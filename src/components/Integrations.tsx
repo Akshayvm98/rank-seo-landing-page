@@ -37,7 +37,7 @@ const integrations = [
     name: "Framer",
     description: "Push optimized pages to Framer sites",
     icon: (
-      <img src="/framer-logo.svg" alt="Framer" className="h-7 w-7" />
+      <img src="/framer-logo.svg" alt="Framer" className="h-7 w-auto" />
     ),
   },
   {

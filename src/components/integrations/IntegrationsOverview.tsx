@@ -41,7 +41,7 @@ const integrations = [
     description:
       "Publish content efficiently for modern marketing websites built in Framer.",
     icon: (
-      <img src="/framer-logo.svg" alt="Framer" className="h-7 w-7" />
+      <img src="/framer-logo.svg" alt="Framer" className="h-7 w-auto" />
     ),
   },
   {
