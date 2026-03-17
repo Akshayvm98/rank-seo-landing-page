@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "Which integrations does RankSEO support?",
     answer:
-      "RankSEO supports Google Search Console, WordPress, Webflow, Framer, Notion, analytics tools, Google authentication, and billing through Stripe.",
+      "RankSEO supports Google Search Console, WordPress, Webflow, Framer, Notion, and analytics tools.",
   },
   {
     question: "Do I need to switch my website platform to use RankSEO?",

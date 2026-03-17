@@ -2,57 +2,16 @@
 
 import { useReveal } from "@/hooks/useReveal";
 
-const innerNodes = [
-  { label: "Search Console", color: "#4285F4", angle: 0 },
-  { label: "WordPress", color: "#21759B", angle: 120 },
-  { label: "Notion", color: "#000000", angle: 240 },
+const nodes = [
+  { label: "Search Console", x: "28%", y: "2%", color: "#4285F4", cx: 150, cy: 30 },
+  { label: "WordPress", x: "72%", y: "8%", color: "#21759B", cx: 330, cy: 55 },
+  { label: "Webflow", x: "82%", y: "45%", color: "#4353FF", cx: 365, cy: 190 },
+  { label: "Framer", x: "62%", y: "82%", color: "#0055FF", cx: 290, cy: 340 },
+  { label: "Notion", x: "18%", y: "78%", color: "#000000", cx: 105, cy: 325 },
+  { label: "Analytics", x: "0%", y: "35%", color: "#0d9488", cx: 30, cy: 160 },
 ];
 
-const outerNodes = [
-  { label: "Webflow", color: "#4353FF", angle: 45 },
-  { label: "Framer", color: "#0055FF", angle: 135 },
-  { label: "Analytics", color: "#0d9488", angle: 225 },
-  { label: "Stripe", color: "#635BFF", angle: 315 },
-];
-
-function OrbitNode({
-  label,
-  color,
-  angle,
-  radius,
-  counterClass,
-}: {
-  label: string;
-  color: string;
-  angle: number;
-  radius: number;
-  counterClass: string;
-}) {
-  const rad = (angle * Math.PI) / 180;
-  const x = Math.cos(rad) * radius;
-  const y = Math.sin(rad) * radius;
-
-  return (
-    <div
-      className={`absolute left-1/2 top-1/2 ${counterClass}`}
-      style={{
-        transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
-      }}
-    >
-      <div className="rounded-xl border border-border-light bg-white px-3.5 py-2 shadow-sm">
-        <div className="flex items-center gap-2">
-          <div
-            className="h-2.5 w-2.5 rounded-full"
-            style={{ backgroundColor: color }}
-          />
-          <span className="text-[12px] font-medium text-foreground whitespace-nowrap">
-            {label}
-          </span>
-        </div>
-      </div>
-    </div>
-  );
-}
+const hubCenter = { cx: 200, cy: 190 };
 
 export function IntegrationsHero() {
   const ref = useReveal();
@@ -97,49 +56,52 @@ export function IntegrationsHero() {
             </p>
           </div>
 
-          {/* Orbit visual */}
-          <div className="reveal reveal-delay-2 relative hidden lg:flex items-center justify-center">
-            <div className="relative h-[400px] w-[400px]">
-              {/* Pulse rings */}
-              <div className="pulse-ring absolute inset-[80px] rounded-full border border-accent/10" />
-              <div className="pulse-ring absolute inset-[40px] rounded-full border border-accent/5" style={{ animationDelay: "2s" }} />
-
-              {/* Static orbit tracks */}
-              <div className="absolute inset-[80px] rounded-full border border-border-light" />
-              <div className="absolute inset-[20px] rounded-full border border-border-light/60" />
+          {/* Integration nodes visual */}
+          <div className="reveal reveal-delay-2 relative hidden lg:block">
+            <div className="relative h-[380px]">
+              {/* SVG connection lines */}
+              <svg className="absolute inset-0 h-full w-full" viewBox="0 0 400 380" fill="none">
+                {nodes.map((node, i) => (
+                  <line
+                    key={node.label}
+                    x1={hubCenter.cx}
+                    y1={hubCenter.cy}
+                    x2={node.cx}
+                    y2={node.cy}
+                    stroke="var(--accent)"
+                    strokeOpacity="0.15"
+                    strokeWidth="1"
+                    strokeDasharray="4 4"
+                    className={`connect-line connect-line-${i + 1}`}
+                  />
+                ))}
+              </svg>
 
               {/* Center hub */}
-              <div className="absolute left-1/2 top-1/2 z-20 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-accent-light shadow-lg shadow-accent/20">
+              <div className="absolute left-1/2 top-1/2 z-10 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-accent-light shadow-lg shadow-accent/20">
                 <span className="text-[20px] font-bold text-white">R</span>
               </div>
 
-              {/* Inner orbit ring */}
-              <div className="orbit-ring absolute inset-[80px]">
-                {innerNodes.map((node) => (
-                  <OrbitNode
-                    key={node.label}
-                    label={node.label}
-                    color={node.color}
-                    angle={node.angle}
-                    radius={120}
-                    counterClass="orbit-node"
-                  />
-                ))}
-              </div>
-
-              {/* Outer orbit ring */}
-              <div className="orbit-ring-reverse absolute inset-[20px]">
-                {outerNodes.map((node) => (
-                  <OrbitNode
-                    key={node.label}
-                    label={node.label}
-                    color={node.color}
-                    angle={node.angle}
-                    radius={180}
-                    counterClass="orbit-node-reverse"
-                  />
-                ))}
-              </div>
+              {/* Floating nodes */}
+              {nodes.map((node, i) => (
+                <div
+                  key={node.label}
+                  className={`absolute integration-node integration-node-${i + 1}`}
+                  style={{ left: node.x, top: node.y }}
+                >
+                  <div className="rounded-xl border border-border-light bg-white px-4 py-2.5 shadow-sm transition-all duration-300 hover:shadow-md hover:border-border">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="h-2.5 w-2.5 rounded-full"
+                        style={{ backgroundColor: node.color }}
+                      />
+                      <span className="text-[12px] font-medium text-foreground whitespace-nowrap">
+                        {node.label}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
