@@ -104,10 +104,10 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-border-light pt-6 md:flex-row">
-          <p className="text-[13px] text-muted-light">
+          <p className="text-[13px] text-muted">
             &copy; 2026 Rank SEO. All rights reserved.
           </p>
-          <div className="flex gap-6 text-[13px] text-muted-light">
+          <div className="flex gap-6 text-[13px] text-muted">
             <a href="#" className="transition-colors hover:text-foreground">Privacy Policy</a>
             <a href="#" className="transition-colors hover:text-foreground">Terms and Conditions</a>
           </div>
