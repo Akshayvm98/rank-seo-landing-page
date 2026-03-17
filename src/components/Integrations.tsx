@@ -28,7 +28,7 @@ const integrations = [
     name: "Webflow",
     description: "Sync content with your Webflow CMS",
     icon: (
-      <img src="/webflow-logo.svg" alt="Webflow" className="h-7 w-auto" />
+      <img src="/webflow-logo.svg" alt="Webflow" className="h-5 w-auto" />
     ),
   },
   {
@@ -42,18 +42,16 @@ const integrations = [
     name: "Notion",
     description: "Draft and organize content in Notion",
     icon: (
-      <svg className="h-7 w-7" viewBox="0 0 24 24" fill="#000">
-        <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L18.19 2.17c-.466-.373-.84-.56-1.773-.466L3.293 3.016c-.467.047-.56.28-.373.466l1.54 1.726zm.793 3.36v13.85c0 .746.373 1.026 1.213.98l14.523-.84c.84-.046.933-.56.933-1.166V6.632c0-.606-.233-.933-.746-.886l-15.177.886c-.56.047-.746.327-.746.933zm14.336.42c.094.42 0 .84-.42.886l-.7.14v10.264c-.607.327-1.166.513-1.633.513-.746 0-.933-.233-1.493-.933l-4.571-7.178v6.952l1.446.327s0 .84-1.166.84l-3.22.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.453-.233 4.758 7.272V9.387l-1.213-.14c-.094-.513.28-.886.746-.933l3.22-.186z" />
-      </svg>
+      <img src="/notion-logo.svg" alt="Notion" className="h-7 w-7" />
     ),
   },
   {
-    name: "Pirsch Analytics",
-    description: "Privacy-friendly performance tracking",
+    name: "Custom API",
+    description: "Connect any platform through our flexible API",
     icon: (
-      <div className="flex h-7 w-7 items-center justify-center rounded bg-[#0E1729] text-[11px] font-bold text-white">
-        P
-      </div>
+      <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="#0d9488" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+      </svg>
     ),
   },
 ];
