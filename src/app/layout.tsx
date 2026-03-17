@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s — Rank SEO",
   },
   description:
-    "Turn your website into a traffic engine that grows itself. Rank SEO connects to Google Search Console, finds keyword opportunities, generates optimized content, and publishes automatically.",
+    "Turn your website into a traffic engine that grows itself. Rank SEO finds keyword opportunities, generates optimized content, and publishes automatically.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Rank SEO",
     title: "Rank SEO — AI-Powered SEO Automation Platform",
     description:
-      "Turn your website into a traffic engine that grows itself. Rank SEO connects to Google Search Console, finds keyword opportunities, generates optimized content, and publishes automatically.",
+      "Turn your website into a traffic engine that grows itself. Rank SEO finds keyword opportunities, generates optimized content, and publishes automatically.",
     images: [
       {
         url: "/opengraph-image",

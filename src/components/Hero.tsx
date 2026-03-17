@@ -23,7 +23,7 @@ export function Hero() {
 
             <div className="animate-hero-delay-3 mt-8 flex flex-wrap items-center gap-3">
               <a
-                href="#pricing"
+                href="/pricing"
                 className="inline-flex h-11 items-center rounded-lg bg-foreground px-6 text-[14px] font-semibold text-white transition-all duration-200 hover:bg-foreground/90 hover:shadow-lg hover:shadow-foreground/10"
               >
                 Get Started

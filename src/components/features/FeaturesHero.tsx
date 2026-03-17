@@ -27,13 +27,13 @@ export function FeaturesHero() {
 
             <div className="reveal reveal-delay-2 mt-8 flex flex-wrap items-center gap-3">
               <a
-                href="#pricing"
+                href="/pricing"
                 className="inline-flex h-11 items-center rounded-lg bg-foreground px-6 text-[14px] font-semibold text-white transition-all duration-200 hover:bg-foreground/90 hover:shadow-lg hover:shadow-foreground/10"
               >
                 Get Started
               </a>
               <a
-                href="/#pricing"
+                href="/pricing"
                 className="inline-flex h-11 items-center gap-2 rounded-lg border border-border px-5 text-[14px] font-medium text-foreground transition-all duration-200 hover:border-muted-light hover:bg-surface"
               >
                 View Pricing

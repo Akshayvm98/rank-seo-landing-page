@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { label: "Features", href: "/features" },
   { label: "About", href: "/about" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Pricing", href: "/pricing" },
 ];
 
 export function Navbar() {
@@ -53,7 +53,7 @@ export function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden items-center gap-3 md:flex">
           <a
-            href="#pricing"
+            href="/pricing"
             className="rounded-lg bg-foreground px-4 py-2 text-[14px] font-medium text-white transition-all duration-200 hover:bg-foreground/90 hover:shadow-md"
           >
             Get Started
@@ -93,7 +93,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="#pricing"
+              href="/pricing"
               onClick={() => setMobileOpen(false)}
               className="mt-1 rounded-lg bg-foreground px-3 py-2.5 text-center text-[15px] font-medium text-white"
             >
