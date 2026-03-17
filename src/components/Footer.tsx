@@ -3,7 +3,7 @@ const footerLinks = [
     title: "Product",
     links: [
       { label: "Features", href: "/features" },
-      { label: "Integrations", href: "#" },
+      { label: "Integrations", href: "/integrations" },
       { label: "Pricing", href: "/pricing" },
     ],
   },
