@@ -13,7 +13,7 @@ export function TrustMetrics() {
   const ref = useReveal();
 
   return (
-    <section ref={ref} className="py-20 md:py-24">
+    <section ref={ref} className="bg-gradient-to-b from-accent-bg/20 to-transparent py-20 md:py-24">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="reveal text-center mb-12">
           <p className="text-[13px] font-medium uppercase tracking-[0.08em] text-muted-light mb-2">
@@ -27,7 +27,7 @@ export function TrustMetrics() {
           {metrics.map((m, i) => (
             <div
               key={m.label}
-              className={`reveal reveal-delay-${i + 1} rounded-2xl border border-border-light bg-white p-6 text-center`}
+              className={`reveal reveal-delay-${i + 1} rounded-2xl border border-black/[0.05] bg-white p-6 text-center shadow-[0_1px_3px_rgba(0,0,0,0.04),0_6px_24px_rgba(0,0,0,0.02)] transition-all duration-300 hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:-translate-y-0.5`}
             >
               <p className="text-[2rem] font-bold tracking-tight text-foreground md:text-[2.25rem]">
                 {m.value}

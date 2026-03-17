@@ -97,7 +97,7 @@ export function FeatureGrid() {
           {features.map((f, i) => (
             <div
               key={f.title}
-              className={`reveal reveal-delay-${(i % 4) + 1} group rounded-xl border border-border-light bg-white p-5 transition-all duration-300 hover:border-accent-muted/50 hover:shadow-[0_2px_16px_-2px_rgba(13,148,136,0.06)]`}
+              className={`reveal reveal-delay-${(i % 4) + 1} group rounded-xl border border-border-light bg-white p-5 shadow-[0_1px_2px_rgba(0,0,0,0.03)] transition-all duration-300 hover:border-accent-muted/50 hover:shadow-[0_4px_20px_-4px_rgba(13,148,136,0.1)] hover:-translate-y-0.5`}
             >
               <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-accent-bg text-accent">
                 {f.icon}

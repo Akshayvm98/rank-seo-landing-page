@@ -42,7 +42,7 @@ export function HowItWorks() {
   const ref = useReveal();
 
   return (
-    <section ref={ref} className="py-20 md:py-28">
+    <section ref={ref} className="border-t border-border-light py-20 md:py-28">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="reveal mx-auto mb-14 max-w-[560px] text-center">
           <h2 className="text-[1.875rem] font-bold tracking-[-0.03em] text-foreground md:text-[2.5rem]">
@@ -57,7 +57,7 @@ export function HowItWorks() {
           {cards.map((card, i) => (
             <div
               key={card.title}
-              className={`reveal reveal-delay-${i + 1} group rounded-2xl border border-border-light bg-white p-7 transition-all duration-300 hover:border-accent-muted/60 hover:shadow-[0_4px_24px_-4px_rgba(13,148,136,0.08)]`}
+              className={`reveal reveal-delay-${i + 1} group card-premium rounded-2xl bg-white p-7 hover:border-accent-muted/60 hover:shadow-[0_4px_24px_-4px_rgba(13,148,136,0.08)]`}
             >
               <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-accent-bg text-accent transition-colors duration-300 group-hover:bg-accent group-hover:text-white">
                 {card.icon}

@@ -33,7 +33,7 @@ export function Testimonials() {
   const ref = useReveal();
 
   return (
-    <section ref={ref} className="py-20 md:py-28">
+    <section ref={ref} className="border-t border-border-light bg-gradient-to-b from-border-light/30 to-transparent py-20 md:py-28">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="reveal mx-auto mb-14 max-w-[560px] text-center">
           <h2 className="text-[1.875rem] font-bold tracking-[-0.03em] text-foreground md:text-[2.5rem]">
@@ -48,7 +48,7 @@ export function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={t.name}
-              className={`reveal reveal-delay-${i + 1} flex flex-col rounded-2xl border border-border-light bg-white p-6`}
+              className={`reveal reveal-delay-${i + 1} flex flex-col rounded-2xl border border-border-light bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:-translate-y-1`}
             >
               {/* Stars */}
               <div className="mb-4 flex gap-0.5">

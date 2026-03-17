@@ -18,7 +18,7 @@ export function LogoStrip() {
             {brands.map((brand) => (
               <span
                 key={brand}
-                className="text-[15px] font-semibold tracking-[-0.01em] text-foreground/20 select-none"
+                className="text-[15px] font-semibold tracking-[-0.01em] text-foreground/25 select-none"
               >
                 {brand}
               </span>

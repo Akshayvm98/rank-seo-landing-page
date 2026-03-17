@@ -8,7 +8,7 @@ const steps = [
     title: "Connect Search Console",
     description: "Link your domain and Google Search Console. We pull in every metric that matters: impressions, clicks, positions, and indexed pages.",
     visual: (
-      <div className="rounded-lg border border-border-light bg-white p-4">
+      <div className="rounded-lg border border-black/[0.05] bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
         <div className="flex items-center gap-3 mb-3">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#4285F4]/10">
             <svg className="h-4 w-4 text-[#4285F4]" viewBox="0 0 24 24" fill="currentColor">
@@ -35,7 +35,7 @@ const steps = [
     title: "Discover opportunities",
     description: "Our algorithm scores every keyword by search volume, current position, competition, and content gap. The highest-ROI topics rise to the top.",
     visual: (
-      <div className="rounded-lg border border-border-light bg-white p-4">
+      <div className="rounded-lg border border-black/[0.05] bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
         <div className="space-y-2">
           {[
             { kw: "seo automation", score: 94, pos: "New" },
@@ -59,7 +59,7 @@ const steps = [
     title: "Generate in your voice",
     description: "Set your brand tone, add writing samples, and let the AI produce articles that feel authentic. Never robotic.",
     visual: (
-      <div className="rounded-lg border border-border-light bg-white p-4">
+      <div className="rounded-lg border border-black/[0.05] bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
         <div className="flex items-center gap-2 mb-3">
           <div className="h-2 w-2 rounded-full bg-accent animate-pulse" />
           <span className="text-[12px] font-medium text-accent">Generating article...</span>
@@ -82,7 +82,7 @@ const steps = [
     title: "Optimize and score",
     description: "Every article is scored for keyword density, structure, readability, and technical SEO before it goes live.",
     visual: (
-      <div className="rounded-lg border border-border-light bg-white p-4">
+      <div className="rounded-lg border border-black/[0.05] bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
         <div className="flex items-center justify-between mb-3">
           <span className="text-[12px] font-medium text-foreground">SEO Score</span>
           <span className="text-[18px] font-bold text-success">94</span>
@@ -112,7 +112,7 @@ const steps = [
     title: "Publish and track",
     description: "Push to your CMS with one click and monitor performance as rankings, clicks, and impressions grow over time.",
     visual: (
-      <div className="rounded-lg border border-border-light bg-white p-4">
+      <div className="rounded-lg border border-black/[0.05] bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
         <div className="flex items-center gap-2 mb-3">
           <div className="h-5 w-5 rounded bg-success-bg flex items-center justify-center">
             <svg className="h-3 w-3 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -140,7 +140,7 @@ export function WorkflowSection() {
   const ref = useReveal();
 
   return (
-    <section id="workflow" ref={ref} className="py-20 md:py-28">
+    <section id="workflow" ref={ref} className="border-t border-border-light py-20 md:py-28">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="reveal mx-auto mb-16 max-w-[560px] text-center">
           <h2 className="text-[1.875rem] font-bold tracking-[-0.03em] text-foreground md:text-[2.5rem]">
@@ -162,7 +162,7 @@ export function WorkflowSection() {
                 className={`reveal reveal-delay-${Math.min(i + 1, 4)} relative grid gap-6 md:grid-cols-[1fr_1fr] md:gap-12 md:pl-16`}
               >
                 {/* Step number */}
-                <div className="absolute left-0 top-0 hidden h-14 w-14 items-center justify-center rounded-xl border border-border bg-white text-[14px] font-bold text-accent md:flex">
+                <div className="absolute left-0 top-0 hidden h-14 w-14 items-center justify-center rounded-xl border border-black/[0.06] bg-white shadow-sm text-[14px] font-bold text-accent md:flex">
                   {step.number}
                 </div>
 

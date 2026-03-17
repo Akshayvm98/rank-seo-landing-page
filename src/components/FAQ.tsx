@@ -40,7 +40,7 @@ export function FAQ() {
   const ref = useReveal();
 
   return (
-    <section ref={ref} className="py-20 md:py-28">
+    <section ref={ref} className="bg-gradient-to-b from-border-light/20 to-transparent py-20 md:py-28">
       <div className="mx-auto max-w-[720px] px-6">
         <div className="reveal mb-12 text-center">
           <h2 className="text-[1.875rem] font-bold tracking-[-0.03em] text-foreground md:text-[2.5rem]">

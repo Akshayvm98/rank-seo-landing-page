@@ -150,3 +150,38 @@ body {
 .connect-line-4 { animation-delay: 0.6s; }
 .connect-line-5 { animation-delay: 0.7s; }
 .connect-line-6 { animation-delay: 0.8s; }
+
+/* Premium grid background pattern */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Hero glow effect */
+.hero-glow {
+  background: radial-gradient(ellipse 60% 50% at 50% 40%, rgba(13, 148, 136, 0.08) 0%, transparent 70%);
+}
+
+/* Premium card base styles */
+.card-premium {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 6px 24px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-premium:hover {
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 12px 40px rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
+}
+
+/* Section gradient transitions */
+.section-fade-in {
+  background: linear-gradient(to bottom, var(--border-light) 0%, transparent 120px);
+}
+
+.section-tint {
+  background: linear-gradient(to bottom, var(--accent-bg) 0%, transparent 100%);
+}
