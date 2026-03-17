@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -7,15 +7,10 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "BlogCraft — AI-Powered Blog Writing Tool",
+  title: "Rank SEO — AI-Powered SEO Automation Platform",
   description:
-    "Write beautiful blog posts in minutes with AI. BlogCraft helps you draft, edit, and publish compelling content effortlessly.",
+    "Turn your website into a traffic machine that grows itself. Rank SEO connects to Google Search Console, finds keyword opportunities, generates optimized content, and publishes automatically.",
 };
 
 export default function RootLayout({
@@ -24,9 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{ colorScheme: "light" }}>
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} antialiased`}
       >
         {children}
       </body>

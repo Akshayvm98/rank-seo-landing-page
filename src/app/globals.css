@@ -2,41 +2,82 @@
 
 html {
   color-scheme: light only;
+  scroll-behavior: smooth;
 }
 
 :root {
-  --background: #fafaf9;
-  --foreground: #1c1917;
-  --accent: #7c3aed;
-  --accent-light: #a78bfa;
-  --accent-dark: #5b21b6;
+  --background: #fafafa;
+  --foreground: #0f172a;
+  --muted: #64748b;
+  --muted-light: #94a3b8;
   --surface: #ffffff;
-  --muted: #78716c;
+  --surface-raised: #ffffff;
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+  --accent: #0d9488;
+  --accent-hover: #0f766e;
+  --accent-light: #2dd4bf;
+  --accent-muted: #99f6e4;
+  --accent-bg: #f0fdfa;
+  --success: #10b981;
+  --success-bg: #ecfdf5;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
-  --color-accent-light: var(--accent-light);
-  --color-accent-dark: var(--accent-dark);
-  --color-surface: var(--surface);
   --color-muted: var(--muted);
+  --color-muted-light: var(--muted-light);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-light: var(--accent-light);
+  --color-accent-muted: var(--accent-muted);
+  --color-accent-bg: var(--accent-bg);
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
-
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes fade-up {
+/* Scroll offset for anchor links */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* Hero entrance */
+@keyframes hero-enter {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(32px);
   }
   to {
     opacity: 1;
@@ -44,24 +85,22 @@ body {
   }
 }
 
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.animate-hero {
+  animation: hero-enter 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+.animate-hero-delay-1 {
+  animation: hero-enter 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
 }
 
-.animate-fade-up {
-  animation: fade-up 0.8s ease-out both;
+.animate-hero-delay-2 {
+  animation: hero-enter 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both;
 }
 
-.animate-fade-in {
-  animation: fade-in 0.6s ease-out both;
+.animate-hero-delay-3 {
+  animation: hero-enter 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.36s both;
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
+.animate-hero-delay-4 {
+  animation: hero-enter 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.48s both;
 }
