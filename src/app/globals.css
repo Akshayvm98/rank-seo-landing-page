@@ -104,3 +104,39 @@ body {
 .animate-hero-delay-4 {
   animation: hero-enter 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.48s both;
 }
+
+/* Orbit animation for integrations hero */
+@keyframes orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes orbit-counter-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes pulse-ring {
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(1.04); }
+}
+
+.orbit-ring {
+  animation: orbit-spin 40s linear infinite;
+}
+
+.orbit-ring-reverse {
+  animation: orbit-spin 55s linear infinite reverse;
+}
+
+.orbit-node {
+  animation: orbit-counter-spin 40s linear infinite;
+}
+
+.orbit-node-reverse {
+  animation: orbit-counter-spin 55s linear infinite reverse;
+}
+
+.pulse-ring {
+  animation: pulse-ring 4s ease-in-out infinite;
+}

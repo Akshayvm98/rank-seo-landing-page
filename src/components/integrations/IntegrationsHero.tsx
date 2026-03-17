@@ -2,14 +2,57 @@
 
 import { useReveal } from "@/hooks/useReveal";
 
-const nodes = [
-  { label: "Search Console", x: "10%", y: "8%", color: "#4285F4" },
-  { label: "WordPress", x: "75%", y: "5%", color: "#21759B" },
-  { label: "Webflow", x: "85%", y: "45%", color: "#4353FF" },
-  { label: "Framer", x: "70%", y: "80%", color: "#0055FF" },
-  { label: "Notion", x: "15%", y: "75%", color: "#000000" },
-  { label: "Analytics", x: "5%", y: "42%", color: "#0d9488" },
+const innerNodes = [
+  { label: "Search Console", color: "#4285F4", angle: 0 },
+  { label: "WordPress", color: "#21759B", angle: 120 },
+  { label: "Notion", color: "#000000", angle: 240 },
 ];
+
+const outerNodes = [
+  { label: "Webflow", color: "#4353FF", angle: 45 },
+  { label: "Framer", color: "#0055FF", angle: 135 },
+  { label: "Analytics", color: "#0d9488", angle: 225 },
+  { label: "Stripe", color: "#635BFF", angle: 315 },
+];
+
+function OrbitNode({
+  label,
+  color,
+  angle,
+  radius,
+  counterClass,
+}: {
+  label: string;
+  color: string;
+  angle: number;
+  radius: number;
+  counterClass: string;
+}) {
+  const rad = (angle * Math.PI) / 180;
+  const x = Math.cos(rad) * radius;
+  const y = Math.sin(rad) * radius;
+
+  return (
+    <div
+      className={`absolute left-1/2 top-1/2 ${counterClass}`}
+      style={{
+        transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
+      }}
+    >
+      <div className="rounded-xl border border-border-light bg-white px-3.5 py-2 shadow-sm">
+        <div className="flex items-center gap-2">
+          <div
+            className="h-2.5 w-2.5 rounded-full"
+            style={{ backgroundColor: color }}
+          />
+          <span className="text-[12px] font-medium text-foreground whitespace-nowrap">
+            {label}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function IntegrationsHero() {
   const ref = useReveal();
@@ -54,34 +97,49 @@ export function IntegrationsHero() {
             </p>
           </div>
 
-          {/* Integration nodes visual */}
-          <div className="reveal reveal-delay-2 relative hidden lg:block">
-            <div className="relative h-[380px]">
+          {/* Orbit visual */}
+          <div className="reveal reveal-delay-2 relative hidden lg:flex items-center justify-center">
+            <div className="relative h-[400px] w-[400px]">
+              {/* Pulse rings */}
+              <div className="pulse-ring absolute inset-[80px] rounded-full border border-accent/10" />
+              <div className="pulse-ring absolute inset-[40px] rounded-full border border-accent/5" style={{ animationDelay: "2s" }} />
+
+              {/* Static orbit tracks */}
+              <div className="absolute inset-[80px] rounded-full border border-border-light" />
+              <div className="absolute inset-[20px] rounded-full border border-border-light/60" />
+
               {/* Center hub */}
-              <div className="absolute left-1/2 top-1/2 z-10 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-accent-light shadow-lg shadow-accent/20">
+              <div className="absolute left-1/2 top-1/2 z-20 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-accent-light shadow-lg shadow-accent/20">
                 <span className="text-[20px] font-bold text-white">R</span>
               </div>
 
-              {/* Connection lines + nodes */}
-              {nodes.map((node) => (
-                <div
-                  key={node.label}
-                  className="absolute"
-                  style={{ left: node.x, top: node.y }}
-                >
-                  <div className="rounded-xl border border-border-light bg-white px-4 py-2.5 shadow-sm transition-all duration-300 hover:shadow-md hover:border-border">
-                    <div className="flex items-center gap-2">
-                      <div
-                        className="h-2.5 w-2.5 rounded-full"
-                        style={{ backgroundColor: node.color }}
-                      />
-                      <span className="text-[12px] font-medium text-foreground whitespace-nowrap">
-                        {node.label}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ))}
+              {/* Inner orbit ring */}
+              <div className="orbit-ring absolute inset-[80px]">
+                {innerNodes.map((node) => (
+                  <OrbitNode
+                    key={node.label}
+                    label={node.label}
+                    color={node.color}
+                    angle={node.angle}
+                    radius={120}
+                    counterClass="orbit-node"
+                  />
+                ))}
+              </div>
+
+              {/* Outer orbit ring */}
+              <div className="orbit-ring-reverse absolute inset-[20px]">
+                {outerNodes.map((node) => (
+                  <OrbitNode
+                    key={node.label}
+                    label={node.label}
+                    color={node.color}
+                    angle={node.angle}
+                    radius={180}
+                    counterClass="orbit-node-reverse"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
