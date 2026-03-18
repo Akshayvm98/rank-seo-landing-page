@@ -1,15 +1,17 @@
+import { X, Check } from "lucide-react";
+
 const beforeItems = [
-  { label: "Scattered tasks across 5+ tools", icon: "M6 18L18 6M6 6l12 12" },
-  { label: "Manual keyword research in spreadsheets", icon: "M6 18L18 6M6 6l12 12" },
-  { label: "Inconsistent publishing rhythm", icon: "M6 18L18 6M6 6l12 12" },
-  { label: "No visibility into what to create next", icon: "M6 18L18 6M6 6l12 12" },
+  "Scattered tasks across 5+ tools",
+  "Manual keyword research in spreadsheets",
+  "Inconsistent publishing rhythm",
+  "No visibility into what to create next",
 ];
 
 const afterItems = [
-  { label: "One connected workflow from idea to publish", icon: "M4.5 12.75l6 6 9-13.5" },
-  { label: "Automated keyword clustering and planning", icon: "M4.5 12.75l6 6 9-13.5" },
-  { label: "Steady, repeatable publishing cadence", icon: "M4.5 12.75l6 6 9-13.5" },
-  { label: "Clear editorial direction from search data", icon: "M4.5 12.75l6 6 9-13.5" },
+  "One connected workflow from idea to publish",
+  "Automated keyword clustering and planning",
+  "Steady, repeatable publishing cadence",
+  "Clear editorial direction from search data",
 ];
 
 export function ContentMarketersWhatChanges() {
@@ -51,10 +53,8 @@ export function ContentMarketersWhatChanges() {
             <ul className="space-y-2.5">
               {beforeItems.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <svg className="mt-0.5 h-4 w-4 shrink-0 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
-                  </svg>
-                  <span className="text-[14px] leading-snug text-foreground/70">{item.label}</span>
+                  <X className="mt-0.5 h-4 w-4 shrink-0 text-red-400" />
+                  <span className="text-[14px] leading-snug text-foreground/70">{item}</span>
                 </li>
               ))}
             </ul>
@@ -86,10 +86,8 @@ export function ContentMarketersWhatChanges() {
             <ul className="space-y-2.5">
               {afterItems.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <svg className="mt-0.5 h-4 w-4 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
-                  </svg>
-                  <span className="text-[14px] leading-snug text-foreground/70">{item.label}</span>
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" strokeWidth={2.5} />
+                  <span className="text-[14px] leading-snug text-foreground/70">{item}</span>
                 </li>
               ))}
             </ul>

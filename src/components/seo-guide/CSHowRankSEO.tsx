@@ -28,7 +28,7 @@ const capabilities = [
 
 export function CSHowRankSEO() {
   return (
-    <section className="bg-gradient-to-b from-border-light/30 to-transparent py-20 md:py-28">
+    <section className="bg-gradient-to-b from-border-light/30 to-transparent py-8 md:py-10">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="grid items-start gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
           <div>

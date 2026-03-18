@@ -1,3 +1,5 @@
+import { Info } from "lucide-react";
+
 const strategies = [
   {
     title: "Create link-worthy resources",
@@ -39,7 +41,7 @@ const strategies = [
 
 export function LBApproaches() {
   return (
-    <section id="approaches" className="border-t border-border-light py-20 md:py-28">
+    <section id="approaches" className="py-8 md:py-10">
       <div className="mx-auto max-w-[800px] px-6">
         <div className="text-center">
           <p className="reveal mb-3 text-[13px] font-medium uppercase tracking-[0.08em] text-accent">
@@ -69,9 +71,7 @@ export function LBApproaches() {
                   <h3 className="text-[17px] font-bold text-foreground">{strategy.title}</h3>
                   <p className="mt-2 text-[14px] leading-[1.75] text-muted">{strategy.description}</p>
                   <p className="mt-3 flex items-start gap-2 text-[13px] leading-[1.6] text-muted-light">
-                    <svg className="mt-0.5 h-4 w-4 shrink-0 text-muted-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-                    </svg>
+                    <Info className="mt-0.5 h-4 w-4 shrink-0 text-muted-light" strokeWidth={1.5} />
                     <span>{strategy.note}</span>
                   </p>
                 </div>

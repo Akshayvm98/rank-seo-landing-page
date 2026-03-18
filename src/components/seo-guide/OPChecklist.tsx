@@ -1,3 +1,5 @@
+import { Check, AlertCircle } from "lucide-react";
+
 const checks = [
   { label: "Does the page target one clear primary topic?", status: "pass" },
   { label: "Is the title specific and relevant?", status: "pass" },
@@ -11,7 +13,7 @@ const checks = [
 
 export function OPChecklist() {
   return (
-    <section className="border-t border-border-light py-20 md:py-28">
+    <section className="py-8 md:py-10">
       <div className="mx-auto max-w-[900px] px-6">
         <div className="text-center">
           <p className="reveal mb-3 text-[13px] font-medium uppercase tracking-[0.08em] text-accent">
@@ -43,13 +45,9 @@ export function OPChecklist() {
                     }`}
                   >
                     {check.status === "pass" ? (
-                      <svg className="h-3 w-3 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
+                      <Check className="h-3 w-3 text-success" strokeWidth={3} />
                     ) : (
-                      <svg className="h-3 w-3 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
-                      </svg>
+                      <AlertCircle className="h-3 w-3 text-amber-500" strokeWidth={3} />
                     )}
                   </div>
                   <span className="text-[14px] leading-[1.5] text-foreground">{check.label}</span>

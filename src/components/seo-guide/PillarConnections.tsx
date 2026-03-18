@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 const connections = [
   {
     from: "Keywords",
@@ -23,7 +25,7 @@ const connections = [
 
 export function PillarConnections() {
   return (
-    <section className="bg-gradient-to-b from-accent-bg/30 to-transparent py-20 md:py-28">
+    <section className="bg-gradient-to-b from-accent-bg/30 to-transparent py-8 md:py-10">
       <div className="mx-auto max-w-[800px] px-6">
         <div className="text-center">
           <p className="reveal mb-3 text-[13px] font-medium uppercase tracking-[0.08em] text-accent">
@@ -49,15 +51,7 @@ export function PillarConnections() {
                   <span className="rounded-lg bg-accent-bg px-2.5 py-1 text-[12px] font-bold text-accent">
                     {c.from}
                   </span>
-                  <svg
-                    className="h-4 w-4 text-accent/50"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                  >
-                    <path d="M3 8h10m-4-4l4 4-4 4" />
-                  </svg>
+                  <ArrowRight className="h-4 w-4 text-accent/50" strokeWidth={1.5} />
                   <span className="rounded-lg bg-accent-bg px-2.5 py-1 text-[12px] font-bold text-accent">
                     {c.to}
                   </span>

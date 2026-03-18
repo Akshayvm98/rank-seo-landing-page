@@ -1,3 +1,5 @@
+import { Check } from "lucide-react";
+
 const sections = [
   {
     title: "Google Search Console integration for real SEO opportunities",
@@ -52,9 +54,7 @@ const sections = [
       <div className="rounded-xl border border-border-light bg-white p-5">
         <div className="mb-4 flex items-center gap-2">
           <div className="h-5 w-5 rounded bg-success-bg flex items-center justify-center">
-            <svg className="h-3 w-3 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-            </svg>
+            <Check className="h-3 w-3 text-success" strokeWidth={2.5} />
           </div>
           <span className="text-[12px] font-medium text-success">Published to WordPress</span>
         </div>
@@ -198,9 +198,7 @@ export function IntegrationDetails() {
                 <ul className="mt-5 space-y-2.5">
                   {section.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-2.5 text-[14px] text-foreground/80">
-                      <svg className="mt-0.5 h-4 w-4 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                       {b}
                     </li>
                   ))}

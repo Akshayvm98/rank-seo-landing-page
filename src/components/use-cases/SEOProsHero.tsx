@@ -1,3 +1,5 @@
+import { Check } from "lucide-react";
+
 export function SEOProsHero() {
   return (
     <section className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28 lg:pt-40">
@@ -122,9 +124,7 @@ export function SEOProsHero() {
                     ].map((item) => (
                       <div key={item.check} className="flex items-center gap-2 text-[11px]">
                         {item.done ? (
-                          <svg className="h-3.5 w-3.5 shrink-0 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                          </svg>
+                          <Check className="h-3.5 w-3.5 shrink-0 text-success" strokeWidth={2.5} />
                         ) : (
                           <div className="h-3.5 w-3.5 shrink-0 rounded border border-border" />
                         )}

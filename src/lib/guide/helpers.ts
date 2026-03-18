@@ -4,6 +4,7 @@ import type {
   GuideTopicPage,
   GuideArticlePage,
   GuideNavGroup,
+  GuideNavTopic,
 } from "./types";
 import { guidePages } from "./guide-data";
 
@@ -127,6 +128,40 @@ export function getNavGroups(): GuideNavGroup[] {
   }
 
   return groups;
+}
+
+/** Flat list of searchable page entries for client-side search */
+export function getSearchablePages() {
+  return getPublishedPages()
+    .filter((p) => p.type !== "pillar")
+    .map((p) => {
+      const topicSlug =
+        p.type === "topic"
+          ? (p as GuideTopicPage).topicSlug
+          : (p as GuideArticlePage).topicSlug;
+      const topic = getTopicBySlug(topicSlug);
+      return {
+        title: p.title,
+        excerpt: p.excerpt,
+        href: getPageHref(p),
+        category: p.category,
+        topicLabel: topic?.title ?? p.category,
+        slug: p.slug,
+      };
+    });
+}
+
+/** Build hierarchical sidebar data: topics with nested articles */
+export function getSidebarTopics(): GuideNavTopic[] {
+  const topics = getTopicPages();
+  return topics.map((topic) => ({
+    title: topic.title,
+    href: getPageHref(topic),
+    articles: getArticlesByTopic(topic.topicSlug).map((a) => ({
+      title: a.title,
+      href: getPageHref(a),
+    })),
+  }));
 }
 
 // ---------------------------------------------------------------------------

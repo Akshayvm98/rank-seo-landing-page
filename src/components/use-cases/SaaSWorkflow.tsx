@@ -1,3 +1,5 @@
+import { Link, Search, PenLine, CheckCircle, Upload, TrendingUp, Check, Globe } from "lucide-react";
+
 const steps = [
   {
     number: "01",
@@ -8,10 +10,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-            </svg>
+            <Link className="h-4 w-4 text-accent" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">Site Connection</span>
         </div>
@@ -32,10 +31,7 @@ const steps = [
           </div>
           <div className="flex items-center gap-3 rounded-lg bg-accent-bg/30 px-3 py-2.5">
             <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-              </svg>
+              <Globe className="h-3.5 w-3.5 text-accent" strokeWidth={1.5} />
             </div>
             <div className="flex-1">
               <span className="text-[12px] font-medium text-foreground/70">yourapp.com</span>
@@ -55,10 +51,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.35-4.35" />
-            </svg>
+            <Search className="h-4 w-4 text-accent" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">Keyword Opportunities</span>
         </div>
@@ -98,10 +91,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-              <path d="M12 20h9" />
-              <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838.838-2.872a2 2 0 0 1 .506-.855Z" />
-            </svg>
+            <PenLine className="h-4 w-4 text-accent" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">Article Draft</span>
         </div>
@@ -134,10 +124,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-success-bg">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-success">
-              <path d="M9 12l2 2 4-4" />
-              <circle cx="12" cy="12" r="10" />
-            </svg>
+            <CheckCircle className="h-4 w-4 text-success" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">SEO Checklist</span>
           <span className="ml-auto text-[12px] font-bold text-success">94/100</span>
@@ -187,10 +174,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-              <path d="M12 3v12M7.5 10.5 12 6l4.5 4.5" />
-              <path d="M4 16v2.5a1.5 1.5 0 0 0 1.5 1.5h13a1.5 1.5 0 0 0 1.5-1.5V16" />
-            </svg>
+            <Upload className="h-4 w-4 text-accent" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">Publish</span>
         </div>
@@ -215,9 +199,7 @@ const steps = [
         </div>
         <div className="rounded-lg bg-success-bg/50 p-3">
           <div className="flex items-center gap-2">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-success">
-              <path d="M9 12l2 2 4-4" />
-            </svg>
+            <Check className="h-3.5 w-3.5 text-success" />
             <span className="text-[12px] font-medium text-success">Published to WordPress</span>
           </div>
           <p className="mt-1 pl-[22px] text-[10px] text-muted-light">
@@ -236,10 +218,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-              <path d="M3 3v18h18" />
-              <path d="m7 16 4-8 4 5 5-7" />
-            </svg>
+            <TrendingUp className="h-4 w-4 text-accent" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">Performance</span>
           <span className="ml-auto text-[11px] font-medium text-success">+42% traffic</span>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Check } from "lucide-react";
 export function About() {
   return (
     <section className="py-20 md:py-28">
@@ -159,19 +160,7 @@ function StoryVisual() {
                   }`}
                 >
                   {item.done ? (
-                    <svg
-                      className="h-3 w-3 text-success"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2.5}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12.75l6 6 9-13.5"
-                      />
-                    </svg>
+                    <Check className="h-3 w-3 text-success" strokeWidth={2.5} />
                   ) : (
                     <div className="h-2 w-2 animate-pulse rounded-full bg-accent" />
                   )}

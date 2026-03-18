@@ -6,6 +6,7 @@ import {
   NumberedList,
   Callout,
 } from "@/components/seo-guide/ArticleBlocks";
+import { ArrowUp } from "lucide-react";
 
 export default function TitleTags() {
   return (
@@ -56,9 +57,7 @@ export default function TitleTags() {
               </p>
             </div>
             <div className="mt-3 flex items-center gap-2">
-              <svg className="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-              </svg>
+              <ArrowUp className="h-4 w-4 text-accent" />
               <p className="text-[12px] font-medium text-accent">
                 This is the title tag — the most visible element
               </p>

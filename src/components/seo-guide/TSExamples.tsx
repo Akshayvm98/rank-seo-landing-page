@@ -1,3 +1,5 @@
+import { AlertTriangle, ArrowRight } from "lucide-react";
+
 const issues = [
   {
     problem: "Important pages blocked by robots.txt",
@@ -28,7 +30,7 @@ const issues = [
 
 export function TSExamples() {
   return (
-    <section className="bg-gradient-to-b from-border-light/30 to-transparent py-20 md:py-28">
+    <section className="bg-gradient-to-b from-border-light/30 to-transparent py-8 md:py-10">
       <div className="mx-auto max-w-[800px] px-6">
         <div className="text-center">
           <p className="reveal mb-3 text-[13px] font-medium uppercase tracking-[0.08em] text-accent">
@@ -53,15 +55,11 @@ export function TSExamples() {
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1.5">
-                    <svg className="h-4 w-4 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z" />
-                    </svg>
+                    <AlertTriangle className="h-4 w-4 text-red-400" />
                     <p className="text-[15px] font-bold text-foreground">{item.problem}</p>
                   </div>
                   <div className="flex items-start gap-2 ml-6">
-                    <svg className="mt-0.5 h-3.5 w-3.5 shrink-0 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
+                    <ArrowRight className="mt-0.5 h-3.5 w-3.5 shrink-0 text-success" strokeWidth={2.5} />
                     <p className="text-[14px] leading-[1.6] text-muted">{item.fix}</p>
                   </div>
                 </div>

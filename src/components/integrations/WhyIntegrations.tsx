@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 export function WhyIntegrations() {
   return (
     <section className="border-t border-border-light bg-gradient-to-b from-border-light/20 to-transparent py-20 md:py-28">
@@ -35,18 +37,14 @@ export function WhyIntegrations() {
             className="inline-flex items-center gap-1.5 rounded-lg border border-border px-4 py-2.5 text-[14px] font-medium text-foreground transition-all duration-200 hover:border-muted-light hover:bg-surface"
           >
             Explore all features
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg>
+            <ArrowRight className="h-4 w-4" />
           </a>
           <a
             href="/pricing"
             className="inline-flex items-center gap-1.5 rounded-lg border border-border px-4 py-2.5 text-[14px] font-medium text-foreground transition-all duration-200 hover:border-muted-light hover:bg-surface"
           >
             See pricing
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg>
+            <ArrowRight className="h-4 w-4" />
           </a>
         </div>
       </div>

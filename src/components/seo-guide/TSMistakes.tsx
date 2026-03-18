@@ -27,7 +27,7 @@ const mistakes = [
 
 export function TSMistakes() {
   return (
-    <section className="border-t border-border-light py-20 md:py-28">
+    <section className="py-8 md:py-10">
       <div className="mx-auto max-w-[800px] px-6">
         <div className="text-center">
           <p className="reveal mb-3 text-[13px] font-medium uppercase tracking-[0.08em] text-accent">

@@ -1,3 +1,5 @@
+import { X, Check } from "lucide-react";
+
 const withoutItems = [
   "Manual research per client",
   "Scattered drafts and approvals",
@@ -33,9 +35,7 @@ export function AgenciesOutcomes() {
           <div className="rounded-xl border border-red-100 bg-white p-6">
             <div className="mb-5 flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-50">
-                <svg className="h-3.5 w-3.5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <X className="h-3.5 w-3.5 text-red-400" />
               </div>
               <span className="text-[13px] font-semibold text-foreground">Without RankSEO</span>
             </div>
@@ -55,9 +55,7 @@ export function AgenciesOutcomes() {
           <div className="rounded-xl border border-accent/20 bg-accent-bg/30 p-6">
             <div className="mb-5 flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent">
-                <svg className="h-3.5 w-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
+                <Check className="h-3.5 w-3.5 text-white" strokeWidth={2.5} />
               </div>
               <span className="text-[13px] font-semibold text-foreground">With RankSEO</span>
             </div>
@@ -65,9 +63,7 @@ export function AgenciesOutcomes() {
               {withItems.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-[14px] text-foreground/80">
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/10">
-                    <svg className="h-3 w-3 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
+                    <Check className="h-3 w-3 text-accent" strokeWidth={2.5} />
                   </div>
                   {item}
                 </li>

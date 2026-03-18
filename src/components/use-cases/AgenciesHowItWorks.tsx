@@ -1,3 +1,5 @@
+import { Plus, ChevronDown, ArrowRight } from "lucide-react";
+
 const steps = [
   {
     number: "01",
@@ -24,9 +26,7 @@ const steps = [
           ))}
         </div>
         <button className="mt-2.5 flex w-full items-center justify-center gap-1 rounded-lg border border-dashed border-border bg-border-light/30 py-2 text-[11px] text-muted transition-colors hover:border-accent hover:text-accent">
-          <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>
+          <Plus className="h-3 w-3" />
           Add domain
         </button>
       </div>
@@ -43,9 +43,7 @@ const steps = [
           <div className="flex items-center gap-1 rounded-full bg-accent-bg px-2 py-0.5">
             <div className="h-1.5 w-1.5 rounded-full bg-accent" />
             <span className="text-[9px] font-medium text-accent">acme.com</span>
-            <svg className="h-2.5 w-2.5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
+            <ChevronDown className="h-2.5 w-2.5 text-accent" />
           </div>
         </div>
         <div className="space-y-1">
@@ -82,9 +80,7 @@ const steps = [
           <div className="flex items-center gap-1 rounded bg-border-light px-2 py-0.5">
             <span className="text-[9px] text-muted">Brand:</span>
             <span className="text-[9px] font-medium text-foreground">Acme</span>
-            <svg className="h-2.5 w-2.5 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
+            <ChevronDown className="h-2.5 w-2.5 text-muted" />
           </div>
         </div>
         <div className="space-y-1.5">
@@ -235,9 +231,7 @@ export function AgenciesHowItWorks() {
                   className="mb-3 inline-flex items-center gap-1 text-[12px] font-medium text-accent transition-colors hover:text-accent-hover"
                 >
                   {step.link.text}
-                  <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
+                  <ArrowRight className="h-3 w-3" />
                 </a>
               )}
               <div className="mt-auto">{step.visual}</div>
@@ -267,9 +261,7 @@ export function AgenciesHowItWorks() {
                   className="mb-3 inline-flex items-center gap-1 text-[12px] font-medium text-accent transition-colors hover:text-accent-hover"
                 >
                   {step.link.text}
-                  <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
+                  <ArrowRight className="h-3 w-3" />
                 </a>
               )}
               <div className="mt-3">{step.visual}</div>

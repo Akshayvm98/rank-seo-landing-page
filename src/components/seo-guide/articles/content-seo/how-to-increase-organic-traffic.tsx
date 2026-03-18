@@ -6,6 +6,7 @@ import {
   NumberedList,
   Callout,
 } from "@/components/seo-guide/ArticleBlocks";
+import { ChevronRight } from "lucide-react";
 
 export default function HowToIncreaseOrganicTraffic() {
   return (
@@ -159,19 +160,7 @@ export default function HowToIncreaseOrganicTraffic() {
                   </div>
                   {i < 4 && (
                     <div className="hidden sm:flex shrink-0 px-1">
-                      <svg
-                        className="h-3.5 w-3.5 text-black/15"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
+                      <ChevronRight className="h-3.5 w-3.5 text-black/15" />
                     </div>
                   )}
                 </div>

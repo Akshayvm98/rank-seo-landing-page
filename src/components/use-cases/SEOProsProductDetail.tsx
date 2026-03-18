@@ -1,3 +1,5 @@
+import { Check, AlertCircle } from "lucide-react";
+
 export function SEOProsProductDetail() {
   return (
     <section className="py-16 md:py-24">
@@ -102,13 +104,9 @@ export function SEOProsProductDetail() {
                     <div className="mb-1 flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         {item.value >= 90 ? (
-                          <svg className="h-3 w-3 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                          </svg>
+                          <Check className="h-3 w-3 text-success" strokeWidth={2.5} />
                         ) : (
-                          <svg className="h-3 w-3 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
-                          </svg>
+                          <AlertCircle className="h-3 w-3 text-accent" />
                         )}
                         <span className="text-[11px] text-foreground">{item.label}</span>
                       </div>

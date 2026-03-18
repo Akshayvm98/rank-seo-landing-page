@@ -1,4 +1,5 @@
 import { getTopicPages, getPageHref } from "@/lib/guide";
+import { ArrowRight } from "lucide-react";
 
 /** Visual styles per card index — keeps the color variety while being data-driven */
 const cardStyles = [
@@ -14,7 +15,7 @@ export function PillarCoreAreas() {
   const topics = getTopicPages();
 
   return (
-    <section className="border-t border-border-light py-20 md:py-28">
+    <section className="py-8 md:py-10">
       <div className="mx-auto max-w-[1000px] px-6">
         <div className="text-center">
           <p className="reveal mb-3 text-[13px] font-medium uppercase tracking-[0.08em] text-accent">
@@ -54,15 +55,7 @@ export function PillarCoreAreas() {
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1 text-[13px] font-semibold text-accent transition-all group-hover:gap-2">
                   Read guide
-                  <svg
-                    className="h-3.5 w-3.5"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M3 8h10m-4-4l4 4-4 4" />
-                  </svg>
+                  <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </a>
             );

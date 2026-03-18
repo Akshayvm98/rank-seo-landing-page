@@ -19,11 +19,11 @@ export function GuideLayout({
   return (
     <>
       <Navbar />
-      <div className="mx-auto max-w-[1360px] px-6 pt-24 pb-8 md:pt-28">
+      <div className="mx-auto max-w-[1200px] px-6 pt-24 pb-10">
         <div className="grid lg:grid-cols-[220px_1fr_200px] lg:gap-10">
           {/* Left sidebar — desktop */}
           <aside className="hidden lg:block">
-            <div className="sticky top-24">
+            <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto">
               <GuideSidebar currentPath={pathname} />
             </div>
           </aside>

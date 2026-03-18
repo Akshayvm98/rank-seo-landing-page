@@ -5,6 +5,7 @@ import {
   getPageHref,
 } from "@/lib/guide";
 import type { GuidePage } from "@/lib/guide";
+import { ArrowRight } from "lucide-react";
 
 /**
  * Data-driven related articles section.
@@ -33,7 +34,7 @@ export function GuideRelated({ pathname }: { pathname: string }) {
   if (related.length === 0) return null;
 
   return (
-    <section className="border-t border-border-light py-16 md:py-20">
+    <section className="py-8 md:py-10">
       <div className="mx-auto max-w-[1200px] px-6">
         <h3 className="reveal mb-8 text-center text-[13px] font-semibold uppercase tracking-[0.08em] text-muted-light">
           Continue reading
@@ -53,19 +54,7 @@ export function GuideRelated({ pathname }: { pathname: string }) {
               </p>
               <span className="mt-4 inline-flex items-center gap-1 text-[13px] font-medium text-accent">
                 Read guide
-                <svg
-                  className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
+                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
               </span>
             </a>
           ))}

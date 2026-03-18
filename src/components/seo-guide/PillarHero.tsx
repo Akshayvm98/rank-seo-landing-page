@@ -1,6 +1,8 @@
+import { ArrowRight } from "lucide-react";
+
 export function PillarHero() {
   return (
-    <section className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
+    <section className="relative overflow-hidden pt-28 pb-10 md:pt-36 md:pb-14">
       <div className="pointer-events-none absolute inset-0 bg-grid" />
       <div className="pointer-events-none absolute inset-0 hero-glow" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
@@ -57,15 +59,7 @@ export function PillarHero() {
                     </span>
                   </div>
                   {i < 3 && (
-                    <svg
-                      className="h-4 w-4 shrink-0 text-border"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                    >
-                      <path d="M4 8h8m-3-3l3 3-3 3" />
-                    </svg>
+                    <ArrowRight className="h-4 w-4 shrink-0 text-border" strokeWidth={1.5} />
                   )}
                 </div>
               ))}

@@ -33,7 +33,7 @@ const traits = [
 
 export function CSGoodContent() {
   return (
-    <section className="bg-gradient-to-b from-border-light/30 to-transparent py-20 md:py-28">
+    <section className="bg-gradient-to-b from-border-light/30 to-transparent py-8 md:py-10">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="mx-auto max-w-[640px] text-center">
           <p className="reveal mb-3 text-[13px] font-medium uppercase tracking-[0.08em] text-accent">

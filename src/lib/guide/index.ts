@@ -5,6 +5,7 @@ export type {
   GuideTopicPage,
   GuideArticlePage,
   GuideNavGroup,
+  GuideNavTopic,
 } from "./types";
 
 export { guidePages } from "./guide-data";
@@ -23,6 +24,8 @@ export {
   getPageTitle,
   getPrevNext,
   getNavGroups,
+  getSearchablePages,
+  getSidebarTopics,
   getBreadcrumbs,
   getAllArticleParams,
   buildGuideMetadata,

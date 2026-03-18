@@ -1,3 +1,5 @@
+import { Check } from "lucide-react";
+
 export function BloggersGrowth() {
   return (
     <section className="border-t border-border-light bg-gradient-to-b from-border-light/20 to-transparent py-20 md:py-28">
@@ -21,9 +23,7 @@ export function BloggersGrowth() {
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-[15px] text-muted">
                 <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-bg">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-success">
-                    <path d="M3 6l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                  <Check className="h-3 w-3 text-success" strokeWidth={2} />
                 </span>
                 <span>{item}</span>
               </li>

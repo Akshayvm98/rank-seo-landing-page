@@ -1,65 +1,35 @@
+import { Repeat2, Target, Calendar, TrendingUp, Zap, Route } from "lucide-react";
+
 const benefits = [
   {
     title: "Build a more repeatable organic acquisition process",
     description: "Stop starting over each quarter. Create a system that compounds.",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-        <path d="M21.5 2v6h-6M2.5 22v-6h6" />
-        <path d="M2.5 11.5a10 10 0 0 1 16.84-4.43L21.5 8M21.5 12.5a10 10 0 0 1-16.84 4.43L2.5 16" />
-      </svg>
-    ),
+    icon: <Repeat2 className="h-5 w-5 text-accent" strokeWidth={1.5} />,
   },
   {
     title: "Reduce time spent deciding what to create next",
     description: "Let keyword data and opportunity scores guide your content calendar.",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-        <circle cx="12" cy="12" r="10" />
-        <circle cx="12" cy="12" r="3" />
-        <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
-      </svg>
-    ),
+    icon: <Target className="h-5 w-5 text-accent" strokeWidth={1.5} />,
   },
   {
     title: "Publish more consistently without messy coordination",
     description: "One workflow from keyword to published article. Fewer handoffs, fewer delays.",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-        <rect x="3" y="4" width="18" height="18" rx="2" />
-        <path d="M16 2v4M8 2v4M3 10h18" />
-        <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01" />
-      </svg>
-    ),
+    icon: <Calendar className="h-5 w-5 text-accent" strokeWidth={1.5} />,
   },
   {
     title: "Connect SEO work to actual performance signals",
     description: "See which content drives rankings, impressions, and traffic growth.",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-        <path d="M3 3v18h18" />
-        <path d="m7 16 4-8 4 5 5-7" />
-      </svg>
-    ),
+    icon: <TrendingUp className="h-5 w-5 text-accent" strokeWidth={1.5} />,
   },
   {
     title: "Improve content velocity without sacrificing structure",
     description: "Generate, optimize, and publish faster while maintaining SEO quality.",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-      </svg>
-    ),
+    icon: <Zap className="h-5 w-5 text-accent" strokeWidth={1.5} />,
   },
   {
     title: "Create a clearer path from keyword opportunity to traffic growth",
     description: "Every piece of content traces back to a real search opportunity with measurable outcomes.",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-        <circle cx="6" cy="19" r="3" />
-        <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
-        <circle cx="18" cy="5" r="3" />
-      </svg>
-    ),
+    icon: <Route className="h-5 w-5 text-accent" strokeWidth={1.5} />,
   },
 ];
 

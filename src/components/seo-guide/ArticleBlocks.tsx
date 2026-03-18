@@ -29,7 +29,7 @@ export function ArticleHero({
   readingTime?: number;
 }) {
   return (
-    <section className="relative overflow-hidden pt-28 pb-10 md:pt-36 md:pb-12">
+    <section className="relative overflow-hidden pt-6 pb-6 md:pt-8 md:pb-8">
       <div className="pointer-events-none absolute inset-0 bg-grid" />
       <div className="pointer-events-none absolute inset-0 hero-glow" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
@@ -67,7 +67,7 @@ export function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section className="border-t border-border-light py-10 md:py-12">
+    <section className="py-6 md:py-8">
       <div className="mx-auto max-w-[720px] px-6">
         <h2
           id={id}

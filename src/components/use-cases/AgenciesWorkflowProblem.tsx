@@ -1,8 +1,10 @@
-const beforeStages = [
-  { label: "Research", icon: "M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" },
-  { label: "Drafts", icon: "M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931z" },
-  { label: "Publishing", icon: "M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" },
-  { label: "Reports", icon: "M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" },
+import { type LucideIcon, X, Check, Search, PenLine, Upload, BarChart3 } from "lucide-react";
+
+const beforeStages: { label: string; icon: LucideIcon }[] = [
+  { label: "Research", icon: Search },
+  { label: "Drafts", icon: PenLine },
+  { label: "Publishing", icon: Upload },
+  { label: "Reports", icon: BarChart3 },
 ];
 
 export function AgenciesWorkflowProblem() {
@@ -30,9 +32,7 @@ export function AgenciesWorkflowProblem() {
           <div className="rounded-xl border border-red-100 bg-white p-6">
             <div className="mb-5 flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-50">
-                <svg className="h-3.5 w-3.5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <X className="h-3.5 w-3.5 text-red-400" />
               </div>
               <span className="text-[13px] font-semibold text-foreground">Before: Fragmented</span>
             </div>
@@ -42,9 +42,7 @@ export function AgenciesWorkflowProblem() {
                 <div key={stage.label}>
                   <div className="flex items-center gap-3 rounded-lg border border-border-light/80 bg-border-light/20 px-4 py-3">
                     <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-red-50">
-                      <svg className="h-4 w-4 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d={stage.icon} />
-                      </svg>
+                      <stage.icon className="h-4 w-4 text-red-400" strokeWidth={1.5} />
                     </div>
                     <span className="text-[13px] font-medium text-foreground">{stage.label}</span>
                     <div className="ml-auto rounded-full bg-red-50 px-2 py-0.5 text-[9px] font-medium text-red-400">
@@ -74,9 +72,7 @@ export function AgenciesWorkflowProblem() {
           <div className="rounded-xl border border-accent/20 bg-accent-bg/20 p-6">
             <div className="mb-5 flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent">
-                <svg className="h-3.5 w-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
+                <Check className="h-3.5 w-3.5 text-white" />
               </div>
               <span className="text-[13px] font-semibold text-foreground">After: Connected with RankSEO</span>
             </div>
@@ -102,9 +98,7 @@ export function AgenciesWorkflowProblem() {
                     {/* Stage card */}
                     <div className="flex flex-1 items-center gap-3 rounded-lg border border-accent/15 bg-white px-4 py-3">
                       <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent-bg">
-                        <svg className="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d={stage.icon} />
-                        </svg>
+                        <stage.icon className="h-4 w-4 text-accent" strokeWidth={1.5} />
                       </div>
                       <span className="text-[13px] font-medium text-foreground">{stage.label}</span>
                       <div className="ml-auto rounded-full bg-accent-bg px-2 py-0.5 text-[9px] font-medium text-accent">

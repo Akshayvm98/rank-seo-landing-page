@@ -1,3 +1,5 @@
+import { Link, Home } from "lucide-react";
+
 const backlinks = [
   { label: "External authority", description: "Backlinks from other domains signal that external sites vouch for your content." },
   { label: "Trust signals", description: "Links from reputable, relevant sites carry trust that search engines factor into rankings." },
@@ -12,7 +14,7 @@ const internalLinks = [
 
 export function LBInternalVsBacklinks() {
   return (
-    <section id="internal-vs-backlinks" className="bg-gradient-to-b from-border-light/30 to-transparent py-20 md:py-28">
+    <section id="internal-vs-backlinks" className="bg-gradient-to-b from-border-light/30 to-transparent py-8 md:py-10">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="mx-auto max-w-[640px] text-center">
           <p className="reveal mb-3 text-[13px] font-medium uppercase tracking-[0.08em] text-accent">
@@ -33,9 +35,7 @@ export function LBInternalVsBacklinks() {
           <div className="reveal reveal-delay-1 rounded-2xl border border-black/[0.04] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:-translate-y-0.5">
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-bg">
-                <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m5.304-3.066a4.5 4.5 0 00-6.364 6.364L5.879 17.12" />
-                </svg>
+                <Link className="h-5 w-5 text-accent" strokeWidth={1.5} />
               </div>
               <div>
                 <h3 className="text-[17px] font-bold text-foreground">Backlinks</h3>
@@ -56,9 +56,7 @@ export function LBInternalVsBacklinks() {
           <div className="reveal reveal-delay-2 rounded-2xl border border-black/[0.04] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:-translate-y-0.5">
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-success-bg">
-                <svg className="h-5 w-5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                </svg>
+                <Home className="h-5 w-5 text-success" strokeWidth={1.5} />
               </div>
               <div>
                 <h3 className="text-[17px] font-bold text-foreground">Internal Links</h3>

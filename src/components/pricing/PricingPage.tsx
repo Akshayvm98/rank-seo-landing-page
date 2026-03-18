@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Check, Search, PenLine, TrendingUp, Plus } from "lucide-react";
 /* ────────────────────────────────────────────
    Data
    ──────────────────────────────────────────── */
@@ -20,29 +21,17 @@ const planFeatures = [
 const valueGroups = [
   {
     title: "Discover",
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-      </svg>
-    ),
+    icon: <Search className="h-5 w-5" strokeWidth={1.5} />,
     items: ["Keyword opportunities", "SERP analysis", "Competitor insights"],
   },
   {
     title: "Create",
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931z" />
-      </svg>
-    ),
+    icon: <PenLine className="h-5 w-5" strokeWidth={1.5} />,
     items: ["AI content in your voice", "SEO optimization", "Internal linking"],
   },
   {
     title: "Grow",
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
-      </svg>
-    ),
+    icon: <TrendingUp className="h-5 w-5" strokeWidth={1.5} />,
     items: ["Publish to CMS", "Track performance", "Improve over time"],
   },
 ];
@@ -144,15 +133,7 @@ export function PricingPage() {
             <ul className="space-y-3.5">
               {planFeatures.map((f) => (
                 <li key={f} className="flex items-start gap-3 text-[14px] leading-snug text-foreground/80">
-                  <svg
-                    className="mt-0.5 h-4 w-4 shrink-0 text-accent"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                  </svg>
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                   {f}
                 </li>
               ))}
@@ -297,15 +278,10 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         aria-expanded={open}
       >
         <span className="text-[15px] font-medium text-foreground">{question}</span>
-        <svg
+        <Plus
           className={`h-5 w-5 shrink-0 text-muted transition-transform duration-200 ${open ? "rotate-45" : ""}`}
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
           strokeWidth={1.5}
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-        </svg>
+        />
       </button>
       <div
         className={`grid transition-all duration-200 ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}

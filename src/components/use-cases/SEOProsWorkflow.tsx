@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 const steps = [
   {
     id: "data",
@@ -294,17 +295,11 @@ export function SEOProsWorkflow() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span className="text-[14px] font-semibold text-foreground">{step.title}</span>
-                <svg
+                <ChevronDown
                   className={`ml-auto h-4 w-4 shrink-0 text-muted transition-transform duration-200 ${
                     activeTab === i ? "rotate-180" : ""
                   }`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
+                />
               </button>
               {activeTab === i && (
                 <div className="border-t border-border-light px-4 pb-4 pt-3">

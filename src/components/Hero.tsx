@@ -1,3 +1,5 @@
+import { Play, Sparkles } from "lucide-react";
+
 export function Hero() {
   return (
     <section className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28 lg:pt-44 lg:pb-32">
@@ -34,9 +36,7 @@ export function Hero() {
                 href="#workflow"
                 className="inline-flex h-12 items-center gap-2 rounded-xl border border-border px-6 text-[14px] font-medium text-foreground transition-all duration-300 hover:border-muted-light hover:bg-white hover:shadow-sm"
               >
-                <svg className="h-4 w-4 text-accent" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M6.3 2.841A1.5 1.5 0 004 4.11v11.78a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                </svg>
+                <Play className="h-4 w-4 text-accent" fill="currentColor" />
                 See how it works
               </a>
             </div>
@@ -119,9 +119,7 @@ function DashboardMockup() {
       <div className="absolute -bottom-5 -left-4 rounded-xl border border-black/[0.06] bg-white p-3.5 shadow-[0_8px_30px_-8px_rgba(0,0,0,0.1)] md:-left-10">
         <div className="flex items-center gap-2.5">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-accent-bg to-accent-muted/30">
-            <svg className="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
-            </svg>
+            <Sparkles className="h-4 w-4 text-accent" />
           </div>
           <div>
             <p className="text-[12px] font-semibold text-foreground">Article generated</p>

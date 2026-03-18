@@ -1,3 +1,5 @@
+import { CheckCircle } from "lucide-react";
+
 const candidates = [
   { keyword: "seo automation tools", volume: "2.4K", difficulty: 34, intent: "Commercial", selected: false },
   { keyword: "automate seo for small business", volume: "720", difficulty: 14, intent: "Informational", selected: true },
@@ -8,7 +10,7 @@ const candidates = [
 
 export function KRExample() {
   return (
-    <section className="bg-gradient-to-b from-accent-bg/40 to-transparent py-20 md:py-28">
+    <section className="bg-gradient-to-b from-accent-bg/40 to-transparent py-8 md:py-10">
       <div className="mx-auto max-w-[900px] px-6">
         <div className="text-center">
           <p className="reveal mb-3 text-[13px] font-medium uppercase tracking-[0.08em] text-accent">
@@ -62,9 +64,7 @@ export function KRExample() {
               <span className="text-right text-[12px] text-muted">{kw.intent}</span>
               <span className="text-right">
                 {kw.selected && (
-                  <svg className="ml-auto h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                  <CheckCircle className="ml-auto h-5 w-5 text-accent" />
                 )}
               </span>
             </div>

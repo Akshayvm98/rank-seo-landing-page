@@ -6,6 +6,7 @@ import {
   NumberedList,
   Callout,
 } from "@/components/seo-guide/ArticleBlocks";
+import { AlertTriangle, Check, ChevronDown } from "lucide-react";
 
 export default function HowToFindEasyKeywords() {
   return (
@@ -125,9 +126,7 @@ export default function HowToFindEasyKeywords() {
                       </span>
                     </div>
                     {i < 4 && (
-                      <svg className="h-4 w-4 text-accent/40" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <path d="M8 3v10m-3-3l3 3 3-3" />
-                      </svg>
+                      <ChevronDown className="h-4 w-4 text-accent/40" strokeWidth={1.5} />
                     )}
                   </div>
                   {i < 4 && (
@@ -195,9 +194,7 @@ export default function HowToFindEasyKeywords() {
             <div className="rounded-2xl border border-black/[0.06] bg-white p-5 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.06)]">
               <div className="mb-3 flex items-center gap-2">
                 <span className="flex h-5 w-5 items-center justify-center rounded-md bg-amber-50 text-amber-500">
-                  <svg className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.168 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                  </svg>
+                  <AlertTriangle className="h-3 w-3" fill="currentColor" />
                 </span>
                 <span className="text-[13px] font-semibold text-foreground">
                   Current top results
@@ -228,9 +225,7 @@ export default function HowToFindEasyKeywords() {
             <div className="rounded-2xl border border-accent-muted/40 bg-gradient-to-b from-accent-bg/30 to-white p-5 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.06)]">
               <div className="mb-3 flex items-center gap-2">
                 <span className="flex h-5 w-5 items-center justify-center rounded-md bg-accent-bg text-accent">
-                  <svg className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                  </svg>
+                  <Check className="h-3 w-3" fill="currentColor" />
                 </span>
                 <span className="text-[13px] font-semibold text-foreground">
                   Your optimized page

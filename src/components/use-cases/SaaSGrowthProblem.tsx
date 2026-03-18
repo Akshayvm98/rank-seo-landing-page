@@ -1,3 +1,5 @@
+import { Search, LayoutList, PenLine, CheckCircle, Upload } from "lucide-react";
+
 export function SaaSGrowthProblem() {
   return (
     <section className="border-t border-border-light py-20 md:py-28">
@@ -47,10 +49,7 @@ export function SaaSGrowthProblem() {
                 {/* Step 1: Keyword Research */}
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-                      <circle cx="11" cy="11" r="8" />
-                      <path d="m21 21-4.35-4.35" />
-                    </svg>
+                    <Search className="h-4 w-4 text-accent" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 rounded-lg border border-border-light bg-accent-bg/30 px-3 py-2">
                     <span className="text-[12px] font-medium text-foreground/70">Keyword Research</span>
@@ -66,10 +65,7 @@ export function SaaSGrowthProblem() {
                 {/* Step 2: Content Brief */}
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg/50">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent/60">
-                      <rect x="3" y="3" width="18" height="18" rx="2" />
-                      <path d="M8 7h8M8 12h6M8 17h4" />
-                    </svg>
+                    <LayoutList className="h-4 w-4 text-accent/60" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 rounded-lg border border-border-light bg-border-light/30 px-3 py-2">
                     <span className="text-[12px] font-medium text-foreground/50">Content Brief</span>
@@ -85,10 +81,7 @@ export function SaaSGrowthProblem() {
                 {/* Step 3: Draft */}
                 <div className="flex items-center gap-3 opacity-60">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-border-light/50">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-muted-light">
-                      <path d="M12 20h9" />
-                      <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838.838-2.872a2 2 0 0 1 .506-.855Z" />
-                    </svg>
+                    <PenLine className="h-4 w-4 text-muted-light" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 rounded-lg border border-border-light/50 bg-border-light/20 px-3 py-2">
                     <span className="text-[12px] font-medium text-foreground/40">Draft</span>
@@ -104,10 +97,7 @@ export function SaaSGrowthProblem() {
                 {/* Step 4: SEO Review */}
                 <div className="flex items-center gap-3 opacity-40">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-border-light/30">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-muted-light">
-                      <path d="M9 12l2 2 4-4" />
-                      <circle cx="12" cy="12" r="9" />
-                    </svg>
+                    <CheckCircle className="h-4 w-4 text-muted-light" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 rounded-lg border border-border-light/30 bg-border-light/10 px-3 py-2">
                     <span className="text-[12px] font-medium text-foreground/30">SEO Review</span>
@@ -123,10 +113,7 @@ export function SaaSGrowthProblem() {
                 {/* Step 5: Publish */}
                 <div className="flex items-center gap-3 opacity-30">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-border-light/20">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-muted-light">
-                      <path d="M12 3v12M7.5 10.5 12 6l4.5 4.5" />
-                      <path d="M4 16v2.5a1.5 1.5 0 0 0 1.5 1.5h13a1.5 1.5 0 0 0 1.5-1.5V16" />
-                    </svg>
+                    <Upload className="h-4 w-4 text-muted-light" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 rounded-lg border border-border-light/20 bg-border-light/5 px-3 py-2">
                     <span className="text-[12px] font-medium text-foreground/20">Publish</span>

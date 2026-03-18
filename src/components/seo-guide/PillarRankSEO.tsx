@@ -19,7 +19,7 @@ const features = [
 
 export function PillarRankSEO() {
   return (
-    <section className="border-t border-border-light py-20 md:py-28">
+    <section className="py-8 md:py-10">
       <div className="mx-auto max-w-[1000px] px-6">
         <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
           <div>

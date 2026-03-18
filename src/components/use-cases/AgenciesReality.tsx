@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 const clientCards = [
   {
     domain: "acme.com",
@@ -67,9 +69,7 @@ export function AgenciesReality() {
                 className="inline-flex items-center gap-1.5 text-[14px] font-medium text-accent transition-colors hover:text-accent-hover"
               >
                 See how RankSEO simplifies this
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
+                <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </div>

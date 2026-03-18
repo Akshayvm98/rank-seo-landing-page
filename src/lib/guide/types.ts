@@ -70,3 +70,13 @@ export interface GuideNavGroup {
   category: string;
   pages: { title: string; href: string }[];
 }
+
+/** A topic with its nested articles for the collapsible sidebar */
+export interface GuideNavTopic {
+  /** Topic label */
+  title: string;
+  /** Topic page href */
+  href: string;
+  /** Nested article links */
+  articles: { title: string; href: string }[];
+}

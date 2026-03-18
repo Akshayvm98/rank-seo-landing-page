@@ -1,3 +1,5 @@
+import { AlertCircle, Clock, X, RotateCcw, Star, CheckCircle, TrendingUp, Zap } from "lucide-react";
+
 export function SaaSWhyStalls() {
   return (
     <section className="bg-gradient-to-b from-border-light/20 to-transparent py-20 md:py-28">
@@ -40,41 +42,22 @@ export function SaaSWhyStalls() {
                 {
                   label: "Unclear priorities",
                   detail: "No system to rank keyword opportunities",
-                  icon: (
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-red-400">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="M12 8v4M12 16h.01" />
-                    </svg>
-                  ),
+                  icon: <AlertCircle className="h-3.5 w-3.5 text-red-400" strokeWidth={1.5} />,
                 },
                 {
                   label: "Slow publishing",
                   detail: "Weeks between draft and live article",
-                  icon: (
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-red-400">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="M12 6v6l4 2" />
-                    </svg>
-                  ),
+                  icon: <Clock className="h-3.5 w-3.5 text-red-400" strokeWidth={1.5} />,
                 },
                 {
                   label: "Disconnected tools",
                   detail: "Research, writing, and publishing in different places",
-                  icon: (
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-red-400">
-                      <path d="M18 6 6 18M6 6l12 12" />
-                    </svg>
-                  ),
+                  icon: <X className="h-3.5 w-3.5 text-red-400" strokeWidth={1.5} />,
                 },
                 {
                   label: "No feedback loop",
                   detail: "Content goes live but performance is never reviewed",
-                  icon: (
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-red-400">
-                      <path d="M3 12a9 9 0 1 1 9 9" />
-                      <path d="M3 21v-9h9" />
-                    </svg>
-                  ),
+                  icon: <RotateCcw className="h-3.5 w-3.5 text-red-400" strokeWidth={1.5} />,
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 rounded-lg bg-red-50/50 px-3 py-2.5">
@@ -103,40 +86,22 @@ export function SaaSWhyStalls() {
                 {
                   label: "Prioritized opportunities",
                   detail: "Keywords ranked by relevance, demand, and difficulty",
-                  icon: (
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-success">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg>
-                  ),
+                  icon: <Star className="h-3.5 w-3.5 text-success" strokeWidth={1.5} />,
                 },
                 {
                   label: "Repeatable publishing",
                   detail: "From keyword to live article in a single workflow",
-                  icon: (
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-success">
-                      <path d="M9 12l2 2 4-4" />
-                      <circle cx="12" cy="12" r="10" />
-                    </svg>
-                  ),
+                  icon: <CheckCircle className="h-3.5 w-3.5 text-success" strokeWidth={1.5} />,
                 },
                 {
                   label: "Performance data",
                   detail: "See which topics drive rankings and traffic",
-                  icon: (
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-success">
-                      <path d="M3 3v18h18" />
-                      <path d="m7 16 4-8 4 5 5-7" />
-                    </svg>
-                  ),
+                  icon: <TrendingUp className="h-3.5 w-3.5 text-success" strokeWidth={1.5} />,
                 },
                 {
                   label: "One system",
                   detail: "Research, create, optimize, publish, measure — all connected",
-                  icon: (
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-success">
-                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                    </svg>
-                  ),
+                  icon: <Zap className="h-3.5 w-3.5 text-success" strokeWidth={1.5} />,
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 rounded-lg bg-success-bg/50 px-3 py-2.5">

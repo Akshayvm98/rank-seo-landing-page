@@ -1,3 +1,5 @@
+import { Search, PenLine, TrendingUp, Banknote, X, Monitor, ShieldCheck, Check } from "lucide-react";
+
 const features = [
   "Generate up to 30 SEO articles per month",
   "Automatic keyword research (Search Console + Google Ads + SERP)",
@@ -13,29 +15,17 @@ const features = [
 const valueGroups = [
   {
     title: "Discover",
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-      </svg>
-    ),
+    icon: <Search className="h-5 w-5" strokeWidth={1.5} />,
     items: ["Keyword opportunities", "SERP analysis", "Competitor insights"],
   },
   {
     title: "Create",
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931z" />
-      </svg>
-    ),
+    icon: <PenLine className="h-5 w-5" strokeWidth={1.5} />,
     items: ["AI articles in your voice", "SEO optimization", "Internal linking"],
   },
   {
     title: "Grow",
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
-      </svg>
-    ),
+    icon: <TrendingUp className="h-5 w-5" strokeWidth={1.5} />,
     items: ["Publish to CMS", "Track rankings", "Performance analytics"],
   },
 ];
@@ -60,35 +50,19 @@ const howItWorks = [
 
 const trustSignals = [
   {
-    icon: (
-      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-      </svg>
-    ),
+    icon: <Banknote className="h-4 w-4" strokeWidth={1.5} />,
     text: "No hidden fees",
   },
   {
-    icon: (
-      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    ),
+    icon: <X className="h-4 w-4" strokeWidth={1.5} />,
     text: "Cancel anytime",
   },
   {
-    icon: (
-      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5" />
-      </svg>
-    ),
+    icon: <Monitor className="h-4 w-4" strokeWidth={1.5} />,
     text: "Full feature access",
   },
   {
-    icon: (
-      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-      </svg>
-    ),
+    icon: <ShieldCheck className="h-4 w-4" strokeWidth={1.5} />,
     text: "Secure payments (Stripe)",
   },
 ];
@@ -126,15 +100,7 @@ export function Pricing() {
             <ul className="space-y-3.5">
               {features.map((f) => (
                 <li key={f} className="flex items-start gap-3 text-[14px] leading-snug text-foreground/80">
-                  <svg
-                    className="mt-0.5 h-4 w-4 shrink-0 text-accent"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                  </svg>
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                   {f}
                 </li>
               ))}

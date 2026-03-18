@@ -1,3 +1,5 @@
+import { Check } from "lucide-react";
+
 const steps = [
   {
     number: "01",
@@ -111,9 +113,7 @@ const steps = [
       <div className="rounded-lg border border-black/[0.05] bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
         <div className="flex items-center gap-2 mb-3">
           <div className="h-5 w-5 rounded bg-success-bg flex items-center justify-center">
-            <svg className="h-3 w-3 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-            </svg>
+            <Check className="h-3 w-3 text-success" strokeWidth={2.5} />
           </div>
           <span className="text-[12px] font-medium text-success">Published to WordPress</span>
         </div>
