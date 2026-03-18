@@ -326,7 +326,7 @@ export default function HowToFindEasyKeywords() {
           items={[
             "Shows keyword difficulty alongside volume so you can spot easy wins instantly",
             "Surfaces queries where you already have impressions but are not ranking well yet",
-            "Suggests content ideas based on keywords that match your domain strength",
+            <span key="content-ideas">Suggests <a href="/features" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">content ideas</a> based on keywords that match your domain strength</span>,
             "Connects keyword data to your content pipeline so nothing gets lost",
           ]}
         />
@@ -340,7 +340,14 @@ export default function HowToFindEasyKeywords() {
           >
             create content
           </a>{" "}
-          that targets them.
+          that targets them. For a complete overview of the process, see the{" "}
+          <a
+            href="/seo-guide"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            full SEO guide
+          </a>
+          .
         </Paragraph>
       </Section>
 
@@ -451,10 +458,10 @@ export default function HowToFindEasyKeywords() {
                   Start $1 Trial
                 </a>
                 <a
-                  href="/pricing"
+                  href="/features"
                   className="inline-flex h-11 items-center rounded-xl border border-white/15 px-5 text-[13px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
                 >
-                  View Pricing
+                  See Features
                 </a>
               </div>
               <p className="mt-4 text-[12px] text-white/40">

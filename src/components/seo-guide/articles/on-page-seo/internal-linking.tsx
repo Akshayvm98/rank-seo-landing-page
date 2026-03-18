@@ -402,7 +402,7 @@ export default function InternalLinking() {
         </Paragraph>
         <BulletList
           items={[
-            "Suggests internal link opportunities based on content similarity",
+            <span key="suggests-links"><a href="/features" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">Suggests internal link opportunities</a> based on content similarity</span>,
             "Identifies orphan pages with no internal links pointing to them",
             "Recommends anchor text that matches the target page's keyword focus",
             "Maps your site's internal link structure so you can spot gaps",
@@ -425,6 +425,13 @@ export default function InternalLinking() {
             className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
           >
             SEO analytics guide
+          </a>
+          . For a complete starting point, explore the{" "}
+          <a
+            href="/seo-guide"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            full SEO guide
           </a>
           .
         </Paragraph>
@@ -535,10 +542,10 @@ export default function InternalLinking() {
                   Start $1 Trial
                 </a>
                 <a
-                  href="/pricing"
+                  href="/features"
                   className="inline-flex h-11 items-center rounded-xl border border-white/15 px-5 text-[13px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
                 >
-                  View Pricing
+                  See Features
                 </a>
               </div>
               <p className="mt-4 text-[12px] text-white/40">

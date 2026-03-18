@@ -285,7 +285,7 @@ export default function TitleTags() {
         </Paragraph>
         <BulletList
           items={[
-            "Generates optimized title tag suggestions based on keyword and intent analysis",
+            <span key="generates-titles"><a href="/features" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">Generates optimized title tag suggestions</a> based on keyword and intent analysis</span>,
             "Checks title length and flags titles that will be truncated",
             "Suggests variations so you can pick the strongest option",
             "Identifies pages with weak or missing title tags across your site",
@@ -306,6 +306,13 @@ export default function TitleTags() {
             className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
           >
             content optimization guide
+          </a>
+          . For a complete overview of how everything fits together, see the{" "}
+          <a
+            href="/seo-guide"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            full SEO guide
           </a>
           .
         </Paragraph>
@@ -416,10 +423,10 @@ export default function TitleTags() {
                   Start $1 Trial
                 </a>
                 <a
-                  href="/pricing"
+                  href="/features"
                   className="inline-flex h-11 items-center rounded-xl border border-white/15 px-5 text-[13px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
                 >
-                  View Pricing
+                  See Features
                 </a>
               </div>
               <p className="mt-4 text-[12px] text-white/40">

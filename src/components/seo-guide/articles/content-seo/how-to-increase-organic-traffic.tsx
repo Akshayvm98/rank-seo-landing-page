@@ -341,7 +341,7 @@ export default function HowToIncreaseOrganicTraffic() {
         <BulletList
           items={[
             "Finds keyword opportunities matched to your site's current authority",
-            "Generates structured, SEO-optimized content ready to publish",
+            <span key="generates-content"><a href="/features" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">Generates SEO-optimized content</a> ready to publish</span>,
             "Suggests optimizations for existing pages based on competitor analysis",
             "Tracks performance so you know what is working and what to improve next",
           ]}
@@ -362,6 +362,13 @@ export default function HowToIncreaseOrganicTraffic() {
             className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
           >
             write articles that rank
+          </a>
+          . For broader content strategy, explore the{" "}
+          <a
+            href="/seo-guide/content-seo"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            content SEO guide
           </a>
           .
         </Paragraph>
@@ -471,10 +478,10 @@ export default function HowToIncreaseOrganicTraffic() {
                   Start $1 Trial
                 </a>
                 <a
-                  href="/pricing"
+                  href="/features"
                   className="inline-flex h-11 items-center rounded-xl border border-white/15 px-5 text-[13px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
                 >
-                  View Pricing
+                  See Features
                 </a>
               </div>
               <p className="mt-4 text-[12px] text-white/40">

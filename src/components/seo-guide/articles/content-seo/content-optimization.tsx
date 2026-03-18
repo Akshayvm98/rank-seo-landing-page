@@ -382,10 +382,10 @@ export default function ContentOptimization() {
               intrusive popups, or is hard to read on mobile, none of the
               content improvements will matter. See the{" "}
               <a
-                href="/seo-guide/on-page-seo"
+                href="/seo-guide/content-seo"
                 className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
               >
-                on-page SEO guide
+                content SEO guide
               </a>{" "}
               for more.
             </span>,
@@ -410,7 +410,7 @@ export default function ContentOptimization() {
         </Paragraph>
         <BulletList
           items={[
-            "Scores each page's SEO strength and highlights specific weaknesses",
+            <span key="scores-seo"><a href="/features" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">Scores each page&apos;s SEO strength</a> and highlights specific weaknesses</span>,
             "Suggests missing sections based on what top competitors cover",
             "Identifies keyword gaps — related terms you should be using but are not",
             "Tracks improvements over time so you can see what is working",
@@ -425,6 +425,13 @@ export default function ContentOptimization() {
             className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
           >
             SEO article writing guide
+          </a>
+          . For the full picture, start with the{" "}
+          <a
+            href="/seo-guide"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            complete SEO guide
           </a>
           .
         </Paragraph>
@@ -517,10 +524,10 @@ export default function ContentOptimization() {
                   Start $1 Trial
                 </a>
                 <a
-                  href="/pricing"
+                  href="/features"
                   className="inline-flex h-11 items-center rounded-xl border border-white/15 px-5 text-[13px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
                 >
-                  View Pricing
+                  See Features
                 </a>
               </div>
               <p className="mt-4 text-[12px] text-white/40">

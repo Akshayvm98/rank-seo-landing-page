@@ -40,7 +40,14 @@ export default function WhyYourContentIsNotRanking() {
         </Paragraph>
         <Callout>
           Before you blame your writing, check your strategy. Most ranking
-          problems are structural, not creative.
+          problems are structural, not creative. The{" "}
+          <a
+            href="/seo-guide"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            SEO guide
+          </a>{" "}
+          covers the full process from research to ranking.
         </Callout>
       </Section>
 
@@ -375,7 +382,7 @@ export default function WhyYourContentIsNotRanking() {
           items={[
             "Identifies which pages are underperforming and why",
             "Finds lower-competition keyword alternatives for pages stuck on hard keywords",
-            "Analyzes your content against top-ranking competitors",
+            <span key="analyzes-content"><a href="/features" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">Analyzes your content</a> against top-ranking competitors</span>,
             "Suggests specific improvements: structure, keywords, internal links",
           ]}
         />
@@ -388,6 +395,13 @@ export default function WhyYourContentIsNotRanking() {
             className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
           >
             content optimization guide
+          </a>
+          . For more on building a content strategy, explore the{" "}
+          <a
+            href="/seo-guide/content-seo"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            content SEO guide
           </a>
           .
         </Paragraph>
@@ -498,10 +512,10 @@ export default function WhyYourContentIsNotRanking() {
                   Start $1 Trial
                 </a>
                 <a
-                  href="/pricing"
+                  href="/features"
                   className="inline-flex h-11 items-center rounded-xl border border-white/15 px-5 text-[13px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
                 >
-                  View Pricing
+                  See Features
                 </a>
               </div>
               <p className="mt-4 text-[12px] text-white/40">

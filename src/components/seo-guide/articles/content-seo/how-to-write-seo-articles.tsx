@@ -413,7 +413,7 @@ export default function HowToWriteSeoArticles() {
         </Paragraph>
         <BulletList
           items={[
-            "Generates structured article outlines based on keyword analysis",
+            <span key="generates-outlines"><a href="/features" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">Generates structured article outlines</a> based on keyword analysis</span>,
             "Aligns content suggestions with search intent automatically",
             "Suggests headings, structure, and related topics to cover",
             "Helps maintain your brand voice while optimizing for search",
@@ -436,7 +436,14 @@ export default function HowToWriteSeoArticles() {
           >
             keyword clustering
           </a>{" "}
-          connects your articles into a cohesive content plan.
+          connects your articles into a cohesive content plan. For the full picture, start with the{" "}
+          <a
+            href="/seo-guide"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            complete SEO guide
+          </a>
+          .
         </Paragraph>
       </Section>
 
@@ -545,10 +552,10 @@ export default function HowToWriteSeoArticles() {
                   Start $1 Trial
                 </a>
                 <a
-                  href="/pricing"
+                  href="/features"
                   className="inline-flex h-11 items-center rounded-xl border border-white/15 px-5 text-[13px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
                 >
-                  View Pricing
+                  See Features
                 </a>
               </div>
               <p className="mt-4 text-[12px] text-white/40">

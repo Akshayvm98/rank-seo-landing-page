@@ -349,7 +349,7 @@ export default function SearchIntent() {
           items={[
             "Analyzes the SERP for each keyword to identify dominant content types",
             "Shows whether results are informational, commercial, or transactional",
-            "Suggests content structure based on what is already working",
+            <span key="content-structure">Suggests <a href="/features" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">content structure</a> based on what is already working</span>,
             "Helps you avoid creating content that fights the wrong battle",
           ]}
         />
@@ -369,7 +369,14 @@ export default function SearchIntent() {
           >
             keyword research
           </a>{" "}
-          and content that actually ranks.
+          and content that actually ranks. For a full walkthrough, see the{" "}
+          <a
+            href="/seo-guide"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            complete SEO guide
+          </a>
+          .
         </Paragraph>
       </Section>
 
@@ -471,10 +478,10 @@ export default function SearchIntent() {
                   Start $1 Trial
                 </a>
                 <a
-                  href="/pricing"
+                  href="/features"
                   className="inline-flex h-11 items-center rounded-xl border border-white/15 px-5 text-[13px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
                 >
-                  View Pricing
+                  See Features
                 </a>
               </div>
               <p className="mt-4 text-[12px] text-white/40">

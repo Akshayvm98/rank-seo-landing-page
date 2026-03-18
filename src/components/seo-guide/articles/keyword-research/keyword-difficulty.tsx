@@ -355,7 +355,7 @@ export default function KeywordDifficulty() {
             "Shows keyword difficulty alongside SERP composition so you see the full picture",
             "Identifies weak spots in the SERP — outdated content, low-authority domains, poor intent matches",
             "Factors in your site's existing authority and topical coverage",
-            "Surfaces keywords where the difficulty score is high but the real competition is beatable",
+            <span key="surfaces-keywords"><a href="/features" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">Surfaces keywords</a> where the difficulty score is high but the real competition is beatable</span>,
           ]}
         />
         <Paragraph>
@@ -374,6 +374,13 @@ export default function KeywordDifficulty() {
             className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
           >
             keyword research overview
+          </a>
+          . For a broader perspective on growing organic traffic, start with the{" "}
+          <a
+            href="/seo-guide"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            complete SEO guide
           </a>
           .
         </Paragraph>
@@ -474,10 +481,10 @@ export default function KeywordDifficulty() {
                   Start $1 Trial
                 </a>
                 <a
-                  href="/pricing"
+                  href="/features"
                   className="inline-flex h-11 items-center rounded-xl border border-white/15 px-5 text-[13px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
                 >
-                  View Pricing
+                  See Features
                 </a>
               </div>
               <p className="mt-4 text-[12px] text-white/40">

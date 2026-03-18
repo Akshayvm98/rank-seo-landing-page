@@ -369,7 +369,7 @@ export default function KeywordClustering() {
         </Paragraph>
         <BulletList
           items={[
-            "Automatically groups keywords by semantic similarity and shared intent",
+            <span key="groups-keywords"><a href="/features" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">Automatically groups keywords</a> by semantic similarity and shared intent</span>,
             "Identifies which keywords belong on one page vs separate pages",
             "Suggests pillar-and-article structures for your topic clusters",
             "Highlights cannibalization risks before you publish",
@@ -391,7 +391,14 @@ export default function KeywordClustering() {
             content plan
           </a>
           . Instead of a list of keywords, you get a blueprint for what to
-          write and how to connect it.
+          write and how to connect it. For a complete starting point, explore the{" "}
+          <a
+            href="/seo-guide"
+            className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+          >
+            SEO guide
+          </a>
+          .
         </Paragraph>
       </Section>
 
@@ -493,10 +500,10 @@ export default function KeywordClustering() {
                   Start $1 Trial
                 </a>
                 <a
-                  href="/pricing"
+                  href="/features"
                   className="inline-flex h-11 items-center rounded-xl border border-white/15 px-5 text-[13px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
                 >
-                  View Pricing
+                  See Features
                 </a>
               </div>
               <p className="mt-4 text-[12px] text-white/40">
