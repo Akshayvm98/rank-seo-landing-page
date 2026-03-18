@@ -1,29 +1,30 @@
-import { Rocket, FileText, BarChart3, Building2, PenLine, Settings } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const personas = [
   {
     label: "Founders",
-    icon: <Rocket className="h-4 w-4" strokeWidth={1.5} />,
+    icon: Icons.rocket,
   },
   {
     label: "Content Marketers",
-    icon: <FileText className="h-4 w-4" strokeWidth={1.5} />,
+    icon: Icons.fileText,
   },
   {
     label: "SEO Professionals",
-    icon: <BarChart3 className="h-4 w-4" strokeWidth={1.5} />,
+    icon: Icons.barChart,
   },
   {
     label: "Agencies",
-    icon: <Building2 className="h-4 w-4" strokeWidth={1.5} />,
+    icon: Icons.building,
   },
   {
     label: "Bloggers",
-    icon: <PenLine className="h-4 w-4" strokeWidth={1.5} />,
+    icon: Icons.penLine,
   },
   {
     label: "SaaS Teams",
-    icon: <Settings className="h-4 w-4" strokeWidth={1.5} />,
+    icon: Icons.settings,
   },
 ];
 
@@ -106,7 +107,7 @@ function PersonaVisual() {
               <div className="absolute -top-1.5 left-1/2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-accent/30" />
 
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
-                {persona.icon}
+                <Icon icon={persona.icon} size="sm" strokeWidth={1.5} />
               </div>
               <span className="text-[12px] font-medium leading-tight text-foreground">
                 {persona.label}

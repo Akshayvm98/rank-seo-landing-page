@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function SEOProsHero() {
   return (
@@ -124,7 +125,7 @@ export function SEOProsHero() {
                     ].map((item) => (
                       <div key={item.check} className="flex items-center gap-2 text-[11px]">
                         {item.done ? (
-                          <Check className="h-3.5 w-3.5 shrink-0 text-success" strokeWidth={2.5} />
+                          <Icon icon={Icons.check} size="sm" className="text-success" strokeWidth={2.5} />
                         ) : (
                           <div className="h-3.5 w-3.5 shrink-0 rounded border border-border" />
                         )}

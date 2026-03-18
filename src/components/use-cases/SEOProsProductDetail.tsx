@@ -1,4 +1,5 @@
-import { Check, AlertCircle } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function SEOProsProductDetail() {
   return (
@@ -104,9 +105,9 @@ export function SEOProsProductDetail() {
                     <div className="mb-1 flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         {item.value >= 90 ? (
-                          <Check className="h-3 w-3 text-success" strokeWidth={2.5} />
+                          <Icon icon={Icons.check} size="sm" className="text-success" strokeWidth={2.5} />
                         ) : (
-                          <AlertCircle className="h-3 w-3 text-accent" />
+                          <Icon icon={Icons.alertCircle} size="sm" className="text-accent" />
                         )}
                         <span className="text-[11px] text-foreground">{item.label}</span>
                       </div>

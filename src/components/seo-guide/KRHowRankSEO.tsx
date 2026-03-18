@@ -1,29 +1,31 @@
-import { Database, Sparkles, Star, Layers } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
+import type { LucideIcon } from "lucide-react";
 
-const features = [
+const features: { title: string; description: string; icon: LucideIcon }[] = [
   {
     title: "Pulls real Search Console data",
     description:
       "No guessing. RankSEO connects to your Google Search Console and finds queries where you already have impressions but aren't ranking yet. These are your fastest wins.",
-    icon: <Database className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.database,
   },
   {
     title: "Finds opportunities automatically",
     description:
       "Instead of scrolling through spreadsheets, RankSEO surfaces keyword opportunities you'd miss manually \u2014 low difficulty, decent volume, high relevance to your site.",
-    icon: <Sparkles className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.sparkles,
   },
   {
     title: "Scores every keyword",
     description:
       "Each keyword gets an opportunity score based on volume, difficulty, and your existing authority. No more guessing which keyword to target first.",
-    icon: <Star className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.star,
   },
   {
     title: "Groups into topic clusters",
     description:
       "RankSEO automatically clusters related keywords so you build topical authority instead of publishing scattered, disconnected articles.",
-    icon: <Layers className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.layers,
   },
 ];
 
@@ -51,7 +53,7 @@ export function KRHowRankSEO() {
               className={`reveal reveal-delay-${Math.min(i + 1, 4)} flex gap-5 rounded-2xl border border-black/[0.04] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:-translate-y-0.5`}
             >
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-bg text-accent">
-                {feature.icon}
+                <Icon icon={feature.icon} size="md" strokeWidth={1.5} />
               </div>
               <div>
                 <h3 className="text-[15px] font-bold text-foreground">{feature.title}</h3>

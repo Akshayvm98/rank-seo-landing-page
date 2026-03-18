@@ -1,20 +1,21 @@
-import { Globe, Users, ArrowLeftRight } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const teamFeatures = [
   {
     title: "Multi-site support",
     description: "Manage multiple domains and projects from a single dashboard.",
-    icon: <Globe className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.globe,
   },
   {
     title: "Team access",
     description: "Invite team members with role-based permissions and shared workflows.",
-    icon: <Users className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.users,
   },
   {
     title: "Shared workflows",
     description: "Collaborate on content from research to approval to publishing.",
-    icon: <ArrowLeftRight className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.arrowLeftRight,
   },
 ];
 
@@ -38,7 +39,7 @@ export function TeamSection() {
               className={`reveal reveal-delay-${i + 1} rounded-2xl border border-border-light bg-white p-7 text-center`}
             >
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-accent-bg text-accent">
-                {f.icon}
+                <Icon icon={f.icon} size="md" strokeWidth={1.5} />
               </div>
               <h3 className="mb-2 text-[16px] font-semibold text-foreground">{f.title}</h3>
               <p className="text-[14px] leading-[1.65] text-muted">{f.description}</p>

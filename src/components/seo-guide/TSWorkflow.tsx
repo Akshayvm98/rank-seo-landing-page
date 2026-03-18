@@ -1,4 +1,5 @@
-import { Check, AlertCircle } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const steps = [
   {
@@ -67,9 +68,9 @@ export function TSWorkflow() {
                     }`}
                   >
                     {step.status === "pass" ? (
-                      <Check className="h-3 w-3 text-success" strokeWidth={3} />
+                      <Icon icon={Icons.check} size="sm" strokeWidth={3} className="text-success" />
                     ) : (
-                      <AlertCircle className="h-3 w-3 text-amber-500" strokeWidth={3} />
+                      <Icon icon={Icons.alertCircle} size="sm" strokeWidth={3} className="text-amber-500" />
                     )}
                   </div>
                   <div>

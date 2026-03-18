@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check, Search, PenLine, TrendingUp, Plus } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 /* ────────────────────────────────────────────
    Data
    ──────────────────────────────────────────── */
@@ -21,17 +21,17 @@ const planFeatures = [
 const valueGroups = [
   {
     title: "Discover",
-    icon: <Search className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.search,
     items: ["Keyword opportunities", "SERP analysis", "Competitor insights"],
   },
   {
     title: "Create",
-    icon: <PenLine className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.penLine,
     items: ["AI content in your voice", "SEO optimization", "Internal linking"],
   },
   {
     title: "Grow",
-    icon: <TrendingUp className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.trendingUp,
     items: ["Publish to CMS", "Track performance", "Improve over time"],
   },
 ];
@@ -133,7 +133,7 @@ export function PricingPage() {
             <ul className="space-y-3.5">
               {planFeatures.map((f) => (
                 <li key={f} className="flex items-start gap-3 text-[14px] leading-snug text-foreground/80">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                  <Icon icon={Icons.check} size="sm" className="mt-0.5 text-accent" />
                   {f}
                 </li>
               ))}
@@ -166,7 +166,7 @@ export function PricingPage() {
               <div key={group.title} className={`reveal reveal-delay-${i + 1}`}>
                 <div className="mb-4 flex items-center gap-2.5">
                   <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-bg text-accent">
-                    {group.icon}
+                    <Icon icon={group.icon} size="md" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-[16px] font-semibold text-foreground">{group.title}</h3>
                 </div>
@@ -278,8 +278,10 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         aria-expanded={open}
       >
         <span className="text-[15px] font-medium text-foreground">{question}</span>
-        <Plus
-          className={`h-5 w-5 shrink-0 text-muted transition-transform duration-200 ${open ? "rotate-45" : ""}`}
+        <Icon
+          icon={Icons.plus}
+          size="md"
+          className={`text-muted transition-transform duration-200 ${open ? "rotate-45" : ""}`}
           strokeWidth={1.5}
         />
       </button>

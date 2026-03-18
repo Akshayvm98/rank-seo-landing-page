@@ -1,4 +1,5 @@
-import { Search, LayoutList, ArrowUp, TrendingUp } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function SaaSHero() {
   return (
@@ -49,7 +50,7 @@ export function SaaSHero() {
               <div className="rounded-xl border border-border-light bg-white p-4 shadow-sm">
                 <div className="mb-3 flex items-center gap-2">
                   <div className="flex h-7 w-7 items-center justify-center rounded-md bg-accent-bg">
-                    <Search className="h-3.5 w-3.5 text-accent" />
+                    <Icon icon={Icons.search} size="sm" className="text-accent" />
                   </div>
                   <span className="text-[13px] font-semibold text-foreground">Keyword Pipeline</span>
                   <span className="ml-auto rounded-full bg-accent-bg px-2 py-0.5 text-[10px] font-medium text-accent">3 opportunities</span>
@@ -77,7 +78,7 @@ export function SaaSHero() {
                 <div className="col-span-3 rounded-xl border border-border-light bg-white p-4 shadow-sm">
                   <div className="mb-3 flex items-center gap-2">
                     <div className="flex h-7 w-7 items-center justify-center rounded-md bg-accent-bg">
-                      <LayoutList className="h-3.5 w-3.5 text-accent" />
+                      <Icon icon={Icons.layoutList} size="sm" className="text-accent" />
                     </div>
                     <span className="text-[13px] font-semibold text-foreground">Articles</span>
                   </div>
@@ -98,7 +99,7 @@ export function SaaSHero() {
                 {/* Ranking Movement */}
                 <div className="col-span-2 rounded-xl border border-border-light bg-white p-4 shadow-sm flex flex-col items-center justify-center text-center">
                   <div className="flex h-7 w-7 items-center justify-center rounded-md bg-success-bg mb-2">
-                    <ArrowUp className="h-3.5 w-3.5 text-success" />
+                    <Icon icon={Icons.arrowUp} size="sm" className="text-success" />
                   </div>
                   <span className="text-[22px] font-bold text-foreground">+12</span>
                   <span className="text-[10px] text-muted-light">avg positions</span>
@@ -131,7 +132,7 @@ export function SaaSHero() {
                 <div className="rounded-xl border border-border-light bg-white p-4 shadow-sm">
                   <div className="mb-3 flex items-center gap-2">
                     <div className="flex h-7 w-7 items-center justify-center rounded-md bg-accent-bg">
-                      <TrendingUp className="h-3.5 w-3.5 text-accent" />
+                      <Icon icon={Icons.trendingUp} size="sm" className="text-accent" />
                     </div>
                     <span className="text-[13px] font-semibold text-foreground">Top Content</span>
                   </div>

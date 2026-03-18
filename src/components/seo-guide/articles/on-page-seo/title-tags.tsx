@@ -1,3 +1,4 @@
+"use client";
 import {
   ArticleHero,
   Section,
@@ -6,7 +7,7 @@ import {
   NumberedList,
   Callout,
 } from "@/components/seo-guide/ArticleBlocks";
-import { ArrowUp } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export default function TitleTags() {
   return (
@@ -57,7 +58,7 @@ export default function TitleTags() {
               </p>
             </div>
             <div className="mt-3 flex items-center gap-2">
-              <ArrowUp className="h-4 w-4 text-accent" />
+              <Icon icon={Icons.arrowUp} size="sm" className="text-accent" />
               <p className="text-[12px] font-medium text-accent">
                 This is the title tag — the most visible element
               </p>

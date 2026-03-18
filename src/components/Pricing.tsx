@@ -1,4 +1,5 @@
-import { Search, PenLine, TrendingUp, Banknote, X, Monitor, ShieldCheck, Check } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const features = [
   "Generate up to 30 SEO articles per month",
@@ -15,17 +16,17 @@ const features = [
 const valueGroups = [
   {
     title: "Discover",
-    icon: <Search className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.search,
     items: ["Keyword opportunities", "SERP analysis", "Competitor insights"],
   },
   {
     title: "Create",
-    icon: <PenLine className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.penLine,
     items: ["AI articles in your voice", "SEO optimization", "Internal linking"],
   },
   {
     title: "Grow",
-    icon: <TrendingUp className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.trendingUp,
     items: ["Publish to CMS", "Track rankings", "Performance analytics"],
   },
 ];
@@ -50,19 +51,19 @@ const howItWorks = [
 
 const trustSignals = [
   {
-    icon: <Banknote className="h-4 w-4" strokeWidth={1.5} />,
+    icon: Icons.banknote,
     text: "No hidden fees",
   },
   {
-    icon: <X className="h-4 w-4" strokeWidth={1.5} />,
+    icon: Icons.x,
     text: "Cancel anytime",
   },
   {
-    icon: <Monitor className="h-4 w-4" strokeWidth={1.5} />,
+    icon: Icons.monitor,
     text: "Full feature access",
   },
   {
-    icon: <ShieldCheck className="h-4 w-4" strokeWidth={1.5} />,
+    icon: Icons.shieldCheck,
     text: "Secure payments (Stripe)",
   },
 ];
@@ -100,7 +101,7 @@ export function Pricing() {
             <ul className="space-y-3.5">
               {features.map((f) => (
                 <li key={f} className="flex items-start gap-3 text-[14px] leading-snug text-foreground/80">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                  <Icon icon={Icons.check} size="sm" className="mt-0.5 text-accent" />
                   {f}
                 </li>
               ))}
@@ -131,7 +132,7 @@ export function Pricing() {
               <div key={group.title} className={`reveal reveal-delay-${i + 1}`}>
                 <div className="mb-4 flex items-center gap-2.5">
                   <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-bg text-accent">
-                    {group.icon}
+                    <Icon icon={group.icon} size="md" strokeWidth={1.5} />
                   </div>
                   <h4 className="text-[16px] font-semibold text-foreground">{group.title}</h4>
                 </div>
@@ -202,7 +203,7 @@ export function Pricing() {
         <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
           {trustSignals.map((signal) => (
             <div key={signal.text} className="flex items-center gap-2 text-[13px] text-muted-light">
-              <span className="text-muted-light">{signal.icon}</span>
+              <Icon icon={signal.icon} size="sm" className="text-muted-light" strokeWidth={1.5} />
               {signal.text}
             </div>
           ))}

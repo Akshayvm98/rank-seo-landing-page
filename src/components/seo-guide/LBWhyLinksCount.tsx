@@ -1,25 +1,27 @@
-import { Search, Share2, ShieldCheck, BarChart3 } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
+import type { LucideIcon } from "lucide-react";
 
-const roles = [
+const roles: { label: string; description: string; icon: LucideIcon }[] = [
   {
     label: "Discover pages",
     description: "Crawlers follow links to find and index new pages across the web.",
-    icon: <Search className="h-5 w-5 text-accent" strokeWidth={1.5} />,
+    icon: Icons.search,
   },
   {
     label: "Understand relationships",
     description: "Links between pages signal topical relevance and content hierarchy.",
-    icon: <Share2 className="h-5 w-5 text-accent" strokeWidth={1.5} />,
+    icon: Icons.share,
   },
   {
     label: "Identify trusted sources",
     description: "Links from authoritative sites pass trust signals to the pages they point to.",
-    icon: <ShieldCheck className="h-5 w-5 text-accent" strokeWidth={1.5} />,
+    icon: Icons.shieldCheck,
   },
   {
     label: "Interpret authority",
     description: "Pages with more quality backlinks tend to rank higher for competitive queries.",
-    icon: <BarChart3 className="h-5 w-5 text-accent" strokeWidth={1.5} />,
+    icon: Icons.barChart,
   },
 ];
 
@@ -71,7 +73,7 @@ export function LBWhyLinksCount() {
                     className="flex items-start gap-3.5 rounded-xl border border-border-light bg-border-light/20 px-4 py-3.5 transition-colors hover:bg-border-light/40"
                   >
                     <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-accent-bg">
-                      {role.icon}
+                      <Icon icon={role.icon} size="md" strokeWidth={1.5} className="text-accent" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-foreground">{role.label}</p>

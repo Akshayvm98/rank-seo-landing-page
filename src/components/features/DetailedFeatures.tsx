@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const sections = [
   {
@@ -132,7 +133,7 @@ const sections = [
         </div>
         <div className="mt-4 flex items-center gap-2">
           <div className="h-5 w-5 rounded bg-success-bg flex items-center justify-center">
-            <Check className="h-3 w-3 text-success" strokeWidth={2.5} />
+            <Icon icon={Icons.check} size="sm" className="text-success" strokeWidth={2.5} />
           </div>
           <span className="text-[12px] text-muted">3 articles published this week</span>
         </div>
@@ -204,7 +205,7 @@ export function DetailedFeatures() {
                 <ul className="mt-5 space-y-2.5">
                   {section.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-2.5 text-[14px] text-foreground/80">
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                      <Icon icon={Icons.check} size="sm" className="mt-0.5 text-accent" />
                       {b}
                     </li>
                   ))}

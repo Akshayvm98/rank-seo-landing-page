@@ -1,4 +1,5 @@
-import { ArrowRight } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function PillarHero() {
   return (
@@ -59,7 +60,7 @@ export function PillarHero() {
                     </span>
                   </div>
                   {i < 3 && (
-                    <ArrowRight className="h-4 w-4 shrink-0 text-border" strokeWidth={1.5} />
+                    <Icon icon={Icons.arrowRight} size="sm" strokeWidth={1.5} className="text-border" />
                   )}
                 </div>
               ))}

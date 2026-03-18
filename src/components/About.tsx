@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import { Check } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 export function About() {
   return (
     <section className="py-20 md:py-28">
@@ -160,7 +161,7 @@ function StoryVisual() {
                   }`}
                 >
                   {item.done ? (
-                    <Check className="h-3 w-3 text-success" strokeWidth={2.5} />
+                    <Icon icon={Icons.check} size="sm" className="text-success" strokeWidth={2.5} />
                   ) : (
                     <div className="h-2 w-2 animate-pulse rounded-full bg-accent" />
                   )}

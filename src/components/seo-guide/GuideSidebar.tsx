@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { getSidebarTopics } from "@/lib/guide";
 import { GuideSearch } from "./GuideSearch";
-import { ChevronRight } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const topics = getSidebarTopics();
 
@@ -92,11 +92,13 @@ function TopicGroup({
             className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-muted-light hover:bg-border-light/60 hover:text-foreground transition-colors duration-150"
             aria-label={open ? "Collapse section" : "Expand section"}
           >
-            <ChevronRight
-              className={`h-3.5 w-3.5 transition-transform duration-200 ${
+            <Icon
+              icon={Icons.chevronRight}
+              size="sm"
+              strokeWidth={2.5}
+              className={`transition-transform duration-200 ${
                 open ? "rotate-90" : ""
               }`}
-              strokeWidth={2.5}
             />
           </button>
         )}

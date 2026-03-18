@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import { ChevronDown, ArrowRight, X, Menu } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const useCases = [
   { label: "Founders", desc: "Grow traffic without hiring an SEO team", href: "/use-cases/founders" },
@@ -110,7 +110,7 @@ export function Navbar() {
                   className="flex items-center gap-1 text-[14px] font-medium text-muted transition-colors duration-200 hover:text-foreground"
                 >
                   {link.label}
-                  <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
+                  <Icon icon={Icons.chevronDown} size="sm" className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
                 </button>
 
                 {/* Mega menu — outer wrapper with invisible hover bridge */}
@@ -146,7 +146,7 @@ export function Navbar() {
                       className="flex items-center gap-1.5 rounded-xl px-4 py-2.5 text-[13px] font-medium text-muted transition-colors duration-150 hover:bg-border-light/60 hover:text-foreground"
                     >
                       View all use cases
-                      <ArrowRight className="h-3.5 w-3.5" />
+                      <Icon icon={Icons.arrowRight} size="sm" />
                     </a>
                   </div>
                   </div>
@@ -181,9 +181,9 @@ export function Navbar() {
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
           {mobileOpen ? (
-            <X size={18} strokeWidth={1.5} />
+            <Icon icon={Icons.x} size="sm" strokeWidth={1.5} />
           ) : (
-            <Menu size={18} strokeWidth={1.5} />
+            <Icon icon={Icons.menu} size="sm" strokeWidth={1.5} />
           )}
         </button>
       </nav>
@@ -200,7 +200,7 @@ export function Navbar() {
                     className="flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-[15px] font-medium text-muted transition-colors hover:bg-border-light hover:text-foreground"
                   >
                     {link.label}
-                    <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${mobileUseCasesOpen ? "rotate-180" : ""}`} />
+                    <Icon icon={Icons.chevronDown} size="sm" className={`transition-transform duration-200 ${mobileUseCasesOpen ? "rotate-180" : ""}`} />
                   </button>
                   {mobileUseCasesOpen && (
                     <div className="ml-1 mt-1 space-y-0.5 border-l border-border-light pl-3">
@@ -231,7 +231,7 @@ export function Navbar() {
                         className="flex items-center gap-1 rounded-lg px-3 py-2 text-[13px] font-medium text-muted transition-colors hover:text-foreground"
                       >
                         View all use cases
-                        <ArrowRight className="h-3 w-3" />
+                        <Icon icon={Icons.arrowRight} size="sm" />
                       </a>
                     </div>
                   )}

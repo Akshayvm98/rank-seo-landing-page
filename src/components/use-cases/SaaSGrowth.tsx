@@ -1,4 +1,5 @@
-import { Check, TrendingUp } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const outcomes = [
   "Clearer priorities for what to create and when",
@@ -26,7 +27,7 @@ export function SaaSGrowth() {
           {outcomes.map((item, i) => (
             <div key={i} className="flex items-start gap-3 rounded-xl border border-border-light bg-white px-4 py-3 shadow-sm">
               <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-bg">
-                <Check className="h-2.5 w-2.5 text-success" strokeWidth={3} />
+                <Icon icon={Icons.check} size="sm" className="text-success" strokeWidth={3} />
               </div>
               <span className="text-[14px] leading-[1.6] text-foreground/80">{item}</span>
             </div>
@@ -42,7 +43,7 @@ export function SaaSGrowth() {
           <div className="rounded-2xl border border-border-light bg-white p-6 shadow-sm">
             <div className="mb-4 flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-                <TrendingUp className="h-4 w-4 text-accent" strokeWidth={1.5} />
+                <Icon icon={Icons.trendingUp} size="sm" className="text-accent" strokeWidth={1.5} />
               </div>
               <span className="text-[14px] font-semibold text-foreground">Growth Summary</span>
             </div>

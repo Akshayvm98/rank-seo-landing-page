@@ -1,30 +1,32 @@
-import { type LucideIcon, Zap, Search, Calendar, Sparkles, Monitor } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const benefits: { title: string; desc: string; icon: LucideIcon }[] = [
   {
     title: "Faster content production",
     desc: "Generate and publish in a fraction of the time",
-    icon: Zap,
+    icon: Icons.zap,
   },
   {
     title: "Less manual research",
     desc: "Real search data replaces guesswork",
-    icon: Search,
+    icon: Icons.search,
   },
   {
     title: "Consistent publishing cadence",
     desc: "Build a rhythm that compounds over time",
-    icon: Calendar,
+    icon: Icons.calendar,
   },
   {
     title: "Better SEO structure",
     desc: "Every article is optimized from the start",
-    icon: Sparkles,
+    icon: Icons.sparkles,
   },
   {
     title: "Clear direction for what to write",
     desc: "Data tells you what your audience wants",
-    icon: Monitor,
+    icon: Icons.monitor,
   },
 ];
 
@@ -38,14 +40,13 @@ export function ContentMarketersBenefits() {
 
         <div className="reveal reveal-delay-1 mt-10 grid gap-3 sm:grid-cols-2">
           {benefits.map((benefit, i) => {
-            const Icon = benefit.icon;
             return (
               <div
                 key={benefit.title}
                 className={`reveal reveal-delay-${(i % 4) + 1} flex items-start gap-3.5 rounded-xl border border-border-light bg-white p-4 transition-all duration-200 hover:border-border hover:shadow-sm ${i === benefits.length - 1 ? "sm:col-span-2 sm:max-w-[50%] sm:mx-auto" : ""}`}
               >
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-accent-bg">
-                  <Icon className="h-[18px] w-[18px] text-accent" strokeWidth={1.5} />
+                  <Icon icon={benefit.icon} size="md" className="text-accent" strokeWidth={1.5} />
                 </div>
                 <div>
                   <h3 className="text-[14px] font-semibold text-foreground">{benefit.title}</h3>

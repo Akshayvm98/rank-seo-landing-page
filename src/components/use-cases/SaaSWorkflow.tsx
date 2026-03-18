@@ -1,4 +1,5 @@
-import { Link, Search, PenLine, CheckCircle, Upload, TrendingUp, Check, Globe } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const steps = [
   {
@@ -10,7 +11,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-            <Link className="h-4 w-4 text-accent" strokeWidth={1.5} />
+            <Icon icon={Icons.link} size="sm" className="text-accent" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">Site Connection</span>
         </div>
@@ -31,7 +32,7 @@ const steps = [
           </div>
           <div className="flex items-center gap-3 rounded-lg bg-accent-bg/30 px-3 py-2.5">
             <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white">
-              <Globe className="h-3.5 w-3.5 text-accent" strokeWidth={1.5} />
+              <Icon icon={Icons.globe} size="sm" className="text-accent" strokeWidth={1.5} />
             </div>
             <div className="flex-1">
               <span className="text-[12px] font-medium text-foreground/70">yourapp.com</span>
@@ -51,7 +52,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-            <Search className="h-4 w-4 text-accent" strokeWidth={1.5} />
+            <Icon icon={Icons.search} size="sm" className="text-accent" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">Keyword Opportunities</span>
         </div>
@@ -91,7 +92,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-            <PenLine className="h-4 w-4 text-accent" strokeWidth={1.5} />
+            <Icon icon={Icons.penLine} size="sm" className="text-accent" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">Article Draft</span>
         </div>
@@ -124,7 +125,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-success-bg">
-            <CheckCircle className="h-4 w-4 text-success" strokeWidth={1.5} />
+            <Icon icon={Icons.checkCircle} size="sm" className="text-success" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">SEO Checklist</span>
           <span className="ml-auto text-[12px] font-bold text-success">94/100</span>
@@ -174,7 +175,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-            <Upload className="h-4 w-4 text-accent" strokeWidth={1.5} />
+            <Icon icon={Icons.upload} size="sm" className="text-accent" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">Publish</span>
         </div>
@@ -199,7 +200,7 @@ const steps = [
         </div>
         <div className="rounded-lg bg-success-bg/50 p-3">
           <div className="flex items-center gap-2">
-            <Check className="h-3.5 w-3.5 text-success" />
+            <Icon icon={Icons.check} size="sm" className="text-success" />
             <span className="text-[12px] font-medium text-success">Published to WordPress</span>
           </div>
           <p className="mt-1 pl-[22px] text-[10px] text-muted-light">
@@ -218,7 +219,7 @@ const steps = [
       <div className="rounded-xl border border-border-light bg-white p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-bg">
-            <TrendingUp className="h-4 w-4 text-accent" strokeWidth={1.5} />
+            <Icon icon={Icons.trendingUp} size="sm" className="text-accent" strokeWidth={1.5} />
           </div>
           <span className="text-[13px] font-semibold text-foreground">Performance</span>
           <span className="ml-auto text-[11px] font-medium text-success">+42% traffic</span>

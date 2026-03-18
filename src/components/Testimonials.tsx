@@ -1,4 +1,5 @@
-import { Star } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const testimonials = [
   {
@@ -49,7 +50,7 @@ export function Testimonials() {
               {/* Stars */}
               <div className="mb-4 flex gap-0.5">
                 {Array.from({ length: 5 }).map((_, j) => (
-                  <Star key={j} className="h-4 w-4 text-amber-400" fill="currentColor" />
+                  <Icon key={j} icon={Icons.star} size="sm" className="text-amber-400" fill="currentColor" />
                 ))}
               </div>
 

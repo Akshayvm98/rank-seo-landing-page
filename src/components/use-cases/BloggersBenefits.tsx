@@ -1,25 +1,27 @@
-import { type LucideIcon, Layers, AlignLeft, Clock, Repeat2 } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const benefits: { title: string; desc: string; icon: LucideIcon }[] = [
   {
     title: "Clearer direction on what to write next",
     desc: "Search data shows you which topics are worth your time",
-    icon: Layers,
+    icon: Icons.layers,
   },
   {
     title: "Better structure for SEO-friendly articles",
     desc: "Every post gets headings, metadata, and keyword support from the start",
-    icon: AlignLeft,
+    icon: Icons.alignLeft,
   },
   {
     title: "Less time lost on keyword guesswork",
     desc: "Spend your energy writing, not researching in spreadsheets",
-    icon: Clock,
+    icon: Icons.clock,
   },
   {
     title: "A more repeatable publishing habit",
     desc: "Build a rhythm that becomes easier to maintain over time",
-    icon: Repeat2,
+    icon: Icons.repeat,
   },
 ];
 
@@ -33,14 +35,13 @@ export function BloggersBenefits() {
 
         <div className="reveal reveal-delay-1 mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {benefits.map((benefit, i) => {
-            const Icon = benefit.icon;
             return (
               <div
                 key={benefit.title}
                 className={`reveal reveal-delay-${(i % 4) + 1} flex flex-col items-center rounded-2xl border border-border-light bg-white p-6 text-center transition-all duration-200 hover:border-border hover:shadow-sm`}
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-bg">
-                  <Icon className="h-5 w-5 text-accent" strokeWidth={1.5} />
+                  <Icon icon={benefit.icon} size="md" className="text-accent" strokeWidth={1.5} />
                 </div>
                 <h3 className="mt-4 text-[15px] font-semibold leading-snug text-foreground">{benefit.title}</h3>
                 <p className="mt-2 text-[13px] leading-relaxed text-muted">{benefit.desc}</p>

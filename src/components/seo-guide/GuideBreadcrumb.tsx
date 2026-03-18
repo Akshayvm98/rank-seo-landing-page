@@ -1,5 +1,6 @@
+"use client";
 import { getBreadcrumbs } from "@/lib/guide";
-import { ChevronRight } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function GuideBreadcrumb({ pathname }: { pathname: string }) {
   const crumbs = getBreadcrumbs(pathname);
@@ -11,7 +12,7 @@ export function GuideBreadcrumb({ pathname }: { pathname: string }) {
         return (
           <span key={crumb.href} className="flex items-center gap-1.5">
             {i > 0 && (
-              <ChevronRight className="h-3 w-3 text-muted-light" />
+              <Icon icon={Icons.chevronRight} size="sm" className="text-muted-light" />
             )}
             {isLast ? (
               <span className="font-medium text-foreground">{crumb.label}</span>

@@ -1,4 +1,7 @@
-import { FileText, Sparkles } from "lucide-react";
+"use client";
+import { isValidElement, type ReactNode } from "react";
+import { type LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const cards = [
   {
@@ -18,13 +21,13 @@ const cards = [
     title: "Generate and publish optimized content",
     description:
       "Create SEO-structured articles and publish directly to WordPress, Webflow, Framer, or Notion in just a few clicks.",
-    icon: <FileText className="h-6 w-6" strokeWidth={1.5} />,
+    icon: Icons.fileText,
   },
   {
     title: "Define your brand voice",
     description:
       "Choose your tone, add writing samples, and set content guidelines. Rank SEO generates articles that sound natural and aligned with your brand.",
-    icon: <Sparkles className="h-6 w-6" strokeWidth={1.5} />,
+    icon: Icons.sparkles,
   },
 ];
 
@@ -48,7 +51,7 @@ export function HowItWorks() {
               className={`reveal reveal-delay-${i + 1} group card-premium rounded-2xl bg-white p-7 hover:border-accent-muted/60 hover:shadow-[0_4px_24px_-4px_rgba(13,148,136,0.08)]`}
             >
               <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-accent-bg text-accent transition-colors duration-300 group-hover:bg-accent group-hover:text-white">
-                {card.icon}
+                {isValidElement(card.icon) ? card.icon : <Icon icon={card.icon as LucideIcon} size="lg" strokeWidth={1.5} />}
               </div>
               <h3 className="mb-2 text-[16px] font-semibold tracking-[-0.01em] text-foreground">
                 {card.title}

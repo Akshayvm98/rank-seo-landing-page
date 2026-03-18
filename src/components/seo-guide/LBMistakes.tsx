@@ -1,4 +1,5 @@
-import { AlertTriangle } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const mistakes = [
   {
@@ -45,7 +46,7 @@ export function LBMistakes() {
           {mistakes.map((item) => (
             <div key={item.mistake} className="px-6 py-5 transition-colors hover:bg-border-light/20">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-red-400" strokeWidth={1.5} />
+                <Icon icon={Icons.alertTriangle} size="md" strokeWidth={1.5} className="mt-0.5 text-red-400" />
                 <div>
                   <p className="text-[15px] font-bold text-foreground">{item.mistake}</p>
                   <p className="mt-1.5 text-[14px] leading-[1.7] text-muted">{item.fix}</p>

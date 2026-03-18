@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function BloggersGrowth() {
   return (
@@ -23,7 +24,7 @@ export function BloggersGrowth() {
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-[15px] text-muted">
                 <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-bg">
-                  <Check className="h-3 w-3 text-success" strokeWidth={2} />
+                  <Icon icon={Icons.check} size="sm" className="text-success" strokeWidth={2} />
                 </span>
                 <span>{item}</span>
               </li>

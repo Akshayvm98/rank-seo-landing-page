@@ -1,4 +1,5 @@
-import { Link } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function LBHero() {
   return (
@@ -60,7 +61,7 @@ export function LBHero() {
                   ].map((source) => (
                     <div key={source.domain} className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <Link className="h-3 w-3 text-accent" />
+                        <Icon icon={Icons.link} size="sm" className="text-accent" />
                         <span className="text-[12px] font-medium text-foreground">{source.domain}</span>
                       </div>
                       <div className="flex items-center gap-2">

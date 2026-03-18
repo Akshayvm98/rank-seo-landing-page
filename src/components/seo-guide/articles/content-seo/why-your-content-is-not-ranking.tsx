@@ -1,3 +1,4 @@
+"use client";
 import {
   ArticleHero,
   Section,
@@ -6,7 +7,7 @@ import {
   NumberedList,
   Callout,
 } from "@/components/seo-guide/ArticleBlocks";
-import { ChevronRight } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export default function WhyYourContentIsNotRanking() {
   return (
@@ -199,7 +200,7 @@ export default function WhyYourContentIsNotRanking() {
                   </div>
                   {i < 3 && (
                     <div className="hidden sm:flex shrink-0 px-1.5">
-                      <ChevronRight className="h-4 w-4 text-black/15" />
+                      <Icon icon={Icons.chevronRight} size="sm" className="text-black/15" />
                     </div>
                   )}
                 </div>

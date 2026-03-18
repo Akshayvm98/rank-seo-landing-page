@@ -1,4 +1,5 @@
-import { ArrowRight } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const challenges = [
   {
@@ -58,7 +59,7 @@ export function UseCasesSelector() {
               <span className="text-[14px] text-muted">{item.challenge}</span>
               <span className="inline-flex shrink-0 items-center gap-1.5 text-[14px] font-medium text-accent transition-colors hover:text-accent-hover">
                 {item.persona}
-                <ArrowRight className="h-3.5 w-3.5" />
+                <Icon icon={Icons.arrowRight} size="sm" />
               </span>
             </a>
           ))}

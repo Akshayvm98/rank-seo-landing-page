@@ -1,4 +1,5 @@
-import { X, Check } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const withoutItems = [
   "Manual research per client",
@@ -35,7 +36,7 @@ export function AgenciesOutcomes() {
           <div className="rounded-xl border border-red-100 bg-white p-6">
             <div className="mb-5 flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-50">
-                <X className="h-3.5 w-3.5 text-red-400" />
+                <Icon icon={Icons.x} size="sm" className="text-red-400" />
               </div>
               <span className="text-[13px] font-semibold text-foreground">Without RankSEO</span>
             </div>
@@ -55,7 +56,7 @@ export function AgenciesOutcomes() {
           <div className="rounded-xl border border-accent/20 bg-accent-bg/30 p-6">
             <div className="mb-5 flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent">
-                <Check className="h-3.5 w-3.5 text-white" strokeWidth={2.5} />
+                <Icon icon={Icons.check} size="sm" className="text-white" strokeWidth={2.5} />
               </div>
               <span className="text-[13px] font-semibold text-foreground">With RankSEO</span>
             </div>
@@ -63,7 +64,7 @@ export function AgenciesOutcomes() {
               {withItems.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-[14px] text-foreground/80">
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/10">
-                    <Check className="h-3 w-3 text-accent" strokeWidth={2.5} />
+                    <Icon icon={Icons.check} size="sm" className="text-accent" strokeWidth={2.5} />
                   </div>
                   {item}
                 </li>

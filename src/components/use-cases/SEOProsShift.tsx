@@ -1,4 +1,5 @@
-import { Check, User } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const youDecide = [
   "Topic prioritization",
@@ -34,7 +35,7 @@ export function SEOProsShift() {
           <div className="rounded-xl border border-border-light bg-white p-6">
             <div className="mb-5 flex items-center gap-2.5">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-foreground">
-                <User className="h-4 w-4 text-white" />
+                <Icon icon={Icons.user} size="sm" className="text-white" />
               </div>
               <div>
                 <span className="text-[14px] font-semibold text-foreground">You decide</span>
@@ -68,7 +69,7 @@ export function SEOProsShift() {
               {rankSEOHandles.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-[14px] text-foreground/80">
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/10">
-                    <Check className="h-3 w-3 text-accent" strokeWidth={2.5} />
+                    <Icon icon={Icons.check} size="sm" className="text-accent" strokeWidth={2.5} />
                   </div>
                   {item}
                 </li>

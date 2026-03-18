@@ -1,4 +1,5 @@
-import { AlertCircle, Clock, X, RotateCcw, Star, CheckCircle, TrendingUp, Zap } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function SaaSWhyStalls() {
   return (
@@ -42,22 +43,22 @@ export function SaaSWhyStalls() {
                 {
                   label: "Unclear priorities",
                   detail: "No system to rank keyword opportunities",
-                  icon: <AlertCircle className="h-3.5 w-3.5 text-red-400" strokeWidth={1.5} />,
+                  icon: <Icon icon={Icons.alertCircle} size="sm" className="text-red-400" strokeWidth={1.5} />,
                 },
                 {
                   label: "Slow publishing",
                   detail: "Weeks between draft and live article",
-                  icon: <Clock className="h-3.5 w-3.5 text-red-400" strokeWidth={1.5} />,
+                  icon: <Icon icon={Icons.clock} size="sm" className="text-red-400" strokeWidth={1.5} />,
                 },
                 {
                   label: "Disconnected tools",
                   detail: "Research, writing, and publishing in different places",
-                  icon: <X className="h-3.5 w-3.5 text-red-400" strokeWidth={1.5} />,
+                  icon: <Icon icon={Icons.x} size="sm" className="text-red-400" strokeWidth={1.5} />,
                 },
                 {
                   label: "No feedback loop",
                   detail: "Content goes live but performance is never reviewed",
-                  icon: <RotateCcw className="h-3.5 w-3.5 text-red-400" strokeWidth={1.5} />,
+                  icon: <Icon icon={Icons.rotateCcw} size="sm" className="text-red-400" strokeWidth={1.5} />,
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 rounded-lg bg-red-50/50 px-3 py-2.5">
@@ -86,22 +87,22 @@ export function SaaSWhyStalls() {
                 {
                   label: "Prioritized opportunities",
                   detail: "Keywords ranked by relevance, demand, and difficulty",
-                  icon: <Star className="h-3.5 w-3.5 text-success" strokeWidth={1.5} />,
+                  icon: <Icon icon={Icons.star} size="sm" className="text-success" strokeWidth={1.5} />,
                 },
                 {
                   label: "Repeatable publishing",
                   detail: "From keyword to live article in a single workflow",
-                  icon: <CheckCircle className="h-3.5 w-3.5 text-success" strokeWidth={1.5} />,
+                  icon: <Icon icon={Icons.checkCircle} size="sm" className="text-success" strokeWidth={1.5} />,
                 },
                 {
                   label: "Performance data",
                   detail: "See which topics drive rankings and traffic",
-                  icon: <TrendingUp className="h-3.5 w-3.5 text-success" strokeWidth={1.5} />,
+                  icon: <Icon icon={Icons.trendingUp} size="sm" className="text-success" strokeWidth={1.5} />,
                 },
                 {
                   label: "One system",
                   detail: "Research, create, optimize, publish, measure — all connected",
-                  icon: <Zap className="h-3.5 w-3.5 text-success" strokeWidth={1.5} />,
+                  icon: <Icon icon={Icons.zap} size="sm" className="text-success" strokeWidth={1.5} />,
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 rounded-lg bg-success-bg/50 px-3 py-2.5">

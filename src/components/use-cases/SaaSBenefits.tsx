@@ -1,35 +1,36 @@
-import { Repeat2, Target, Calendar, TrendingUp, Zap, Route } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const benefits = [
   {
     title: "Build a more repeatable organic acquisition process",
     description: "Stop starting over each quarter. Create a system that compounds.",
-    icon: <Repeat2 className="h-5 w-5 text-accent" strokeWidth={1.5} />,
+    icon: Icons.repeat,
   },
   {
     title: "Reduce time spent deciding what to create next",
     description: "Let keyword data and opportunity scores guide your content calendar.",
-    icon: <Target className="h-5 w-5 text-accent" strokeWidth={1.5} />,
+    icon: Icons.target,
   },
   {
     title: "Publish more consistently without messy coordination",
     description: "One workflow from keyword to published article. Fewer handoffs, fewer delays.",
-    icon: <Calendar className="h-5 w-5 text-accent" strokeWidth={1.5} />,
+    icon: Icons.calendar,
   },
   {
     title: "Connect SEO work to actual performance signals",
     description: "See which content drives rankings, impressions, and traffic growth.",
-    icon: <TrendingUp className="h-5 w-5 text-accent" strokeWidth={1.5} />,
+    icon: Icons.trendingUp,
   },
   {
     title: "Improve content velocity without sacrificing structure",
     description: "Generate, optimize, and publish faster while maintaining SEO quality.",
-    icon: <Zap className="h-5 w-5 text-accent" strokeWidth={1.5} />,
+    icon: Icons.zap,
   },
   {
     title: "Create a clearer path from keyword opportunity to traffic growth",
     description: "Every piece of content traces back to a real search opportunity with measurable outcomes.",
-    icon: <Route className="h-5 w-5 text-accent" strokeWidth={1.5} />,
+    icon: Icons.route,
   },
 ];
 
@@ -51,7 +52,7 @@ export function SaaSBenefits() {
                 className="rounded-2xl border border-border-light bg-white p-6 shadow-sm transition-all duration-200 hover:border-border hover:shadow-md md:p-8"
               >
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-accent-bg">
-                  {b.icon}
+                  <Icon icon={b.icon} size="md" className="text-accent" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-[17px] font-semibold leading-snug text-foreground">{b.title}</h3>
                 <p className="mt-2 text-[14px] leading-[1.65] text-muted">{b.description}</p>
@@ -67,7 +68,7 @@ export function SaaSBenefits() {
                 className="rounded-2xl border border-border-light bg-white p-5 shadow-sm transition-all duration-200 hover:border-border hover:shadow-md"
               >
                 <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-bg">
-                  {b.icon}
+                  <Icon icon={b.icon} size="md" className="text-accent" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-[15px] font-semibold leading-snug text-foreground">{b.title}</h3>
                 <p className="mt-1.5 text-[13px] leading-[1.65] text-muted">{b.description}</p>
@@ -80,7 +81,7 @@ export function SaaSBenefits() {
             <div className="rounded-2xl border border-border-light bg-white p-6 shadow-sm transition-all duration-200 hover:border-border hover:shadow-md md:p-8">
               <div className="flex flex-col items-center text-center md:flex-row md:text-left md:gap-6">
                 <div className="mb-4 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent-bg md:mb-0">
-                  {benefits[5].icon}
+                  <Icon icon={benefits[5].icon} size="md" className="text-accent" strokeWidth={1.5} />
                 </div>
                 <div>
                   <h3 className="text-[17px] font-semibold leading-snug text-foreground">{benefits[5].title}</h3>

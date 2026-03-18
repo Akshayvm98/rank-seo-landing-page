@@ -1,3 +1,4 @@
+"use client";
 import {
   ArticleHero,
   Section,
@@ -6,7 +7,7 @@ import {
   NumberedList,
   Callout,
 } from "@/components/seo-guide/ArticleBlocks";
-import { Check } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export default function ContentOptimization() {
   return (
@@ -341,7 +342,7 @@ export default function ContentOptimization() {
                         className="flex items-start gap-2.5 rounded-lg border border-black/[0.03] bg-border-light/10 px-3 py-2"
                       >
                         <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded border border-black/10 bg-white">
-                          <Check className="h-2.5 w-2.5 text-accent opacity-0 group-hover:opacity-100" strokeWidth={3} />
+                          <Icon icon={Icons.check} size="sm" strokeWidth={3} className="text-accent opacity-0 group-hover:opacity-100" />
                         </span>
                         <span className="text-[13px] text-muted">
                           {item}

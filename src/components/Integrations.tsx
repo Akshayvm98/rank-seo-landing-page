@@ -1,4 +1,5 @@
-import { Code } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const integrations = [
   {
@@ -46,7 +47,7 @@ const integrations = [
   {
     name: "Custom API",
     description: "Connect any platform through our flexible API",
-    icon: <Code className="h-7 w-7" stroke="#0d9488" strokeWidth={1.5} />,
+    icon: <Icon icon={Icons.code} size="lg" className="h-7 w-7 text-accent" strokeWidth={1.5} />,
   },
 ];
 

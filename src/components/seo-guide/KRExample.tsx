@@ -1,4 +1,5 @@
-import { CheckCircle } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const candidates = [
   { keyword: "seo automation tools", volume: "2.4K", difficulty: 34, intent: "Commercial", selected: false },
@@ -64,7 +65,7 @@ export function KRExample() {
               <span className="text-right text-[12px] text-muted">{kw.intent}</span>
               <span className="text-right">
                 {kw.selected && (
-                  <CheckCircle className="ml-auto h-5 w-5 text-accent" />
+                  <Icon icon={Icons.checkCircle} size="md" className="ml-auto text-accent" />
                 )}
               </span>
             </div>

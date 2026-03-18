@@ -1,4 +1,5 @@
-import { Info } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const strategies = [
   {
@@ -71,7 +72,7 @@ export function LBApproaches() {
                   <h3 className="text-[17px] font-bold text-foreground">{strategy.title}</h3>
                   <p className="mt-2 text-[14px] leading-[1.75] text-muted">{strategy.description}</p>
                   <p className="mt-3 flex items-start gap-2 text-[13px] leading-[1.6] text-muted-light">
-                    <Info className="mt-0.5 h-4 w-4 shrink-0 text-muted-light" strokeWidth={1.5} />
+                    <Icon icon={Icons.info} size="sm" strokeWidth={1.5} className="mt-0.5 text-muted-light" />
                     <span>{strategy.note}</span>
                   </p>
                 </div>

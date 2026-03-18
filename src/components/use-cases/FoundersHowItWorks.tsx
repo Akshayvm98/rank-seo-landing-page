@@ -1,35 +1,37 @@
-import { type LucideIcon, Globe, Search, PenLine, Upload, TrendingUp } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const steps: { number: string; title: string; description: string; icon: LucideIcon }[] = [
   {
     number: "01",
     title: "Connect your site",
     description: "Link your domain and Search Console",
-    icon: Globe,
+    icon: Icons.globe,
   },
   {
     number: "02",
     title: "Discover opportunities",
     description: "See what keywords you can realistically rank for",
-    icon: Search,
+    icon: Icons.search,
   },
   {
     number: "03",
     title: "Generate content",
     description: "Create articles in your brand voice",
-    icon: PenLine,
+    icon: Icons.penLine,
   },
   {
     number: "04",
     title: "Publish",
     description: "Push directly to your CMS",
-    icon: Upload,
+    icon: Icons.upload,
   },
   {
     number: "05",
     title: "Track growth",
     description: "Watch your traffic improve over time",
-    icon: TrendingUp,
+    icon: Icons.trendingUp,
   },
 ];
 
@@ -43,13 +45,12 @@ export function FoundersHowItWorks() {
 
         <div className="reveal reveal-delay-1 relative">
           {steps.map((step, i) => {
-            const Icon = step.icon;
             return (
               <div key={step.number} className={`reveal reveal-delay-${Math.min(i + 1, 4)} relative flex gap-5`}>
                 {/* Rail */}
                 <div className="flex flex-col items-center">
                   <div className="relative z-10 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white transition-all duration-200 hover:border-accent/40 hover:shadow-sm">
-                    <Icon className="h-[18px] w-[18px] text-accent" strokeWidth={1.5} />
+                    <Icon icon={step.icon} size="md" className="text-accent" strokeWidth={1.5} />
                   </div>
                   {i < steps.length - 1 && (
                     <div

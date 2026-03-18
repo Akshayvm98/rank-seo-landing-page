@@ -1,4 +1,5 @@
-import { Link, Home } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const backlinks = [
   { label: "External authority", description: "Backlinks from other domains signal that external sites vouch for your content." },
@@ -35,7 +36,7 @@ export function LBInternalVsBacklinks() {
           <div className="reveal reveal-delay-1 rounded-2xl border border-black/[0.04] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:-translate-y-0.5">
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-bg">
-                <Link className="h-5 w-5 text-accent" strokeWidth={1.5} />
+                <Icon icon={Icons.link} size="md" strokeWidth={1.5} className="text-accent" />
               </div>
               <div>
                 <h3 className="text-[17px] font-bold text-foreground">Backlinks</h3>
@@ -56,7 +57,7 @@ export function LBInternalVsBacklinks() {
           <div className="reveal reveal-delay-2 rounded-2xl border border-black/[0.04] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:-translate-y-0.5">
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-success-bg">
-                <Home className="h-5 w-5 text-success" strokeWidth={1.5} />
+                <Icon icon={Icons.home} size="md" strokeWidth={1.5} className="text-success" />
               </div>
               <div>
                 <h3 className="text-[17px] font-bold text-foreground">Internal Links</h3>

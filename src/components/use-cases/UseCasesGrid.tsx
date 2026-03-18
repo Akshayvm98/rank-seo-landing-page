@@ -1,4 +1,5 @@
-import { Rocket, FileText, BarChart3, Building2, PenLine, Settings, ArrowRight } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const useCases = [
   {
@@ -6,42 +7,42 @@ const useCases = [
     href: "/use-cases/founders",
     description:
       "Grow organic traffic without hiring an SEO team or learning a whole new discipline.",
-    icon: <Rocket className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.rocket,
   },
   {
     title: "Content Marketers",
     href: "/use-cases/content-marketers",
     description:
       "Scale SEO content production with a workflow that is easier to manage and easier to repeat.",
-    icon: <FileText className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.fileText,
   },
   {
     title: "SEO Professionals",
     href: "/use-cases/seo-professionals",
     description:
       "Automate execution, reduce repetitive work, and stay focused on strategy.",
-    icon: <BarChart3 className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.barChart,
   },
   {
     title: "Agencies",
     href: "/use-cases/agencies",
     description:
       "Manage SEO across multiple clients with cleaner workflows and less operational overhead.",
-    icon: <Building2 className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.building,
   },
   {
     title: "Bloggers",
     href: "/use-cases/bloggers",
     description:
       "Stop guessing what to write and build blog traffic with more clarity and consistency.",
-    icon: <PenLine className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.penLine,
   },
   {
     title: "SaaS Teams",
     href: "/use-cases/saas",
     description:
       "Turn SEO into a more repeatable growth channel for your product and content team.",
-    icon: <Settings className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.settings,
   },
 ];
 
@@ -63,13 +64,13 @@ export function UseCasesGrid() {
               className={`reveal reveal-delay-${(i % 4) + 1} group rounded-xl border border-border-light bg-white p-6 transition-all duration-300 hover:border-border hover:shadow-sm`}
             >
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-bg text-accent">
-                {uc.icon}
+                <Icon icon={uc.icon} size="md" strokeWidth={1.5} />
               </div>
               <h3 className="mb-2 text-[16px] font-semibold text-foreground">{uc.title}</h3>
               <p className="mb-4 text-[14px] leading-[1.6] text-muted">{uc.description}</p>
               <span className="inline-flex items-center gap-1.5 text-[13px] font-medium text-accent transition-colors group-hover:text-accent-hover">
                 View use case
-                <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                <Icon icon={Icons.arrowRight} size="sm" className="transition-transform group-hover:translate-x-0.5" />
               </span>
             </a>
           ))}

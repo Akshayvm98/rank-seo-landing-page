@@ -1,4 +1,5 @@
-import { AlertTriangle, Check } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function SAExample() {
   return (
@@ -110,7 +111,7 @@ export function SAExample() {
             <div className="rounded-2xl border border-black/[0.06] bg-white p-6 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.06)]">
               <div className="mb-3 flex items-center gap-2">
                 <span className="flex h-6 w-6 items-center justify-center rounded-md bg-amber-50 text-amber-500">
-                  <AlertTriangle className="h-3.5 w-3.5" fill="currentColor" />
+                  <Icon icon={Icons.alertTriangle} size="sm" fill="currentColor" />
                 </span>
                 <h3 className="text-[15px] font-bold text-foreground">
                   What is happening
@@ -126,7 +127,7 @@ export function SAExample() {
             <div className="rounded-2xl border border-black/[0.06] bg-white p-6 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.06)]">
               <div className="mb-3 flex items-center gap-2">
                 <span className="flex h-6 w-6 items-center justify-center rounded-md bg-accent-bg text-accent">
-                  <Check className="h-3.5 w-3.5" fill="currentColor" />
+                  <Icon icon={Icons.check} size="sm" fill="currentColor" />
                 </span>
                 <h3 className="text-[15px] font-bold text-foreground">
                   What to do next

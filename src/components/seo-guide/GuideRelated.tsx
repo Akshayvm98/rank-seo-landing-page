@@ -1,3 +1,4 @@
+"use client";
 import {
   getPageByHref,
   getRelatedPages,
@@ -5,7 +6,7 @@ import {
   getPageHref,
 } from "@/lib/guide";
 import type { GuidePage } from "@/lib/guide";
-import { ArrowRight } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 /**
  * Data-driven related articles section.
@@ -54,7 +55,7 @@ export function GuideRelated({ pathname }: { pathname: string }) {
               </p>
               <span className="mt-4 inline-flex items-center gap-1 text-[13px] font-medium text-accent">
                 Read guide
-                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
+                <Icon icon={Icons.arrowRight} size="sm" className="transition-transform duration-200 group-hover:translate-x-0.5" />
               </span>
             </a>
           ))}

@@ -1,4 +1,5 @@
-import { Search, LayoutList, PenLine, CheckCircle, Upload } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function SaaSGrowthProblem() {
   return (
@@ -49,7 +50,7 @@ export function SaaSGrowthProblem() {
                 {/* Step 1: Keyword Research */}
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg">
-                    <Search className="h-4 w-4 text-accent" strokeWidth={1.5} />
+                    <Icon icon={Icons.search} size="sm" className="text-accent" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 rounded-lg border border-border-light bg-accent-bg/30 px-3 py-2">
                     <span className="text-[12px] font-medium text-foreground/70">Keyword Research</span>
@@ -65,7 +66,7 @@ export function SaaSGrowthProblem() {
                 {/* Step 2: Content Brief */}
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg/50">
-                    <LayoutList className="h-4 w-4 text-accent/60" strokeWidth={1.5} />
+                    <Icon icon={Icons.layoutList} size="sm" className="text-accent/60" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 rounded-lg border border-border-light bg-border-light/30 px-3 py-2">
                     <span className="text-[12px] font-medium text-foreground/50">Content Brief</span>
@@ -81,7 +82,7 @@ export function SaaSGrowthProblem() {
                 {/* Step 3: Draft */}
                 <div className="flex items-center gap-3 opacity-60">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-border-light/50">
-                    <PenLine className="h-4 w-4 text-muted-light" strokeWidth={1.5} />
+                    <Icon icon={Icons.penLine} size="sm" className="text-muted-light" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 rounded-lg border border-border-light/50 bg-border-light/20 px-3 py-2">
                     <span className="text-[12px] font-medium text-foreground/40">Draft</span>
@@ -97,7 +98,7 @@ export function SaaSGrowthProblem() {
                 {/* Step 4: SEO Review */}
                 <div className="flex items-center gap-3 opacity-40">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-border-light/30">
-                    <CheckCircle className="h-4 w-4 text-muted-light" strokeWidth={1.5} />
+                    <Icon icon={Icons.checkCircle} size="sm" className="text-muted-light" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 rounded-lg border border-border-light/30 bg-border-light/10 px-3 py-2">
                     <span className="text-[12px] font-medium text-foreground/30">SEO Review</span>
@@ -113,7 +114,7 @@ export function SaaSGrowthProblem() {
                 {/* Step 5: Publish */}
                 <div className="flex items-center gap-3 opacity-30">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-border-light/20">
-                    <Upload className="h-4 w-4 text-muted-light" strokeWidth={1.5} />
+                    <Icon icon={Icons.upload} size="sm" className="text-muted-light" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 rounded-lg border border-border-light/20 bg-border-light/5 px-3 py-2">
                     <span className="text-[12px] font-medium text-foreground/20">Publish</span>

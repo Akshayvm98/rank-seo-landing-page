@@ -1,4 +1,5 @@
-import { ArrowRight } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const blocks = [
   {
@@ -156,7 +157,7 @@ export function AgenciesMultiClient() {
             className="inline-flex items-center gap-1.5 text-[14px] font-medium text-accent transition-colors hover:text-accent-hover"
           >
             Explore all features
-            <ArrowRight className="h-4 w-4" />
+            <Icon icon={Icons.arrowRight} size="sm" />
           </a>
         </div>
       </div>

@@ -1,20 +1,21 @@
-import { Sparkles, Puzzle, Tag, ArrowRight } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const links = [
   {
     title: "Features",
     href: "/features",
-    icon: <Sparkles className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.sparkles,
   },
   {
     title: "Integrations",
     href: "/integrations",
-    icon: <Puzzle className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.puzzle,
   },
   {
     title: "Pricing",
     href: "/pricing",
-    icon: <Tag className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.tag,
   },
 ];
 
@@ -40,10 +41,10 @@ export function UseCasesLinks() {
               className="group flex items-center gap-3 rounded-xl border border-border-light bg-white p-4 transition-all duration-300 hover:border-border hover:shadow-sm"
             >
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
-                {link.icon}
+                <Icon icon={link.icon} size="md" strokeWidth={1.5} />
               </div>
               <span className="text-[14px] font-medium text-foreground">{link.title}</span>
-              <ArrowRight className="ml-auto h-4 w-4 text-muted-light transition-all group-hover:translate-x-0.5 group-hover:text-accent" />
+              <Icon icon={Icons.arrowRight} size="sm" className="ml-auto text-muted-light transition-all group-hover:translate-x-0.5 group-hover:text-accent" />
             </a>
           ))}
         </div>

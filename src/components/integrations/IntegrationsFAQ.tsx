@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Plus } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 const faqs = [
   {
     question: "Which integrations does RankSEO support?",
@@ -59,8 +59,10 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         aria-expanded={open}
       >
         <span className="text-[15px] font-medium text-foreground">{question}</span>
-        <Plus
-          className={`h-5 w-5 shrink-0 text-muted transition-transform duration-200 ${open ? "rotate-45" : ""}`}
+        <Icon
+          icon={Icons.plus}
+          size="md"
+          className={`text-muted transition-transform duration-200 ${open ? "rotate-45" : ""}`}
           strokeWidth={1.5}
         />
       </button>

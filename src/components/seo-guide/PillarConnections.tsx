@@ -1,4 +1,5 @@
-import { ArrowRight } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const connections = [
   {
@@ -51,7 +52,7 @@ export function PillarConnections() {
                   <span className="rounded-lg bg-accent-bg px-2.5 py-1 text-[12px] font-bold text-accent">
                     {c.from}
                   </span>
-                  <ArrowRight className="h-4 w-4 text-accent/50" strokeWidth={1.5} />
+                  <Icon icon={Icons.arrowRight} size="sm" strokeWidth={1.5} className="text-accent/50" />
                   <span className="rounded-lg bg-accent-bg px-2.5 py-1 text-[12px] font-bold text-accent">
                     {c.to}
                   </span>

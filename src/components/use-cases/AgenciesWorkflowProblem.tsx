@@ -1,10 +1,12 @@
-import { type LucideIcon, X, Check, Search, PenLine, Upload, BarChart3 } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const beforeStages: { label: string; icon: LucideIcon }[] = [
-  { label: "Research", icon: Search },
-  { label: "Drafts", icon: PenLine },
-  { label: "Publishing", icon: Upload },
-  { label: "Reports", icon: BarChart3 },
+  { label: "Research", icon: Icons.search },
+  { label: "Drafts", icon: Icons.penLine },
+  { label: "Publishing", icon: Icons.upload },
+  { label: "Reports", icon: Icons.barChart },
 ];
 
 export function AgenciesWorkflowProblem() {
@@ -32,7 +34,7 @@ export function AgenciesWorkflowProblem() {
           <div className="rounded-xl border border-red-100 bg-white p-6">
             <div className="mb-5 flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-50">
-                <X className="h-3.5 w-3.5 text-red-400" />
+                <Icon icon={Icons.x} size="sm" className="text-red-400" />
               </div>
               <span className="text-[13px] font-semibold text-foreground">Before: Fragmented</span>
             </div>
@@ -42,7 +44,7 @@ export function AgenciesWorkflowProblem() {
                 <div key={stage.label}>
                   <div className="flex items-center gap-3 rounded-lg border border-border-light/80 bg-border-light/20 px-4 py-3">
                     <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-red-50">
-                      <stage.icon className="h-4 w-4 text-red-400" strokeWidth={1.5} />
+                      <Icon icon={stage.icon} size="sm" className="text-red-400" strokeWidth={1.5} />
                     </div>
                     <span className="text-[13px] font-medium text-foreground">{stage.label}</span>
                     <div className="ml-auto rounded-full bg-red-50 px-2 py-0.5 text-[9px] font-medium text-red-400">
@@ -72,7 +74,7 @@ export function AgenciesWorkflowProblem() {
           <div className="rounded-xl border border-accent/20 bg-accent-bg/20 p-6">
             <div className="mb-5 flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent">
-                <Check className="h-3.5 w-3.5 text-white" />
+                <Icon icon={Icons.check} size="sm" className="text-white" />
               </div>
               <span className="text-[13px] font-semibold text-foreground">After: Connected with RankSEO</span>
             </div>
@@ -98,7 +100,7 @@ export function AgenciesWorkflowProblem() {
                     {/* Stage card */}
                     <div className="flex flex-1 items-center gap-3 rounded-lg border border-accent/15 bg-white px-4 py-3">
                       <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent-bg">
-                        <stage.icon className="h-4 w-4 text-accent" strokeWidth={1.5} />
+                        <Icon icon={stage.icon} size="sm" className="text-accent" strokeWidth={1.5} />
                       </div>
                       <span className="text-[13px] font-medium text-foreground">{stage.label}</span>
                       <div className="ml-auto rounded-full bg-accent-bg px-2 py-0.5 text-[9px] font-medium text-accent">

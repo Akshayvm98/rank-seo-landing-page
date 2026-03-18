@@ -1,25 +1,27 @@
-import { type LucideIcon, Search, PenLine, SlidersHorizontal, Upload } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const stages: { label: string; desc: string; icon: LucideIcon }[] = [
   {
     label: "Discover",
     desc: "Find high-value topics from real search data",
-    icon: Search,
+    icon: Icons.search,
   },
   {
     label: "Create",
     desc: "Generate SEO-structured drafts in your voice",
-    icon: PenLine,
+    icon: Icons.penLine,
   },
   {
     label: "Optimize",
     desc: "Review SEO score, structure, and readability",
-    icon: SlidersHorizontal,
+    icon: Icons.sliders,
   },
   {
     label: "Publish",
     desc: "Push directly to your CMS in one click",
-    icon: Upload,
+    icon: Icons.upload,
   },
 ];
 
@@ -53,14 +55,13 @@ export function ContentMarketersSolution() {
 
             <div className="relative grid grid-cols-4 gap-6">
               {stages.map((stage, i) => {
-                const Icon = stage.icon;
                 return (
                   <div key={stage.label} className={`reveal reveal-delay-${i + 1} flex flex-col items-center text-center`}>
                     {/* Circle node */}
                     <div className="relative z-10 flex h-[104px] w-[104px] items-center justify-center rounded-2xl border border-border-light bg-white shadow-sm transition-all duration-200 hover:border-accent/30 hover:shadow-md">
                       <div className="flex flex-col items-center gap-1.5">
                         <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-bg">
-                          <Icon className="h-5 w-5 text-accent" strokeWidth={1.5} />
+                          <Icon icon={stage.icon} size="md" className="text-accent" strokeWidth={1.5} />
                         </div>
                         <span className="text-[12px] font-bold text-accent">{stage.label}</span>
                       </div>
@@ -86,12 +87,11 @@ export function ContentMarketersSolution() {
           <div className="md:hidden">
             <div className="space-y-0">
               {stages.map((stage, i) => {
-                const Icon = stage.icon;
                 return (
                   <div key={stage.label} className={`reveal reveal-delay-${Math.min(i + 1, 4)} flex gap-4`}>
                     <div className="flex flex-col items-center">
                       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-border-light bg-white shadow-sm">
-                        <Icon className="h-5 w-5 text-accent" strokeWidth={1.5} />
+                        <Icon icon={stage.icon} size="md" className="text-accent" strokeWidth={1.5} />
                       </div>
                       {i < stages.length - 1 && (
                         <div className="h-8 w-px bg-accent/20" />

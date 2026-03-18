@@ -1,5 +1,6 @@
+"use client";
 import { getTopicPages, getPageHref } from "@/lib/guide";
-import { ArrowRight } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 /** Visual styles per card index — keeps the color variety while being data-driven */
 const cardStyles = [
@@ -55,7 +56,7 @@ export function PillarCoreAreas() {
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1 text-[13px] font-semibold text-accent transition-all group-hover:gap-2">
                   Read guide
-                  <ArrowRight className="h-3.5 w-3.5" />
+                  <Icon icon={Icons.arrowRight} size="sm" />
                 </span>
               </a>
             );

@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function CSHero() {
   return (
@@ -88,7 +89,7 @@ export function CSHero() {
                     }`}
                   >
                     {item.done && (
-                      <Check className="h-2.5 w-2.5" strokeWidth={3} />
+                      <Icon icon={Icons.check} size="sm" strokeWidth={3} />
                     )}
                     {item.label}
                   </div>

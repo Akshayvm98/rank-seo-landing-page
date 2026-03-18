@@ -1,30 +1,32 @@
-import { type LucideIcon, Users, Sparkles, Clock, Monitor, TrendingUp } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const benefits: { title: string; desc: string; icon: LucideIcon }[] = [
   {
     title: "No need to hire an SEO team",
     desc: "One tool replaces an entire workflow",
-    icon: Users,
+    icon: Icons.users,
   },
   {
     title: "No need to learn complex tools",
     desc: "Simple interface designed for non-SEO people",
-    icon: Sparkles,
+    icon: Icons.sparkles,
   },
   {
     title: "Consistent content without effort",
     desc: "Publish regularly without burning out",
-    icon: Clock,
+    icon: Icons.clock,
   },
   {
     title: "Clear direction on what to write",
     desc: "Data-driven suggestions, not guesswork",
-    icon: Monitor,
+    icon: Icons.monitor,
   },
   {
     title: "Faster path to organic traffic",
     desc: "Start seeing results in weeks, not months",
-    icon: TrendingUp,
+    icon: Icons.trendingUp,
   },
 ];
 
@@ -38,14 +40,13 @@ export function FoundersBenefits() {
 
         <div className="reveal reveal-delay-1 mt-10 grid gap-3 sm:grid-cols-2">
           {benefits.map((benefit, i) => {
-            const Icon = benefit.icon;
             return (
               <div
                 key={benefit.title}
                 className={`reveal reveal-delay-${(i % 4) + 1} flex items-start gap-3.5 rounded-xl border border-border-light bg-white p-4 transition-all duration-200 hover:border-border hover:shadow-sm ${i === benefits.length - 1 ? "sm:col-span-2 sm:max-w-[50%] sm:mx-auto" : ""}`}
               >
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-accent-bg">
-                  <Icon className="h-[18px] w-[18px] text-accent" strokeWidth={1.5} />
+                  <Icon icon={benefit.icon} size="md" className="text-accent" strokeWidth={1.5} />
                 </div>
                 <div>
                   <h3 className="text-[14px] font-semibold text-foreground">{benefit.title}</h3>

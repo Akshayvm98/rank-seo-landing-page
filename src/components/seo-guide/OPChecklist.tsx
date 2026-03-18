@@ -1,4 +1,5 @@
-import { Check, AlertCircle } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const checks = [
   { label: "Does the page target one clear primary topic?", status: "pass" },
@@ -45,9 +46,9 @@ export function OPChecklist() {
                     }`}
                   >
                     {check.status === "pass" ? (
-                      <Check className="h-3 w-3 text-success" strokeWidth={3} />
+                      <Icon icon={Icons.check} size="sm" strokeWidth={3} className="text-success" />
                     ) : (
-                      <AlertCircle className="h-3 w-3 text-amber-500" strokeWidth={3} />
+                      <Icon icon={Icons.alertCircle} size="sm" strokeWidth={3} className="text-amber-500" />
                     )}
                   </div>
                   <span className="text-[14px] leading-[1.5] text-foreground">{check.label}</span>

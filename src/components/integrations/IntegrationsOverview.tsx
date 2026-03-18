@@ -1,4 +1,5 @@
-import { BarChart3 } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const integrations = [
   {
@@ -52,7 +53,7 @@ const integrations = [
     name: "Analytics",
     description:
       "Track traffic and article performance to understand what content drives organic growth.",
-    icon: <BarChart3 className="h-7 w-7" stroke="#0d9488" />,
+    icon: <Icon icon={Icons.barChart} size="lg" className="h-7 w-7 text-accent" />,
   },
 ];
 

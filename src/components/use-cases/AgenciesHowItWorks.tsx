@@ -1,4 +1,5 @@
-import { Plus, ChevronDown, ArrowRight } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const steps = [
   {
@@ -26,7 +27,7 @@ const steps = [
           ))}
         </div>
         <button className="mt-2.5 flex w-full items-center justify-center gap-1 rounded-lg border border-dashed border-border bg-border-light/30 py-2 text-[11px] text-muted transition-colors hover:border-accent hover:text-accent">
-          <Plus className="h-3 w-3" />
+          <Icon icon={Icons.plus} size="sm" />
           Add domain
         </button>
       </div>
@@ -43,7 +44,7 @@ const steps = [
           <div className="flex items-center gap-1 rounded-full bg-accent-bg px-2 py-0.5">
             <div className="h-1.5 w-1.5 rounded-full bg-accent" />
             <span className="text-[9px] font-medium text-accent">acme.com</span>
-            <ChevronDown className="h-2.5 w-2.5 text-accent" />
+            <Icon icon={Icons.chevronDown} size="sm" className="text-accent" />
           </div>
         </div>
         <div className="space-y-1">
@@ -80,7 +81,7 @@ const steps = [
           <div className="flex items-center gap-1 rounded bg-border-light px-2 py-0.5">
             <span className="text-[9px] text-muted">Brand:</span>
             <span className="text-[9px] font-medium text-foreground">Acme</span>
-            <ChevronDown className="h-2.5 w-2.5 text-muted" />
+            <Icon icon={Icons.chevronDown} size="sm" className="text-muted" />
           </div>
         </div>
         <div className="space-y-1.5">
@@ -231,7 +232,7 @@ export function AgenciesHowItWorks() {
                   className="mb-3 inline-flex items-center gap-1 text-[12px] font-medium text-accent transition-colors hover:text-accent-hover"
                 >
                   {step.link.text}
-                  <ArrowRight className="h-3 w-3" />
+                  <Icon icon={Icons.arrowRight} size="sm" />
                 </a>
               )}
               <div className="mt-auto">{step.visual}</div>
@@ -261,7 +262,7 @@ export function AgenciesHowItWorks() {
                   className="mb-3 inline-flex items-center gap-1 text-[12px] font-medium text-accent transition-colors hover:text-accent-hover"
                 >
                   {step.link.text}
-                  <ArrowRight className="h-3 w-3" />
+                  <Icon icon={Icons.arrowRight} size="sm" />
                 </a>
               )}
               <div className="mt-3">{step.visual}</div>

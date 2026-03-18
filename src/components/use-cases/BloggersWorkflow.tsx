@@ -1,29 +1,31 @@
-import { type LucideIcon, Search, LayoutList, PenLine, Sparkles, Upload, TrendingUp } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const steps: { number: string; title: string; description: string | React.ReactNode; icon: LucideIcon }[] = [
   {
     number: "01",
     title: "Find blog topics with potential",
     description: "Use keyword and search data to uncover topics worth targeting.",
-    icon: Search,
+    icon: Icons.search,
   },
   {
     number: "02",
     title: "Build a realistic content plan",
     description: "Prioritize ideas you can actually publish and rank for.",
-    icon: LayoutList,
+    icon: Icons.layoutList,
   },
   {
     number: "03",
     title: "Generate optimized drafts",
     description: "Create articles with structure, headings, and SEO support already in place.",
-    icon: PenLine,
+    icon: Icons.penLine,
   },
   {
     number: "04",
     title: "Improve before you publish",
     description: "Review your SEO score, internal links, and metadata.",
-    icon: Sparkles,
+    icon: Icons.sparkles,
   },
   {
     number: "05",
@@ -37,13 +39,13 @@ const steps: { number: string; title: string; description: string | React.ReactN
         .
       </span>
     ),
-    icon: Upload,
+    icon: Icons.upload,
   },
   {
     number: "06",
     title: "See what performs",
     description: "Track impressions, clicks, rankings, and article performance.",
-    icon: TrendingUp,
+    icon: Icons.trendingUp,
   },
 ];
 
@@ -62,7 +64,6 @@ export function BloggersWorkflow() {
         <div className="reveal reveal-delay-2 mt-14 hidden lg:block">
           <div className="grid grid-cols-3 gap-5">
             {steps.map((step, i) => {
-              const Icon = step.icon;
               return (
                 <div
                   key={step.number}
@@ -73,7 +74,7 @@ export function BloggersWorkflow() {
                       {step.number}
                     </div>
                     <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-bg/50">
-                      <Icon className="h-[18px] w-[18px] text-accent" strokeWidth={1.5} />
+                      <Icon icon={step.icon} size="md" className="text-accent" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h3 className="text-[15px] font-semibold text-foreground">{step.title}</h3>

@@ -1,4 +1,5 @@
-import { ArrowRight } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function WhyIntegrations() {
   return (
@@ -37,14 +38,14 @@ export function WhyIntegrations() {
             className="inline-flex items-center gap-1.5 rounded-lg border border-border px-4 py-2.5 text-[14px] font-medium text-foreground transition-all duration-200 hover:border-muted-light hover:bg-surface"
           >
             Explore all features
-            <ArrowRight className="h-4 w-4" />
+            <Icon icon={Icons.arrowRight} size="sm" />
           </a>
           <a
             href="/pricing"
             className="inline-flex items-center gap-1.5 rounded-lg border border-border px-4 py-2.5 text-[14px] font-medium text-foreground transition-all duration-200 hover:border-muted-light hover:bg-surface"
           >
             See pricing
-            <ArrowRight className="h-4 w-4" />
+            <Icon icon={Icons.arrowRight} size="sm" />
           </a>
         </div>
       </div>

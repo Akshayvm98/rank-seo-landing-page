@@ -1,11 +1,13 @@
-import { type LucideIcon, Search, PenLine, SlidersHorizontal, Upload, BarChart3, ChevronDown } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const stages: { label: string; icon: LucideIcon }[] = [
-  { label: "Research", icon: Search },
-  { label: "Draft", icon: PenLine },
-  { label: "Optimize", icon: SlidersHorizontal },
-  { label: "Publish", icon: Upload },
-  { label: "Track", icon: BarChart3 },
+  { label: "Research", icon: Icons.search },
+  { label: "Draft", icon: Icons.penLine },
+  { label: "Optimize", icon: Icons.sliders },
+  { label: "Publish", icon: Icons.upload },
+  { label: "Track", icon: Icons.barChart },
 ];
 
 export function SEOProsReality() {
@@ -52,12 +54,11 @@ export function SEOProsReality() {
               </p>
               <div className="space-y-3">
                 {stages.map((stage, i) => {
-                  const Icon = stage.icon;
                   return (
                     <div key={stage.label}>
                       <div className="flex items-center gap-3 rounded-lg border border-border-light/80 bg-border-light/20 px-4 py-3">
                         <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-red-50">
-                          <Icon className="h-4 w-4 text-red-400" strokeWidth={1.5} />
+                          <Icon icon={stage.icon} size="sm" className="text-red-400" strokeWidth={1.5} />
                         </div>
                         <span className="text-[13px] font-medium text-foreground">{stage.label}</span>
                         <div className="ml-auto rounded-full bg-red-50 px-2 py-0.5 text-[9px] font-medium text-red-400">
@@ -68,7 +69,7 @@ export function SEOProsReality() {
                         <div className="flex justify-center py-1">
                           <div className="flex flex-col items-center gap-0.5">
                             <div className="h-1 w-px bg-border" />
-                            <ChevronDown className="h-3 w-3 text-border" />
+                            <Icon icon={Icons.chevronDown} size="sm" className="text-border" />
                           </div>
                         </div>
                       )}

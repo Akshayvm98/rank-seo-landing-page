@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { getSearchablePages } from "@/lib/guide";
-import { Search, X } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 type SearchEntry = ReturnType<typeof getSearchablePages>[number];
 
@@ -95,9 +95,11 @@ export function GuideSearch() {
     <div ref={wrapperRef} className="relative mb-4">
       {/* Search input */}
       <div className="relative">
-        <Search
-          className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-light"
+        <Icon
+          icon={Icons.search}
+          size="sm"
           strokeWidth={2.5}
+          className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted-light"
         />
         <input
           ref={inputRef}
@@ -122,7 +124,7 @@ export function GuideSearch() {
             }}
             className="absolute right-2 top-1/2 -translate-y-1/2 flex h-5 w-5 items-center justify-center rounded text-muted-light hover:text-foreground transition-colors"
           >
-            <X className="h-3 w-3" strokeWidth={2.5} />
+            <Icon icon={Icons.x} size="sm" strokeWidth={2.5} />
           </button>
         )}
       </div>

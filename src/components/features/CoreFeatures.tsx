@@ -1,35 +1,36 @@
-import { Search, Sparkles, Settings, Upload, BarChart3, Lightbulb } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const coreFeatures = [
   {
     title: "Keyword Opportunity Discovery",
     description: "Surface high-ROI keywords from your real search data and ranking gaps.",
-    icon: <Search className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.search,
   },
   {
     title: "Brand Voice Content Generation",
     description: "AI writes articles that match your tone, style, and messaging.",
-    icon: <Sparkles className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.sparkles,
   },
   {
     title: "SEO Optimization Engine",
     description: "Score every article for structure, keywords, readability, and technical SEO.",
-    icon: <Settings className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.settings,
   },
   {
     title: "One-Click Publishing",
     description: "Push content directly to WordPress, Webflow, Framer, or Notion.",
-    icon: <Upload className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.upload,
   },
   {
     title: "Performance Tracking",
     description: "Monitor rankings, clicks, and impressions across all your content.",
-    icon: <BarChart3 className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.barChart,
   },
   {
     title: "Continuous Content Intelligence",
     description: "AI-powered recommendations that sharpen with every article you publish.",
-    icon: <Lightbulb className="h-5 w-5" strokeWidth={1.5} />,
+    icon: Icons.lightbulb,
   },
 ];
 
@@ -48,7 +49,7 @@ export function CoreFeatures() {
               className={`reveal reveal-delay-${(i % 3) + 1} flex items-start gap-4 rounded-xl border border-border-light bg-white p-6 transition-all duration-300 hover:border-accent-muted/50 hover:shadow-[0_2px_16px_-2px_rgba(13,148,136,0.06)]`}
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
-                {f.icon}
+                <Icon icon={f.icon} size="md" strokeWidth={1.5} />
               </div>
               <div>
                 <h3 className="mb-1 text-[15px] font-semibold text-foreground">{f.title}</h3>

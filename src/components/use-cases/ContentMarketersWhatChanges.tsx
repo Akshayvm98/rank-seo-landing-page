@@ -1,4 +1,5 @@
-import { X, Check } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const beforeItems = [
   "Scattered tasks across 5+ tools",
@@ -53,7 +54,7 @@ export function ContentMarketersWhatChanges() {
             <ul className="space-y-2.5">
               {beforeItems.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <X className="mt-0.5 h-4 w-4 shrink-0 text-red-400" />
+                  <Icon icon={Icons.x} size="sm" className="mt-0.5 text-red-400" />
                   <span className="text-[14px] leading-snug text-foreground/70">{item}</span>
                 </li>
               ))}
@@ -86,7 +87,7 @@ export function ContentMarketersWhatChanges() {
             <ul className="space-y-2.5">
               {afterItems.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" strokeWidth={2.5} />
+                  <Icon icon={Icons.check} size="sm" className="mt-0.5 text-accent" strokeWidth={2.5} />
                   <span className="text-[14px] leading-snug text-foreground/70">{item}</span>
                 </li>
               ))}

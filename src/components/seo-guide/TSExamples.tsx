@@ -1,4 +1,5 @@
-import { AlertTriangle, ArrowRight } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const issues = [
   {
@@ -55,11 +56,11 @@ export function TSExamples() {
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1.5">
-                    <AlertTriangle className="h-4 w-4 text-red-400" />
+                    <Icon icon={Icons.alertTriangle} size="sm" className="text-red-400" />
                     <p className="text-[15px] font-bold text-foreground">{item.problem}</p>
                   </div>
                   <div className="flex items-start gap-2 ml-6">
-                    <ArrowRight className="mt-0.5 h-3.5 w-3.5 shrink-0 text-success" strokeWidth={2.5} />
+                    <Icon icon={Icons.arrowRight} size="sm" strokeWidth={2.5} className="mt-0.5 text-success" />
                     <p className="text-[14px] leading-[1.6] text-muted">{item.fix}</p>
                   </div>
                 </div>

@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const steps = [
   {
@@ -113,7 +114,7 @@ const steps = [
       <div className="rounded-lg border border-black/[0.05] bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
         <div className="flex items-center gap-2 mb-3">
           <div className="h-5 w-5 rounded bg-success-bg flex items-center justify-center">
-            <Check className="h-3 w-3 text-success" strokeWidth={2.5} />
+            <Icon icon={Icons.check} size="sm" className="text-success" strokeWidth={2.5} />
           </div>
           <span className="text-[12px] font-medium text-success">Published to WordPress</span>
         </div>

@@ -1,20 +1,22 @@
-import { type LucideIcon, BookOpen, TrendingUp, Smile } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const outcomes: { label: string; desc: string; icon: LucideIcon }[] = [
   {
     label: "More articles published",
     desc: "Consistent output",
-    icon: BookOpen,
+    icon: Icons.bookOpen,
   },
   {
     label: "Better rankings",
     desc: "Over time",
-    icon: TrendingUp,
+    icon: Icons.trendingUp,
   },
   {
     label: "Less stress",
     desc: "Managing the process",
-    icon: Smile,
+    icon: Icons.smile,
   },
 ];
 
@@ -33,14 +35,13 @@ export function ContentMarketersOutcomes() {
 
         <div className="reveal reveal-delay-2 mx-auto mt-10 grid max-w-[600px] gap-4 sm:grid-cols-3">
           {outcomes.map((item) => {
-            const Icon = item.icon;
             return (
               <div
                 key={item.label}
                 className="rounded-xl border border-border-light bg-white px-5 py-6 text-center transition-all duration-200 hover:border-border hover:shadow-sm"
               >
                 <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-xl bg-accent-bg">
-                  <Icon className="h-5 w-5 text-accent" strokeWidth={1.5} />
+                  <Icon icon={item.icon} size="md" className="text-accent" strokeWidth={1.5} />
                 </div>
                 <p className="mt-3 text-[15px] font-semibold text-foreground">{item.label}</p>
                 <p className="mt-1 text-[13px] text-muted">{item.desc}</p>

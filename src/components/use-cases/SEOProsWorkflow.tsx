@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 const steps = [
   {
     id: "data",
@@ -295,8 +295,10 @@ export function SEOProsWorkflow() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span className="text-[14px] font-semibold text-foreground">{step.title}</span>
-                <ChevronDown
-                  className={`ml-auto h-4 w-4 shrink-0 text-muted transition-transform duration-200 ${
+                <Icon
+                  icon={Icons.chevronDown}
+                  size="sm"
+                  className={`ml-auto text-muted transition-transform duration-200 ${
                     activeTab === i ? "rotate-180" : ""
                   }`}
                 />

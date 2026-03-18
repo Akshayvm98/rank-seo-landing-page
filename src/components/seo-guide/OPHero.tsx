@@ -1,4 +1,5 @@
-import { CheckCircle, Link } from "lucide-react";
+"use client";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export function OPHero() {
   return (
@@ -53,7 +54,7 @@ export function OPHero() {
               <div className="rounded-lg border border-accent/15 bg-accent-bg/30 px-4 py-2.5">
                 <div className="flex items-center justify-between mb-0.5">
                   <span className="text-[10px] font-semibold uppercase tracking-wide text-accent">Title tag</span>
-                  <CheckCircle className="h-3.5 w-3.5 text-success" />
+                  <Icon icon={Icons.checkCircle} size="sm" className="text-success" />
                 </div>
                 <p className="text-[13px] font-medium text-foreground">How to Automate SEO for Small Business | RankSEO</p>
                 <p className="mt-0.5 text-[11px] text-muted-light">58 characters · Includes primary keyword</p>
@@ -82,7 +83,7 @@ export function OPHero() {
                   <div className="space-y-1">
                     {["Keyword Research", "Content SEO", "Pricing"].map((link) => (
                       <div key={link} className="flex items-center gap-1.5 text-[11px]">
-                        <Link className="h-2.5 w-2.5 text-accent" />
+                        <Icon icon={Icons.link} size="sm" className="text-accent" />
                         <span className="text-accent">{link}</span>
                       </div>
                     ))}

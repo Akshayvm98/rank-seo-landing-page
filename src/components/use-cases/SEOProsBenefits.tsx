@@ -1,30 +1,32 @@
-import { type LucideIcon, Clock, Zap, CheckCircle, TrendingUp, Sparkles } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const benefits: { title: string; desc: string; icon: LucideIcon }[] = [
   {
     title: "Spend less time on repetitive operational work",
     desc: "Automate keyword expansion, draft generation, and optimization checks so you can focus on what matters.",
-    icon: Clock,
+    icon: Icons.clock,
   },
   {
     title: "Move faster from research to live content",
     desc: "Connect the steps between keyword discovery and publishing into a single workflow.",
-    icon: Zap,
+    icon: Icons.zap,
   },
   {
     title: "Keep optimization quality more consistent",
     desc: "Every piece of content is scored for SEO, readability, and structure before it goes live.",
-    icon: CheckCircle,
+    icon: Icons.checkCircle,
   },
   {
     title: "Scale content production without adding unnecessary process",
     desc: "Increase output without adding headcount or layering on more tools.",
-    icon: TrendingUp,
+    icon: Icons.trendingUp,
   },
   {
     title: "Free up time for higher-level SEO decisions",
     desc: "Spend more time on strategy, analysis, and growth instead of coordination.",
-    icon: Sparkles,
+    icon: Icons.sparkles,
   },
 ];
 
@@ -38,14 +40,13 @@ export function SEOProsBenefits() {
 
         <div className="reveal reveal-delay-1 mt-10 space-y-3">
           {benefits.map((benefit, i) => {
-            const Icon = benefit.icon;
             return (
               <div
                 key={benefit.title}
                 className={`reveal reveal-delay-${Math.min(i + 1, 4)} flex items-start gap-4 rounded-xl border border-border-light bg-white p-5 transition-all duration-200 hover:border-border hover:shadow-sm`}
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg">
-                  <Icon className="h-5 w-5 text-accent" strokeWidth={1.5} />
+                  <Icon icon={benefit.icon} size="md" className="text-accent" strokeWidth={1.5} />
                 </div>
                 <div>
                   <h3 className="text-[15px] font-semibold text-foreground">{benefit.title}</h3>

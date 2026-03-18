@@ -1,12 +1,14 @@
-import { type LucideIcon, Search, Table, PenLine, Globe, BarChart3, ClipboardList } from "lucide-react";
+"use client";
+import type { LucideIcon } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 const tools: { label: string; icon: LucideIcon; status: string; statusColor: string }[] = [
-  { label: "Keyword Tool", icon: Search, status: "Exported CSV", statusColor: "text-amber-600 bg-amber-50" },
-  { label: "Google Sheets", icon: Table, status: "Out of date", statusColor: "text-red-500 bg-red-50" },
-  { label: "AI Writer", icon: PenLine, status: "No SEO data", statusColor: "text-muted bg-border-light" },
-  { label: "CMS Dashboard", icon: Globe, status: "Waiting", statusColor: "text-amber-600 bg-amber-50" },
-  { label: "Analytics", icon: BarChart3, status: "Disconnected", statusColor: "text-red-500 bg-red-50" },
-  { label: "Project Board", icon: ClipboardList, status: "Stale tasks", statusColor: "text-muted bg-border-light" },
+  { label: "Keyword Tool", icon: Icons.search, status: "Exported CSV", statusColor: "text-amber-600 bg-amber-50" },
+  { label: "Google Sheets", icon: Icons.table, status: "Out of date", statusColor: "text-red-500 bg-red-50" },
+  { label: "AI Writer", icon: Icons.penLine, status: "No SEO data", statusColor: "text-muted bg-border-light" },
+  { label: "CMS Dashboard", icon: Icons.globe, status: "Waiting", statusColor: "text-amber-600 bg-amber-50" },
+  { label: "Analytics", icon: Icons.barChart, status: "Disconnected", statusColor: "text-red-500 bg-red-50" },
+  { label: "Project Board", icon: Icons.clipboardList, status: "Stale tasks", statusColor: "text-muted bg-border-light" },
 ];
 
 export function ContentMarketersProblem() {
@@ -59,7 +61,6 @@ export function ContentMarketersProblem() {
 
               <div className="grid grid-cols-2 gap-3">
                 {tools.map((tool, i) => {
-                  const Icon = tool.icon;
                   return (
                     <div
                       key={i}
@@ -67,7 +68,7 @@ export function ContentMarketersProblem() {
                     >
                       <div className="flex items-center gap-2">
                         <div className="flex h-6 w-6 items-center justify-center rounded-md bg-border-light">
-                          <Icon className="h-3.5 w-3.5 text-muted" strokeWidth={1.5} />
+                          <Icon icon={tool.icon} size="sm" className="text-muted" strokeWidth={1.5} />
                         </div>
                         <span className="text-[12px] font-medium text-foreground">{tool.label}</span>
                       </div>

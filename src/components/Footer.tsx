@@ -108,8 +108,8 @@ export function Footer() {
             &copy; 2026 Rank SEO. All rights reserved.
           </p>
           <div className="flex gap-6 text-[13px] text-muted">
-            <a href="#" className="transition-colors hover:text-foreground">Privacy Policy</a>
-            <a href="#" className="transition-colors hover:text-foreground">Terms and Conditions</a>
+            <a href="/privacy-policy" className="transition-colors hover:text-foreground">Privacy Policy</a>
+            <a href="/terms-and-conditions" className="transition-colors hover:text-foreground">Terms and Conditions</a>
           </div>
         </div>
       </div>

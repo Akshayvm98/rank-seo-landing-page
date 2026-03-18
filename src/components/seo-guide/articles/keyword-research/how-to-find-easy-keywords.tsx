@@ -1,3 +1,4 @@
+"use client";
 import {
   ArticleHero,
   Section,
@@ -6,7 +7,7 @@ import {
   NumberedList,
   Callout,
 } from "@/components/seo-guide/ArticleBlocks";
-import { AlertTriangle, Check, ChevronDown } from "lucide-react";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 export default function HowToFindEasyKeywords() {
   return (
@@ -126,7 +127,7 @@ export default function HowToFindEasyKeywords() {
                       </span>
                     </div>
                     {i < 4 && (
-                      <ChevronDown className="h-4 w-4 text-accent/40" strokeWidth={1.5} />
+                      <Icon icon={Icons.chevronDown} size="sm" strokeWidth={1.5} className="text-accent/40" />
                     )}
                   </div>
                   {i < 4 && (
@@ -194,7 +195,7 @@ export default function HowToFindEasyKeywords() {
             <div className="rounded-2xl border border-black/[0.06] bg-white p-5 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.06)]">
               <div className="mb-3 flex items-center gap-2">
                 <span className="flex h-5 w-5 items-center justify-center rounded-md bg-amber-50 text-amber-500">
-                  <AlertTriangle className="h-3 w-3" fill="currentColor" />
+                  <Icon icon={Icons.alertTriangle} size="sm" fill="currentColor" />
                 </span>
                 <span className="text-[13px] font-semibold text-foreground">
                   Current top results
@@ -225,7 +226,7 @@ export default function HowToFindEasyKeywords() {
             <div className="rounded-2xl border border-accent-muted/40 bg-gradient-to-b from-accent-bg/30 to-white p-5 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.06)]">
               <div className="mb-3 flex items-center gap-2">
                 <span className="flex h-5 w-5 items-center justify-center rounded-md bg-accent-bg text-accent">
-                  <Check className="h-3 w-3" fill="currentColor" />
+                  <Icon icon={Icons.check} size="sm" fill="currentColor" />
                 </span>
                 <span className="text-[13px] font-semibold text-foreground">
                   Your optimized page
