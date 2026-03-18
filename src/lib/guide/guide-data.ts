@@ -37,6 +37,7 @@ const pillar: GuidePillarPage = {
     "technical-seo",
     "link-building",
     "seo-analytics",
+    "seo-strategy",
   ],
 };
 
@@ -162,6 +163,29 @@ const topics: GuideTopicPage[] = [
     twitterDescription:
       "Practical link building strategies that improve SEO without spammy tactics.",
     relatedIds: ["content-seo", "on-page-seo", "seo-analytics"],
+  },
+  {
+    id: "seo-strategy",
+    type: "topic",
+    title: "SEO Strategy Guide",
+    slug: "seo-strategy",
+    topicSlug: "seo-strategy",
+    excerpt: "Plan your SEO strategy with realistic timelines and priorities",
+    category: "Strategy",
+    order: 7,
+    published: true,
+    lastUpdated: "2026-03-18",
+    seoTitle: "SEO Strategy Guide | Plan Your SEO With Realistic Timelines",
+    seoDescription:
+      "Learn how to plan an effective SEO strategy with realistic timelines, priorities, and actionable steps that deliver results.",
+    ogTitle: "SEO Strategy Guide | RankSEO",
+    ogDescription:
+      "Plan your SEO strategy with realistic timelines and clear priorities.",
+    ogImage: "/og-image.png",
+    twitterTitle: "SEO Strategy Guide | RankSEO",
+    twitterDescription:
+      "Plan your SEO strategy with realistic timelines and actionable priorities.",
+    relatedIds: ["keyword-research", "content-seo", "seo-analytics"],
   },
   {
     id: "seo-analytics",
@@ -447,6 +471,266 @@ const articles: GuideArticlePage[] = [
     twitterDescription:
       "How internal linking improves your SEO more than you think — practical strategies included.",
     relatedIds: ["on-page-seo", "keyword-clustering", "content-optimization", "seo-analytics"],
+  },
+  {
+    id: "how-to-find-low-competition-keywords",
+    type: "article",
+    title: "How to Find Low Competition Keywords",
+    slug: "how-to-find-low-competition-keywords",
+    topicSlug: "keyword-research",
+    excerpt:
+      "Learn how to find low competition keywords that are easier to rank for using a step-by-step process.",
+    category: "Keyword Research",
+    order: 1.5,
+    published: true,
+    lastUpdated: "2026-03-18",
+    readingTime: 10,
+    seoTitle:
+      "How to Find Low Competition Keywords (Step-by-Step Guide)",
+    seoDescription:
+      "Learn how to find low competition keywords that are easier to rank for. A step-by-step process with examples, tools, and a practical checklist.",
+    ogTitle: "How to Find Low Competition Keywords | RankSEO",
+    ogDescription:
+      "Find low competition keywords you can actually rank for with this step-by-step guide.",
+    ogImage: "/og-image.png",
+    twitterTitle: "How to Find Low Competition Keywords | RankSEO",
+    twitterDescription:
+      "Step-by-step guide to finding low competition keywords that are easier to rank for.",
+    relatedIds: ["keyword-research", "how-to-find-easy-keywords", "keyword-difficulty", "search-intent"],
+  },
+  {
+    id: "ai-content-seo",
+    type: "article",
+    title: "AI Content SEO",
+    slug: "ai-content-seo",
+    topicSlug: "content-seo",
+    excerpt:
+      "Learn how to rank with AI-generated content by combining automation with quality and intent.",
+    category: "Content",
+    order: 2.5,
+    published: true,
+    lastUpdated: "2026-03-18",
+    readingTime: 10,
+    seoTitle:
+      "AI Content SEO: How to Rank with AI-Generated Content",
+    seoDescription:
+      "Learn how to rank with AI-generated content. Practical guide to making AI content SEO-friendly with quality, structure, and originality.",
+    ogTitle: "AI Content SEO | RankSEO",
+    ogDescription:
+      "How to rank with AI-generated content — practical SEO strategies that work.",
+    ogImage: "/og-image.png",
+    twitterTitle: "AI Content SEO | RankSEO",
+    twitterDescription:
+      "Learn how to make AI-generated content rank on Google with practical SEO strategies.",
+    relatedIds: ["content-seo", "how-to-write-seo-articles", "content-optimization", "search-intent"],
+  },
+  {
+    id: "blog-seo-checklist",
+    type: "article",
+    title: "Blog SEO Checklist",
+    slug: "blog-seo-checklist",
+    topicSlug: "content-seo",
+    excerpt:
+      "Use this 15-step blog SEO checklist to optimize every article for search, traffic, and visibility.",
+    category: "Content",
+    order: 2.6,
+    published: true,
+    lastUpdated: "2026-03-18",
+    readingTime: 9,
+    seoTitle:
+      "Blog SEO Checklist: 15 Steps to Optimize Every Post",
+    seoDescription:
+      "Use this blog SEO checklist to optimize every article for search. 15 simple steps to improve rankings, traffic, and visibility.",
+    ogTitle: "Blog SEO Checklist | RankSEO",
+    ogDescription:
+      "15-step blog SEO checklist to optimize every post for better rankings.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Blog SEO Checklist | RankSEO",
+    twitterDescription:
+      "Optimize every blog post with this 15-step SEO checklist.",
+    relatedIds: ["content-seo", "how-to-write-seo-articles", "content-optimization", "title-tags", "internal-linking"],
+  },
+  {
+    id: "how-to-update-old-content",
+    type: "article",
+    title: "How to Update Old Content for SEO",
+    slug: "how-to-update-old-content",
+    topicSlug: "content-seo",
+    excerpt:
+      "Learn how to update old content for SEO and improve rankings with a step-by-step refresh process.",
+    category: "Content",
+    order: 2.7,
+    published: true,
+    lastUpdated: "2026-03-18",
+    readingTime: 9,
+    seoTitle:
+      "How to Update Old Content for SEO (Step-by-Step Guide)",
+    seoDescription:
+      "Learn how to update old content for SEO and improve rankings. A step-by-step guide to refresh and optimize existing articles.",
+    ogTitle: "How to Update Old Content for SEO | RankSEO",
+    ogDescription:
+      "Step-by-step guide to refreshing old content for better SEO rankings.",
+    ogImage: "/og-image.png",
+    twitterTitle: "How to Update Old Content for SEO | RankSEO",
+    twitterDescription:
+      "How to update and refresh old content to improve your SEO rankings.",
+    relatedIds: ["content-seo", "content-optimization", "blog-seo-checklist", "internal-linking"],
+  },
+  {
+    id: "how-long-does-seo-take",
+    type: "article",
+    title: "How Long Does SEO Take",
+    slug: "how-long-does-seo-take",
+    topicSlug: "seo-strategy",
+    excerpt:
+      "Learn how long SEO takes to show results with realistic timelines and factors that affect speed.",
+    category: "Strategy",
+    order: 7.1,
+    published: true,
+    lastUpdated: "2026-03-18",
+    readingTime: 10,
+    seoTitle:
+      "How Long Does SEO Take? Realistic Timeline Explained",
+    seoDescription:
+      "Learn how long SEO takes to show results. Realistic timelines by strategy type, factors that affect speed, and how to accelerate growth.",
+    ogTitle: "How Long Does SEO Take | RankSEO",
+    ogDescription:
+      "Realistic SEO timelines — how long it takes and what affects the speed of results.",
+    ogImage: "/og-image.png",
+    twitterTitle: "How Long Does SEO Take | RankSEO",
+    twitterDescription:
+      "How long does SEO take? Realistic timelines and factors that affect your results.",
+    relatedIds: ["seo-strategy", "keyword-difficulty", "how-to-find-low-competition-keywords", "content-seo"],
+  },
+  {
+    id: "semantic-keywords",
+    type: "article",
+    title: "Semantic Keywords Explained",
+    slug: "semantic-keywords",
+    topicSlug: "keyword-research",
+    excerpt:
+      "Learn what semantic keywords are and how to use them to improve SEO with better content context.",
+    category: "Keyword Research",
+    order: 1.6,
+    published: true,
+    lastUpdated: "2026-03-18",
+    readingTime: 9,
+    seoTitle:
+      "Semantic Keywords: What They Are and How to Use Them for SEO",
+    seoDescription:
+      "Learn what semantic keywords are and how to use them to improve SEO. A practical guide to ranking with better content context.",
+    ogTitle: "Semantic Keywords Explained | RankSEO",
+    ogDescription:
+      "What semantic keywords are and how to use them to improve your SEO rankings.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Semantic Keywords Explained | RankSEO",
+    twitterDescription:
+      "Learn what semantic keywords are and how to use them for better SEO results.",
+    relatedIds: ["keyword-research", "keyword-clustering", "search-intent", "how-to-find-easy-keywords"],
+  },
+  {
+    id: "how-to-improve-ctr",
+    type: "article",
+    title: "How to Improve CTR in SEO",
+    slug: "how-to-improve-ctr",
+    topicSlug: "seo-analytics",
+    excerpt:
+      "Learn how to improve your CTR in SEO and get more clicks from Google without ranking higher.",
+    category: "Analytics",
+    order: 6.1,
+    published: true,
+    lastUpdated: "2026-03-18",
+    readingTime: 10,
+    seoTitle:
+      "How to Improve CTR in SEO (Increase Clicks Without Ranking Higher)",
+    seoDescription:
+      "Learn how to improve your CTR in SEO and get more clicks from Google without ranking higher. Practical tips that work.",
+    ogTitle: "How to Improve CTR in SEO | RankSEO",
+    ogDescription:
+      "Get more clicks from Google without ranking higher — practical CTR optimization tips.",
+    ogImage: "/og-image.png",
+    twitterTitle: "How to Improve CTR in SEO | RankSEO",
+    twitterDescription:
+      "How to improve your click-through rate in SEO and get more traffic from existing rankings.",
+    relatedIds: ["seo-analytics", "title-tags", "content-optimization", "search-intent"],
+  },
+  {
+    id: "robots-txt-guide",
+    type: "article",
+    title: "Robots.txt Guide",
+    slug: "robots-txt-guide",
+    topicSlug: "technical-seo",
+    excerpt:
+      "Learn how to use robots.txt for SEO with simple examples. Control how search engines crawl your site.",
+    category: "On-Page",
+    order: 4.1,
+    published: true,
+    lastUpdated: "2026-03-18",
+    readingTime: 9,
+    seoTitle:
+      "Robots.txt Guide: How to Use It for SEO (With Examples)",
+    seoDescription:
+      "Learn how to use robots.txt for SEO with simple examples. Avoid common mistakes and control how search engines crawl your site.",
+    ogTitle: "Robots.txt Guide | RankSEO",
+    ogDescription:
+      "How to use robots.txt for SEO — simple examples and common mistakes to avoid.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Robots.txt Guide | RankSEO",
+    twitterDescription:
+      "Learn how to use robots.txt for SEO with practical examples and best practices.",
+    relatedIds: ["technical-seo", "on-page-seo", "content-seo"],
+  },
+  {
+    id: "seo-for-startups",
+    type: "article",
+    title: "SEO for Startups",
+    slug: "seo-for-startups",
+    topicSlug: "seo-strategy",
+    excerpt:
+      "Learn how startups can use SEO to get their first organic traffic with a simple, practical framework.",
+    category: "Strategy",
+    order: 7.2,
+    published: true,
+    lastUpdated: "2026-03-18",
+    readingTime: 9,
+    seoTitle:
+      "SEO for Startups: A Simple Guide to Getting Your First Organic Traffic",
+    seoDescription:
+      "Learn how startups can use SEO to get their first users. A simple, practical guide to growing organic traffic without a big team.",
+    ogTitle: "SEO for Startups | RankSEO",
+    ogDescription:
+      "A simple guide to getting your first organic traffic as a startup.",
+    ogImage: "/og-image.png",
+    twitterTitle: "SEO for Startups | RankSEO",
+    twitterDescription:
+      "How startups can use SEO to get their first organic traffic — simple, practical, no big team required.",
+    relatedIds: ["seo-strategy", "how-to-find-easy-keywords", "how-to-write-seo-articles", "content-optimization"],
+  },
+  {
+    id: "seo-writing-mistakes",
+    type: "article",
+    title: "10 SEO Writing Mistakes",
+    slug: "seo-writing-mistakes",
+    topicSlug: "content-seo",
+    excerpt:
+      "Avoid these common SEO writing mistakes that hurt your rankings. Learn what to fix and how to improve your content.",
+    category: "Content",
+    order: 2.8,
+    published: true,
+    lastUpdated: "2026-03-18",
+    readingTime: 10,
+    seoTitle:
+      "10 SEO Writing Mistakes That Are Killing Your Rankings",
+    seoDescription:
+      "Avoid these common SEO writing mistakes that hurt your rankings. Learn what to fix and how to improve your content.",
+    ogTitle: "10 SEO Writing Mistakes | RankSEO",
+    ogDescription:
+      "Common SEO writing mistakes that hurt your rankings — and how to fix them.",
+    ogImage: "/og-image.png",
+    twitterTitle: "10 SEO Writing Mistakes | RankSEO",
+    twitterDescription:
+      "Avoid these SEO writing mistakes that are killing your rankings. Practical fixes included.",
+    relatedIds: ["content-seo", "search-intent", "how-to-write-seo-articles", "content-optimization", "title-tags"],
   },
 ];
 
