@@ -8,31 +8,12 @@ import { TSExamples } from "@/components/seo-guide/TSExamples";
 import { TSMistakes } from "@/components/seo-guide/TSMistakes";
 import { TSHowRankSEO } from "@/components/seo-guide/TSHowRankSEO";
 import { TSCTA } from "@/components/seo-guide/TSCTA";
+import { GuideRelated } from "@/components/seo-guide/GuideRelated";
+import { getTopicBySlug, buildGuideMetadata } from "@/lib/guide";
 
-const pageUrl = "https://rankseoengine.com/seo-guide/technical-seo";
+const page = getTopicBySlug("technical-seo")!;
 
-export const metadata: Metadata = {
-  title: "Technical SEO Guide | Improve Crawlability, Speed, and Indexing",
-  description:
-    "Learn the technical SEO basics that actually matter, including crawlability, indexing, site speed, Core Web Vitals, sitemaps, and robots.txt.",
-  openGraph: {
-    title: "Technical SEO Guide | RankSEO",
-    description:
-      "Learn the technical SEO improvements that help pages get crawled, indexed, and loaded faster.",
-    url: pageUrl,
-    images: ["/og-image.png"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Technical SEO Guide | RankSEO",
-    description:
-      "Learn the technical SEO improvements that help pages get crawled, indexed, and loaded faster.",
-    images: ["/og-image.png"],
-  },
-  alternates: {
-    canonical: pageUrl,
-  },
-};
+export const metadata: Metadata = buildGuideMetadata(page);
 
 export default function TechnicalSEOPage() {
   return (
@@ -45,6 +26,7 @@ export default function TechnicalSEOPage() {
       <TSMistakes />
       <TSHowRankSEO />
       <TSCTA />
+      <GuideRelated pathname="/seo-guide/technical-seo" />
     </GuideLayout>
   );
 }

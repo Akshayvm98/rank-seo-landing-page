@@ -1,11 +1,13 @@
 "use client";
 
-import { guideStructure } from "./GuideNav";
+import { getNavGroups } from "@/lib/guide";
+
+const navGroups = getNavGroups();
 
 export function GuideSidebar({ currentPath }: { currentPath: string }) {
   return (
     <nav className="space-y-6" aria-label="SEO Guide navigation">
-      {guideStructure.map((group) => (
+      {navGroups.map((group) => (
         <div key={group.category}>
           <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-muted-light">
             {group.category}

@@ -8,32 +8,12 @@ import { KRExample } from "@/components/seo-guide/KRExample";
 import { KRMistakes } from "@/components/seo-guide/KRMistakes";
 import { KRHowRankSEO } from "@/components/seo-guide/KRHowRankSEO";
 import { KRCTA } from "@/components/seo-guide/KRCTA";
-import { KRRelated } from "@/components/seo-guide/KRRelated";
+import { GuideRelated } from "@/components/seo-guide/GuideRelated";
+import { getTopicBySlug, buildGuideMetadata } from "@/lib/guide";
 
-const pageUrl = "https://rankseoengine.com/seo-guide/keyword-research";
+const page = getTopicBySlug("keyword-research")!;
 
-export const metadata: Metadata = {
-  title: "Keyword Research Guide | Find Keywords You Can Actually Rank For",
-  description:
-    "Learn how to find SEO keywords you can actually rank for using real data. Step-by-step keyword research guide with practical workflows and examples.",
-  openGraph: {
-    title: "Keyword Research Guide | RankSEO",
-    description:
-      "Find keywords you can actually rank for using real data and smarter workflows.",
-    url: pageUrl,
-    images: ["/og-image.png"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Keyword Research Guide | RankSEO",
-    description:
-      "Find keywords you can actually rank for using real data and smarter workflows.",
-    images: ["/og-image.png"],
-  },
-  alternates: {
-    canonical: pageUrl,
-  },
-};
+export const metadata: Metadata = buildGuideMetadata(page);
 
 export default function KeywordResearchPage() {
   return (
@@ -46,7 +26,7 @@ export default function KeywordResearchPage() {
       <KRMistakes />
       <KRHowRankSEO />
       <KRCTA />
-      <KRRelated />
+      <GuideRelated pathname="/seo-guide/keyword-research" />
     </GuideLayout>
   );
 }

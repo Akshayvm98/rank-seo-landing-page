@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getGuideSitemapEntries } from "@/lib/guide";
 
 const siteUrl = "https://rankseoengine.com";
 
@@ -76,47 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    {
-      url: `${siteUrl}/seo-guide`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${siteUrl}/seo-guide/keyword-research`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${siteUrl}/seo-guide/content-seo`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${siteUrl}/seo-guide/on-page-seo`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${siteUrl}/seo-guide/technical-seo`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${siteUrl}/seo-guide/link-building`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${siteUrl}/seo-guide/seo-analytics`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
+    // SEO Guide pages — auto-generated from guide data registry
+    ...getGuideSitemapEntries(),
   ];
 }

@@ -5,7 +5,7 @@ import { GuideTOC } from "./GuideTOC";
 import { GuideBreadcrumb } from "./GuideBreadcrumb";
 import { GuidePrevNext } from "./GuidePrevNext";
 import { GuideMobileNav } from "./GuideMobileNav";
-import { getPageTitle, getPrevNext } from "./GuideNav";
+import { getPrevNext } from "@/lib/guide";
 
 export function GuideLayout({
   pathname,
@@ -14,7 +14,6 @@ export function GuideLayout({
   pathname: string;
   children: React.ReactNode;
 }) {
-  const pageTitle = getPageTitle(pathname);
   const { prev, next } = getPrevNext(pathname);
 
   return (
@@ -31,7 +30,7 @@ export function GuideLayout({
 
           {/* Main content */}
           <div className="min-w-0">
-            <GuideBreadcrumb pageTitle={pageTitle} />
+            <GuideBreadcrumb pathname={pathname} />
             <GuideMobileNav currentPath={pathname} />
             <main>{children}</main>
             <GuidePrevNext prev={prev} next={next} />

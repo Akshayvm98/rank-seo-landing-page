@@ -8,32 +8,12 @@ import { CSExample } from "@/components/seo-guide/CSExample";
 import { CSMistakes } from "@/components/seo-guide/CSMistakes";
 import { CSHowRankSEO } from "@/components/seo-guide/CSHowRankSEO";
 import { CSCTA } from "@/components/seo-guide/CSCTA";
-import { CSRelated } from "@/components/seo-guide/CSRelated";
+import { GuideRelated } from "@/components/seo-guide/GuideRelated";
+import { getTopicBySlug, buildGuideMetadata } from "@/lib/guide";
 
-const pageUrl = "https://rankseoengine.com/seo-guide/content-seo";
+const page = getTopicBySlug("content-seo")!;
 
-export const metadata: Metadata = {
-  title: "Content SEO Guide | How to Write Content That Actually Ranks",
-  description:
-    "Learn how to create SEO content that is structured, relevant, and built to rank. Practical guide to writing and optimizing content for organic traffic.",
-  openGraph: {
-    title: "Content SEO Guide | RankSEO",
-    description:
-      "Learn how to write and optimize content that actually ranks.",
-    url: pageUrl,
-    images: ["/og-image.png"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Content SEO Guide | RankSEO",
-    description:
-      "Learn how to write and optimize content that actually ranks.",
-    images: ["/og-image.png"],
-  },
-  alternates: {
-    canonical: pageUrl,
-  },
-};
+export const metadata: Metadata = buildGuideMetadata(page);
 
 export default function ContentSEOPage() {
   return (
@@ -46,7 +26,7 @@ export default function ContentSEOPage() {
       <CSMistakes />
       <CSHowRankSEO />
       <CSCTA />
-      <CSRelated />
+      <GuideRelated pathname="/seo-guide/content-seo" />
     </GuideLayout>
   );
 }

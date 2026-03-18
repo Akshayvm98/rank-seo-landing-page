@@ -8,31 +8,12 @@ import { OPExample } from "@/components/seo-guide/OPExample";
 import { OPMistakes } from "@/components/seo-guide/OPMistakes";
 import { OPHowRankSEO } from "@/components/seo-guide/OPHowRankSEO";
 import { OPCTA } from "@/components/seo-guide/OPCTA";
+import { GuideRelated } from "@/components/seo-guide/GuideRelated";
+import { getTopicBySlug, buildGuideMetadata } from "@/lib/guide";
 
-const pageUrl = "https://rankseoengine.com/seo-guide/on-page-seo";
+const page = getTopicBySlug("on-page-seo")!;
 
-export const metadata: Metadata = {
-  title: "On-Page SEO Guide | How to Optimize Pages for Better Rankings",
-  description:
-    "Learn how on-page SEO works, what actually matters, and how to improve titles, headings, internal links, metadata, and page structure for better rankings.",
-  openGraph: {
-    title: "On-Page SEO Guide | RankSEO",
-    description:
-      "Learn how to optimize pages with better titles, structure, links, and metadata.",
-    url: pageUrl,
-    images: ["/og-image.png"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "On-Page SEO Guide | RankSEO",
-    description:
-      "Practical on-page SEO guide for titles, headings, metadata, and page structure.",
-    images: ["/og-image.png"],
-  },
-  alternates: {
-    canonical: pageUrl,
-  },
-};
+export const metadata: Metadata = buildGuideMetadata(page);
 
 export default function OnPageSEOPage() {
   return (
@@ -45,6 +26,7 @@ export default function OnPageSEOPage() {
       <OPMistakes />
       <OPHowRankSEO />
       <OPCTA />
+      <GuideRelated pathname="/seo-guide/on-page-seo" />
     </GuideLayout>
   );
 }
