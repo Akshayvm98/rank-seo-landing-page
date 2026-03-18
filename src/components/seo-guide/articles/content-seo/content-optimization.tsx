@@ -6,6 +6,7 @@ import {
   BulletList,
   NumberedList,
   Callout,
+  FaqSection,
 } from "@/components/seo-guide/ArticleBlocks";
 import { Icon, Icons } from "@/components/ui/Icon";
 
@@ -428,6 +429,70 @@ export default function ContentOptimization() {
           .
         </Paragraph>
       </Section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* FAQ */}
+      {/* ------------------------------------------------------------------ */}
+      <FaqSection
+        faqs={[
+          {
+            question: "How often should I update my content?",
+            answer: (
+              <p>
+                Review your top-performing pages every 3–6 months and update any that show declining rankings or outdated information. Pages in competitive niches may need quarterly updates, while evergreen content might only need a yearly refresh.
+              </p>
+            ),
+            answerText: "Review your top-performing pages every 3–6 months and update any that show declining rankings or outdated information. Pages in competitive niches may need quarterly updates, while evergreen content might only need a yearly refresh.",
+          },
+          {
+            question: "Which content should I optimize first?",
+            answer: (
+              <p>
+                Start with pages ranking in positions 5–20. These are close to page 1 and have the highest potential return on investment. Small improvements can push them into top positions. Pages stuck beyond position 30 may need a{" "}
+                <a href="/seo-guide/content-seo/why-your-content-is-not-ranking" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">different strategy</a>.
+              </p>
+            ),
+            answerText: "Start with pages ranking in positions 5–20. These are close to page 1 and have the highest potential return on investment. Small improvements can push them into top positions. Pages stuck beyond position 30 may need a different strategy.",
+          },
+          {
+            question: "Does content length matter for SEO?",
+            answer: (
+              <p>
+                Length itself is not a ranking factor. What matters is completeness — covering the topic thoroughly enough that the reader does not need to search again. Sometimes that takes 800 words, sometimes 2,500. Match the depth to the query, not an arbitrary word count.
+              </p>
+            ),
+            answerText: "Length itself is not a ranking factor. What matters is completeness — covering the topic thoroughly enough that the reader does not need to search again. Sometimes that takes 800 words, sometimes 2,500. Match the depth to the query, not an arbitrary word count.",
+          },
+          {
+            question: "How do I know if my content needs updating?",
+            answer: (
+              <p>
+                Check Google Search Console for declining impressions, clicks, or average position. Also look for outdated statistics, broken links, or missing sections that competitors now cover. If the page has slipped from its peak position, optimization is likely needed.
+              </p>
+            ),
+            answerText: "Check Google Search Console for declining impressions, clicks, or average position. Also look for outdated statistics, broken links, or missing sections that competitors now cover. If the page has slipped from its peak position, optimization is likely needed.",
+          },
+          {
+            question: "What is the difference between optimizing and rewriting?",
+            answer: (
+              <p>
+                Optimization means improving what exists — better headings, updated info, added sections, stronger{" "}
+                <a href="/seo-guide/on-page-seo/title-tags" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">title tags</a>. Rewriting means replacing the content entirely. Optimization is almost always the better first step because it preserves existing ranking signals.
+              </p>
+            ),
+            answerText: "Optimization means improving what exists — better headings, updated info, added sections, stronger title tags. Rewriting means replacing the content entirely. Optimization is almost always the better first step because it preserves existing ranking signals.",
+          },
+          {
+            question: "How long does it take for optimization to impact rankings?",
+            answer: (
+              <p>
+                Most content optimizations take 2–4 weeks to show results in rankings, though some changes — like improving title tags for better CTR — can impact traffic within days. Monitor your pages in Google Search Console after making changes.
+              </p>
+            ),
+            answerText: "Most content optimizations take 2–4 weeks to show results in rankings, though some changes — like improving title tags for better CTR — can impact traffic within days. Monitor your pages in Google Search Console after making changes.",
+          },
+        ]}
+      />
 
       {/* ------------------------------------------------------------------ */}
       {/* CTA */}

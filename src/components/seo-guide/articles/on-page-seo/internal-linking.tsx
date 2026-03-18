@@ -5,6 +5,7 @@ import {
   BulletList,
   NumberedList,
   Callout,
+  FaqSection,
 } from "@/components/seo-guide/ArticleBlocks";
 
 export default function InternalLinking() {
@@ -428,6 +429,88 @@ export default function InternalLinking() {
           .
         </Paragraph>
       </Section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* FAQ */}
+      {/* ------------------------------------------------------------------ */}
+      <FaqSection
+        faqs={[
+          {
+            question: "How many internal links should each page have?",
+            answer: (
+              <p>
+                Aim for 3 to 8 internal links per article, depending on the length of the content. Every link should be contextually relevant and helpful to the reader. Longer, more comprehensive articles can naturally support more internal links, while shorter pieces should keep it to a few well-placed links.
+              </p>
+            ),
+            answerText:
+              "Aim for 3 to 8 internal links per article, depending on the length of the content. Every link should be contextually relevant and helpful to the reader. Longer, more comprehensive articles can naturally support more internal links, while shorter pieces should keep it to a few well-placed links.",
+          },
+          {
+            question: "What is the best anchor text for internal links?",
+            answer: (
+              <p>
+                Use descriptive anchor text that tells the reader what the linked page is about. Instead of generic text like &ldquo;click here&rdquo; or &ldquo;read more,&rdquo; use specific phrases like &ldquo;how to find easy keywords&rdquo; or &ldquo;content optimization guide.&rdquo; Vary your anchor text across different links to the same page to keep it natural.
+              </p>
+            ),
+            answerText:
+              "Use descriptive anchor text that tells the reader what the linked page is about. Instead of generic text like \"click here\" or \"read more,\" use specific phrases like \"how to find easy keywords\" or \"content optimization guide.\" Vary your anchor text across different links to the same page to keep it natural.",
+          },
+          {
+            question: "What are orphan pages and why do they matter?",
+            answer: (
+              <p>
+                Orphan pages are pages on your site that have no internal links pointing to them. Google discovers pages by following links, so orphan pages may never get crawled or indexed properly. They also receive no authority from other pages, making it much harder for them to rank. Regularly audit your site to find and link to orphan pages.
+              </p>
+            ),
+            answerText:
+              "Orphan pages are pages on your site that have no internal links pointing to them. Google discovers pages by following links, so orphan pages may never get crawled or indexed properly. They also receive no authority from other pages, making it much harder for them to rank. Regularly audit your site to find and link to orphan pages.",
+          },
+          {
+            question: "Does internal linking actually help SEO rankings?",
+            answer: (
+              <p>
+                Yes. Internal links help Google discover your pages, understand your site structure, and distribute authority across your content. Pages with more relevant internal links pointing to them tend to rank better. Building{" "}
+                <a
+                  href="/seo-guide/keyword-research/keyword-clustering"
+                  className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+                >
+                  topic clusters
+                </a>{" "}
+                with strong internal linking is one of the most effective and controllable SEO strategies.
+              </p>
+            ),
+            answerText:
+              "Yes. Internal links help Google discover your pages, understand your site structure, and distribute authority across your content. Pages with more relevant internal links pointing to them tend to rank better. Building topic clusters with strong internal linking is one of the most effective and controllable SEO strategies.",
+          },
+          {
+            question: "What is the difference between internal links and external links?",
+            answer: (
+              <p>
+                Internal links connect pages within the same website. External links point from your site to a different website, or from another site to yours. Both are valuable for SEO. Internal links help with site structure and authority distribution, while external links (especially inbound backlinks) build your site&apos;s overall authority.
+              </p>
+            ),
+            answerText:
+              "Internal links connect pages within the same website. External links point from your site to a different website, or from another site to yours. Both are valuable for SEO. Internal links help with site structure and authority distribution, while external links (especially inbound backlinks) build your site's overall authority.",
+          },
+          {
+            question: "How do I find internal linking opportunities on my site?",
+            answer: (
+              <p>
+                Search your own site for keywords related to the page you want to link to. Look for existing articles that mention the topic but do not link to it yet. Check your most-visited pages in analytics and add links from those high-traffic pages to newer or underperforming{" "}
+                <a
+                  href="/seo-guide/content-seo/content-optimization"
+                  className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+                >
+                  content that needs optimization
+                </a>
+                . Tools like Google Search Console can help you identify pages that share related queries.
+              </p>
+            ),
+            answerText:
+              "Search your own site for keywords related to the page you want to link to. Look for existing articles that mention the topic but do not link to it yet. Check your most-visited pages in analytics and add links from those high-traffic pages to newer or underperforming content that needs optimization. Tools like Google Search Console can help you identify pages that share related queries.",
+          },
+        ]}
+      />
 
       {/* ------------------------------------------------------------------ */}
       {/* CTA */}

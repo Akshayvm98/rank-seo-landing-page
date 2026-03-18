@@ -5,6 +5,7 @@ import {
   BulletList,
   NumberedList,
   Callout,
+  FaqSection,
 } from "@/components/seo-guide/ArticleBlocks";
 
 export default function KeywordDifficulty() {
@@ -377,6 +378,78 @@ export default function KeywordDifficulty() {
           .
         </Paragraph>
       </Section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* FAQ */}
+      {/* ------------------------------------------------------------------ */}
+      <FaqSection
+        faqs={[
+          {
+            question: "What is a good keyword difficulty score to target?",
+            answer: (
+              <p>
+                For newer or smaller sites, aim for keywords with a difficulty score between 0 and 30. Sites with some established authority can target scores up to 40 or 50. However, the score is only a starting point — always check the actual SERP to see who is ranking and whether their content is beatable. A score of 40 might be easy if the top results are thin or outdated.
+              </p>
+            ),
+            answerText:
+              "For newer or smaller sites, aim for keywords with a difficulty score between 0 and 30. Sites with some established authority can target scores up to 40 or 50. However, the score is only a starting point — always check the actual SERP to see who is ranking and whether their content is beatable. A score of 40 might be easy if the top results are thin or outdated.",
+          },
+          {
+            question: "Why do keyword difficulty scores differ between SEO tools?",
+            answer: (
+              <p>
+                Each tool uses a different formula. Some weight backlinks heavily, others factor in domain authority, content quality, or SERP features. Ahrefs, Moz, and Semrush can give wildly different scores for the same keyword because they measure different signals and use different scales. Use one tool consistently for relative comparisons rather than treating any single score as absolute truth.
+              </p>
+            ),
+            answerText:
+              "Each tool uses a different formula. Some weight backlinks heavily, others factor in domain authority, content quality, or SERP features. Ahrefs, Moz, and Semrush can give wildly different scores for the same keyword because they measure different signals and use different scales. Use one tool consistently for relative comparisons rather than treating any single score as absolute truth.",
+          },
+          {
+            question: "Can you rank for high difficulty keywords with a new site?",
+            answer: (
+              <p>
+                It is very difficult but not impossible. The strategy is to build topical authority first by ranking for{" "}
+                <a href="/seo-guide/keyword-research/how-to-find-easy-keywords" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">easier keywords</a>
+                {" "}in the same topic area, then gradually target harder terms as your site gains authority and backlinks. Trying to rank for high-difficulty keywords on day one almost always fails.
+              </p>
+            ),
+            answerText:
+              "It is very difficult but not impossible. The strategy is to build topical authority first by ranking for easier keywords in the same topic area, then gradually target harder terms as your site gains authority and backlinks. Trying to rank for high-difficulty keywords on day one almost always fails.",
+          },
+          {
+            question: "What is the difference between domain authority and keyword difficulty?",
+            answer: (
+              <p>
+                Domain authority measures the overall strength of your entire website based on backlinks and trust signals. Keyword difficulty estimates how hard it is to rank for a specific keyword based on the competition in the SERP. A high domain authority makes it easier to rank for harder keywords, but they are separate metrics. You can have strong domain authority and still struggle with a keyword if the SERP is dominated by even stronger sites.
+              </p>
+            ),
+            answerText:
+              "Domain authority measures the overall strength of your entire website based on backlinks and trust signals. Keyword difficulty estimates how hard it is to rank for a specific keyword based on the competition in the SERP. A high domain authority makes it easier to rank for harder keywords, but they are separate metrics. You can have strong domain authority and still struggle with a keyword if the SERP is dominated by even stronger sites.",
+          },
+          {
+            question: "How can I check keyword difficulty without paid tools?",
+            answer: (
+              <p>
+                Search the keyword in Google and manually evaluate the results. Look at who is ranking — are they large authority sites or smaller niche blogs? Check if the content is thorough or thin. Look for outdated pages, forums, or user-generated content in the top results, which signal weaker competition. This manual SERP analysis is often more accurate than any automated score.
+              </p>
+            ),
+            answerText:
+              "Search the keyword in Google and manually evaluate the results. Look at who is ranking — are they large authority sites or smaller niche blogs? Check if the content is thorough or thin. Look for outdated pages, forums, or user-generated content in the top results, which signal weaker competition. This manual SERP analysis is often more accurate than any automated score.",
+          },
+          {
+            question: "Should beginners avoid hard keywords entirely?",
+            answer: (
+              <p>
+                Not entirely, but you should prioritize easier wins first. Start by targeting low-difficulty keywords to build traffic and authority, then work your way up. You can still create content for harder keywords as part of a long-term{" "}
+                <a href="/seo-guide/keyword-research/keyword-clustering" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">keyword cluster</a>
+                {" "}strategy — just do not expect those pages to rank quickly. Think of hard keywords as a 6 to 12 month investment rather than a quick win.
+              </p>
+            ),
+            answerText:
+              "Not entirely, but you should prioritize easier wins first. Start by targeting low-difficulty keywords to build traffic and authority, then work your way up. You can still create content for harder keywords as part of a long-term keyword cluster strategy — just do not expect those pages to rank quickly. Think of hard keywords as a 6 to 12 month investment rather than a quick win.",
+          },
+        ]}
+      />
 
       {/* ------------------------------------------------------------------ */}
       {/* CTA */}

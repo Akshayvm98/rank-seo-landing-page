@@ -5,6 +5,7 @@ import {
   BulletList,
   NumberedList,
   Callout,
+  FaqSection,
 } from "@/components/seo-guide/ArticleBlocks";
 
 export default function KeywordClustering() {
@@ -393,6 +394,81 @@ export default function KeywordClustering() {
           write and how to connect it.
         </Paragraph>
       </Section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* FAQ */}
+      {/* ------------------------------------------------------------------ */}
+      <FaqSection
+        faqs={[
+          {
+            question: "What is keyword clustering in SEO?",
+            answer: (
+              <p>
+                Keyword clustering is the process of grouping related keywords by meaning and{" "}
+                <a href="/seo-guide/keyword-research/search-intent" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">search intent</a>,
+                then using those groups to plan stronger content. Instead of targeting one keyword per page, you cover a cluster of related terms in a single comprehensive piece, helping it rank for more queries.
+              </p>
+            ),
+            answerText: "Keyword clustering is the process of grouping related keywords by meaning and search intent, then using those groups to plan stronger content. Instead of targeting one keyword per page, you cover a cluster of related terms in a single comprehensive piece, helping it rank for more queries.",
+          },
+          {
+            question: "How many keywords should be in a cluster?",
+            answer: (
+              <p>
+                There is no fixed number. A tight cluster might have 3–5 closely related keywords that belong on one page. A broader cluster could have 10–20 keywords that need a pillar page plus several supporting articles. The key is grouping by shared intent, not just word similarity.
+              </p>
+            ),
+            answerText: "There is no fixed number. A tight cluster might have 3–5 closely related keywords that belong on one page. A broader cluster could have 10–20 keywords that need a pillar page plus several supporting articles. The key is grouping by shared intent, not just word similarity.",
+          },
+          {
+            question: "What is keyword cannibalization?",
+            answer: (
+              <p>
+                Keyword cannibalization happens when multiple pages on your site compete for the same search query. Google does not know which page to rank, so it often ranks neither well. Clustering prevents this by identifying which keywords belong on one page versus separate pages before you publish.
+              </p>
+            ),
+            answerText: "Keyword cannibalization happens when multiple pages on your site compete for the same search query. Google does not know which page to rank, so it often ranks neither well. Clustering prevents this by identifying which keywords belong on one page versus separate pages before you publish.",
+          },
+          {
+            question: "What is a pillar page in SEO?",
+            answer: (
+              <p>
+                A pillar page is a comprehensive page that covers a broad topic at a high level and links to more detailed supporting articles on subtopics. It acts as the hub of a topic cluster. Supporting articles link back to the pillar, creating a clear structure that Google uses to understand your topical authority.
+              </p>
+            ),
+            answerText: "A pillar page is a comprehensive page that covers a broad topic at a high level and links to more detailed supporting articles on subtopics. It acts as the hub of a topic cluster. Supporting articles link back to the pillar, creating a clear structure that Google uses to understand your topical authority.",
+          },
+          {
+            question: "Should I use a tool for keyword clustering?",
+            answer: (
+              <p>
+                You can cluster keywords manually by checking SERPs and grouping by intent, which works well for a few topics. For larger sites or dozens of keywords, a tool like RankSEO can automatically group keywords by semantic similarity and shared intent, saving significant time and reducing errors.
+              </p>
+            ),
+            answerText: "You can cluster keywords manually by checking SERPs and grouping by intent, which works well for a few topics. For larger sites or dozens of keywords, a tool can automatically group keywords by semantic similarity and shared intent, saving significant time and reducing errors.",
+          },
+          {
+            question: "How do I know if keywords should be on one page or separate pages?",
+            answer: (
+              <p>
+                Search each keyword in Google. If the top results are the same pages for both keywords, they share the same intent and belong on one page. If the results are different, the keywords need separate pages. This SERP overlap test is the most reliable way to decide.
+              </p>
+            ),
+            answerText: "Search each keyword in Google. If the top results are the same pages for both keywords, they share the same intent and belong on one page. If the results are different, the keywords need separate pages. This SERP overlap test is the most reliable way to decide.",
+          },
+          {
+            question: "How does clustering connect to writing content?",
+            answer: (
+              <p>
+                Clustering turns a flat keyword list into a structured content plan. Each cluster becomes an article or page with clear scope, and the relationships between clusters define your{" "}
+                <a href="/seo-guide/content-seo/how-to-write-seo-articles" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">article writing</a>{" "}
+                priorities and internal linking strategy.
+              </p>
+            ),
+            answerText: "Clustering turns a flat keyword list into a structured content plan. Each cluster becomes an article or page with clear scope, and the relationships between clusters define your article writing priorities and internal linking strategy.",
+          },
+        ]}
+      />
 
       {/* ------------------------------------------------------------------ */}
       {/* CTA */}

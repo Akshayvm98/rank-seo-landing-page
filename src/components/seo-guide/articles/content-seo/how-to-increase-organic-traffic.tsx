@@ -6,6 +6,7 @@ import {
   BulletList,
   NumberedList,
   Callout,
+  FaqSection,
 } from "@/components/seo-guide/ArticleBlocks";
 import { Icon, Icons } from "@/components/ui/Icon";
 
@@ -365,6 +366,88 @@ export default function HowToIncreaseOrganicTraffic() {
           .
         </Paragraph>
       </Section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* FAQ */}
+      {/* ------------------------------------------------------------------ */}
+      <FaqSection
+        faqs={[
+          {
+            question: "How long does it take to grow organic traffic?",
+            answer: (
+              <p>
+                Most pages need 2 to 6 months to reach their ranking potential. New sites typically see meaningful traffic growth after 3 to 6 months of consistent publishing and optimization. SEO compounds over time, so the longer you invest, the faster growth accelerates.
+              </p>
+            ),
+            answerText:
+              "Most pages need 2 to 6 months to reach their ranking potential. New sites typically see meaningful traffic growth after 3 to 6 months of consistent publishing and optimization. SEO compounds over time, so the longer you invest, the faster growth accelerates.",
+          },
+          {
+            question: "What is the best way to increase organic traffic for a new website?",
+            answer: (
+              <p>
+                Start by targeting low-competition, long-tail keywords that your site can realistically rank for. Focus on creating useful content that matches search intent, and build a strong internal linking structure. Learn how to{" "}
+                <a
+                  href="/seo-guide/keyword-research/how-to-find-easy-keywords"
+                  className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+                >
+                  find easy keywords
+                </a>{" "}
+                to get started with realistic targets.
+              </p>
+            ),
+            answerText:
+              "Start by targeting low-competition, long-tail keywords that your site can realistically rank for. Focus on creating useful content that matches search intent, and build a strong internal linking structure.",
+          },
+          {
+            question: "What is the difference between organic traffic and paid traffic?",
+            answer: (
+              <p>
+                Organic traffic comes from unpaid search results and grows over time as your content ranks higher. Paid traffic comes from ads and stops the moment you stop paying. Organic traffic compounds and becomes more cost-effective over time, while paid traffic provides immediate but temporary results.
+              </p>
+            ),
+            answerText:
+              "Organic traffic comes from unpaid search results and grows over time as your content ranks higher. Paid traffic comes from ads and stops the moment you stop paying. Organic traffic compounds and becomes more cost-effective over time, while paid traffic provides immediate but temporary results.",
+          },
+          {
+            question: "How often should I publish content for SEO?",
+            answer: (
+              <p>
+                Consistency matters more than frequency. Publishing 2 to 4 well-researched, optimized articles per month is better than publishing daily low-quality content. Each article should target a specific keyword and be{" "}
+                <a
+                  href="/seo-guide/content-seo/content-optimization"
+                  className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+                >
+                  properly optimized
+                </a>{" "}
+                before moving on to the next one.
+              </p>
+            ),
+            answerText:
+              "Consistency matters more than frequency. Publishing 2 to 4 well-researched, optimized articles per month is better than publishing daily low-quality content. Each article should target a specific keyword and be properly optimized before moving on to the next one.",
+          },
+          {
+            question: "Why did my organic traffic suddenly drop?",
+            answer: (
+              <p>
+                Traffic drops usually happen because of Google algorithm updates, increased competition for your keywords, technical issues like broken pages or slow load times, or content becoming outdated. Check Google Search Console for indexing errors, review your top pages for ranking changes, and compare your content against competitors who may have published better alternatives.
+              </p>
+            ),
+            answerText:
+              "Traffic drops usually happen because of Google algorithm updates, increased competition for your keywords, technical issues like broken pages or slow load times, or content becoming outdated. Check Google Search Console for indexing errors, review your top pages for ranking changes, and compare your content against competitors who may have published better alternatives.",
+          },
+          {
+            question: "What does compound growth mean in SEO?",
+            answer: (
+              <p>
+                Compound growth in SEO means that each piece of content, each optimization, and each internal link makes your entire site stronger. A new article benefits from the authority your existing content has built. Over time, the same effort produces increasingly better results because your site has more pages ranking, more internal links distributing authority, and stronger topical relevance.
+              </p>
+            ),
+            answerText:
+              "Compound growth in SEO means that each piece of content, each optimization, and each internal link makes your entire site stronger. A new article benefits from the authority your existing content has built. Over time, the same effort produces increasingly better results because your site has more pages ranking, more internal links distributing authority, and stronger topical relevance.",
+          },
+        ]}
+      />
 
       {/* ------------------------------------------------------------------ */}
       {/* CTA */}

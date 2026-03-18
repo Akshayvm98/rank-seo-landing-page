@@ -5,6 +5,7 @@ import {
   BulletList,
   NumberedList,
   Callout,
+  FaqSection,
 } from "@/components/seo-guide/ArticleBlocks";
 
 export default function HowToWriteSeoArticles() {
@@ -438,6 +439,88 @@ export default function HowToWriteSeoArticles() {
           connects your articles into a cohesive content plan.
         </Paragraph>
       </Section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* FAQ */}
+      {/* ------------------------------------------------------------------ */}
+      <FaqSection
+        faqs={[
+          {
+            question: "What is the ideal length for an SEO article?",
+            answer: (
+              <p>
+                There is no universal ideal length. The right length depends on the topic and what the top-ranking pages look like. A simple answer might need 800 words. A comprehensive guide might need 2,500. Focus on covering the topic completely without filler rather than hitting an arbitrary word count.
+              </p>
+            ),
+            answerText:
+              "There is no universal ideal length. The right length depends on the topic and what the top-ranking pages look like. A simple answer might need 800 words. A comprehensive guide might need 2,500. Focus on covering the topic completely without filler rather than hitting an arbitrary word count.",
+          },
+          {
+            question: "How do I use keywords naturally in my content?",
+            answer: (
+              <p>
+                Include your main keyword in the title, first paragraph, and a few headings. Use related terms and synonyms throughout the body. If a sentence sounds awkward when you read it aloud, you have forced the keyword. Write for the reader first, then check that the keyword appears in the key positions.
+              </p>
+            ),
+            answerText:
+              "Include your main keyword in the title, first paragraph, and a few headings. Use related terms and synonyms throughout the body. If a sentence sounds awkward when you read it aloud, you have forced the keyword. Write for the reader first, then check that the keyword appears in the key positions.",
+          },
+          {
+            question: "How many headings should an SEO article have?",
+            answer: (
+              <p>
+                Use as many headings as your content needs to stay organized and scannable. Most articles benefit from 4 to 8 H2 headings, with H3 sub-headings where sections need further breakdown. Every heading should describe what the section covers so readers can skim and find what they need.
+              </p>
+            ),
+            answerText:
+              "Use as many headings as your content needs to stay organized and scannable. Most articles benefit from 4 to 8 H2 headings, with H3 sub-headings where sections need further breakdown. Every heading should describe what the section covers so readers can skim and find what they need.",
+          },
+          {
+            question: "Should I prioritize writing speed or quality for SEO?",
+            answer: (
+              <p>
+                Quality wins every time. One well-researched, well-structured article that ranks on page 1 brings more traffic than ten rushed articles stuck on page 5. That said, having a repeatable process and understanding{" "}
+                <a
+                  href="/seo-guide/keyword-research/search-intent"
+                  className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+                >
+                  search intent
+                </a>{" "}
+                before you write helps you produce quality content more efficiently.
+              </p>
+            ),
+            answerText:
+              "Quality wins every time. One well-researched, well-structured article that ranks on page 1 brings more traffic than ten rushed articles stuck on page 5. That said, having a repeatable process and understanding search intent before you write helps you produce quality content more efficiently.",
+          },
+          {
+            question: "Can I use AI-generated content for SEO?",
+            answer: (
+              <p>
+                AI can help with drafts and outlines, but content that ranks well still needs human expertise, unique insights, and genuine value. Google evaluates content quality regardless of how it was created. Use AI as a starting point, then add your own experience, edit thoroughly, and ensure the article actually answers the searcher&apos;s question better than existing results.
+              </p>
+            ),
+            answerText:
+              "AI can help with drafts and outlines, but content that ranks well still needs human expertise, unique insights, and genuine value. Google evaluates content quality regardless of how it was created. Use AI as a starting point, then add your own experience, edit thoroughly, and ensure the article actually answers the searcher's question better than existing results.",
+          },
+          {
+            question: "How should I structure an SEO blog post?",
+            answer: (
+              <p>
+                Start with a clear introduction that states what the article covers. Use H2 headings for major sections and H3 headings for sub-points. Include bullet points and numbered lists where helpful. Add internal links to related content and write a strong{" "}
+                <a
+                  href="/seo-guide/on-page-seo/title-tags"
+                  className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+                >
+                  title tag
+                </a>{" "}
+                that includes your target keyword. End with a clear takeaway or next step for the reader.
+              </p>
+            ),
+            answerText:
+              "Start with a clear introduction that states what the article covers. Use H2 headings for major sections and H3 headings for sub-points. Include bullet points and numbered lists where helpful. Add internal links to related content and write a strong title tag that includes your target keyword. End with a clear takeaway or next step for the reader.",
+          },
+        ]}
+      />
 
       {/* ------------------------------------------------------------------ */}
       {/* CTA */}

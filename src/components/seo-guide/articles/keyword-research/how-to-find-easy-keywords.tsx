@@ -6,6 +6,7 @@ import {
   BulletList,
   NumberedList,
   Callout,
+  FaqSection,
 } from "@/components/seo-guide/ArticleBlocks";
 import { Icon, Icons } from "@/components/ui/Icon";
 
@@ -342,6 +343,90 @@ export default function HowToFindEasyKeywords() {
           that targets them.
         </Paragraph>
       </Section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* FAQ */}
+      {/* ------------------------------------------------------------------ */}
+      <FaqSection
+        faqs={[
+          {
+            question: "How do I find keywords for a brand new website?",
+            answer: (
+              <p>
+                Start with long-tail, specific phrases related to your niche rather than broad head terms. New sites lack domain authority, so you need keywords where the existing results are weak — forums, outdated posts, or thin content. Use Google autocomplete and &ldquo;People Also Ask&rdquo; to discover phrases real people search for, then manually check the SERP to confirm the competition is beatable.
+              </p>
+            ),
+            answerText:
+              "Start with long-tail, specific phrases related to your niche rather than broad head terms. New sites lack domain authority, so you need keywords where the existing results are weak — forums, outdated posts, or thin content. Use Google autocomplete and People Also Ask to discover phrases real people search for, then manually check the SERP to confirm the competition is beatable.",
+          },
+          {
+            question: "What are long-tail keywords and why are they easier to rank for?",
+            answer: (
+              <p>
+                Long-tail keywords are longer, more specific search phrases — usually 3 or more words. They are easier to rank for because fewer sites target them directly, the{" "}
+                <a href="/seo-guide/keyword-research/search-intent" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">search intent</a>
+                {" "}is clearer, and the competition in the SERP is typically weaker. While each long-tail keyword has lower volume, they convert better because the searcher knows exactly what they want.
+              </p>
+            ),
+            answerText:
+              "Long-tail keywords are longer, more specific search phrases — usually 3 or more words. They are easier to rank for because fewer sites target them directly, the search intent is clearer, and the competition in the SERP is typically weaker. While each long-tail keyword has lower volume, they convert better because the searcher knows exactly what they want.",
+          },
+          {
+            question: "How do I check if a keyword is too competitive for my site?",
+            answer: (
+              <p>
+                Search the keyword in Google and look at the first page of results. Check who is ranking — if it is all major authority sites like Forbes, Wikipedia, or HubSpot, the keyword is likely too competitive. Look at the{" "}
+                <a href="/seo-guide/keyword-research/keyword-difficulty" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">keyword difficulty score</a>
+                {" "}as a starting filter, but always verify by examining the actual SERP for weak content, outdated pages, and low-authority domains.
+              </p>
+            ),
+            answerText:
+              "Search the keyword in Google and look at the first page of results. Check who is ranking — if it is all major authority sites like Forbes, Wikipedia, or HubSpot, the keyword is likely too competitive. Look at the keyword difficulty score as a starting filter, but always verify by examining the actual SERP for weak content, outdated pages, and low-authority domains.",
+          },
+          {
+            question: "How many keywords should I target per page?",
+            answer: (
+              <p>
+                Focus on one primary keyword per page, then naturally include 3 to 5 closely related variations. These related terms should share the same{" "}
+                <a href="/seo-guide/keyword-research/search-intent" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">search intent</a>
+                . Trying to target unrelated keywords on a single page dilutes your content and confuses Google about what the page is really about.
+              </p>
+            ),
+            answerText:
+              "Focus on one primary keyword per page, then naturally include 3 to 5 closely related variations. These related terms should share the same search intent. Trying to target unrelated keywords on a single page dilutes your content and confuses Google about what the page is really about.",
+          },
+          {
+            question: "How long does it take to rank for easy keywords?",
+            answer: (
+              <p>
+                For genuinely low-competition keywords, you can see rankings within 2 to 8 weeks after publishing. However, even easy keywords require well-structured, comprehensive content that matches search intent. Pages on brand-new domains typically take longer — closer to 3 to 6 months — because Google needs time to discover and trust your site.
+              </p>
+            ),
+            answerText:
+              "For genuinely low-competition keywords, you can see rankings within 2 to 8 weeks after publishing. However, even easy keywords require well-structured, comprehensive content that matches search intent. Pages on brand-new domains typically take longer — closer to 3 to 6 months — because Google needs time to discover and trust your site.",
+          },
+          {
+            question: "Are there free tools for finding easy keywords?",
+            answer: (
+              <p>
+                Yes. Google Search Console shows keywords you already get impressions for but are not ranking well — these are often easy wins. Google autocomplete and &ldquo;People Also Ask&rdquo; reveal real queries people type. AnswerThePublic and Google Keyword Planner (with a free Google Ads account) also provide keyword ideas. The most important free tool, though, is Google itself — searching your keyword and analyzing the results tells you more than any score.
+              </p>
+            ),
+            answerText:
+              "Yes. Google Search Console shows keywords you already get impressions for but are not ranking well — these are often easy wins. Google autocomplete and People Also Ask reveal real queries people type. AnswerThePublic and Google Keyword Planner (with a free Google Ads account) also provide keyword ideas. The most important free tool, though, is Google itself — searching your keyword and analyzing the results tells you more than any score.",
+          },
+          {
+            question: "What search volume should I look for in easy keywords?",
+            answer: (
+              <p>
+                There is no universal threshold, but keywords with 100 to 1,000 monthly searches often hit the sweet spot for newer sites — enough volume to bring meaningful traffic, but not so much that every major site is competing. Do not dismiss keywords under 100 searches per month either. If the intent is strong and the keyword is relevant to your business, even low-volume keywords can drive conversions.
+              </p>
+            ),
+            answerText:
+              "There is no universal threshold, but keywords with 100 to 1,000 monthly searches often hit the sweet spot for newer sites — enough volume to bring meaningful traffic, but not so much that every major site is competing. Do not dismiss keywords under 100 searches per month either. If the intent is strong and the keyword is relevant to your business, even low-volume keywords can drive conversions.",
+          },
+        ]}
+      />
 
       {/* ------------------------------------------------------------------ */}
       {/* CTA */}

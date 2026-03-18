@@ -5,6 +5,7 @@ import {
   BulletList,
   NumberedList,
   Callout,
+  FaqSection,
 } from "@/components/seo-guide/ArticleBlocks";
 
 export default function SearchIntent() {
@@ -371,6 +372,81 @@ export default function SearchIntent() {
           and content that actually ranks.
         </Paragraph>
       </Section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* FAQ */}
+      {/* ------------------------------------------------------------------ */}
+      <FaqSection
+        faqs={[
+          {
+            question: "What are the 4 types of search intent?",
+            answer: (
+              <p>
+                The four types are informational (learning something), navigational (finding a specific site), commercial (comparing options before buying), and transactional (ready to take action like purchasing or signing up). Each type requires a different content format to rank.
+              </p>
+            ),
+            answerText: "The four types are informational (learning something), navigational (finding a specific site), commercial (comparing options before buying), and transactional (ready to take action like purchasing or signing up). Each type requires a different content format to rank.",
+          },
+          {
+            question: "How do I determine search intent for a keyword?",
+            answer: (
+              <p>
+                Search the keyword in an incognito window and look at the first page of results. The dominant content type — listicles, guides, product pages, comparisons — tells you what Google thinks the searcher wants. Match your content format to what is already ranking.
+              </p>
+            ),
+            answerText: "Search the keyword in an incognito window and look at the first page of results. The dominant content type — listicles, guides, product pages, comparisons — tells you what Google thinks the searcher wants. Match your content format to what is already ranking.",
+          },
+          {
+            question: "Why does search intent matter for SEO?",
+            answer: (
+              <p>
+                Google&apos;s job is matching results to intent. If your content does not match what the searcher expects — even if it is well-written and keyword-optimized — it will not rank. Intent alignment is often the difference between page 1 and page 5.
+              </p>
+            ),
+            answerText: "Google's job is matching results to intent. If your content does not match what the searcher expects — even if it is well-written and keyword-optimized — it will not rank. Intent alignment is often the difference between page 1 and page 5.",
+          },
+          {
+            question: "Can search intent change over time?",
+            answer: (
+              <p>
+                Yes. As user behavior shifts and Google updates its algorithms, the dominant intent for a keyword can change. A keyword that was informational might become commercial as more product pages start ranking. Check SERPs periodically for your important keywords.
+              </p>
+            ),
+            answerText: "Yes. As user behavior shifts and Google updates its algorithms, the dominant intent for a keyword can change. A keyword that was informational might become commercial as more product pages start ranking. Check SERPs periodically for your important keywords.",
+          },
+          {
+            question: "What should I do when a keyword has mixed intent?",
+            answer: (
+              <p>
+                Some keywords show a mix of content types in the SERP. In this case, match the dominant format (what appears most) or narrow your keyword to one with clearer intent. For example, instead of &ldquo;CRM software&rdquo; try &ldquo;best CRM software for freelancers&rdquo; which has obvious commercial intent.
+              </p>
+            ),
+            answerText: "Some keywords show a mix of content types in the SERP. In this case, match the dominant format or narrow your keyword to one with clearer intent. For example, instead of 'CRM software' try 'best CRM software for freelancers' which has obvious commercial intent.",
+          },
+          {
+            question: "How do I match intent with content format?",
+            answer: (
+              <p>
+                Informational intent needs guides and explainers. Commercial intent needs comparisons and listicles. Transactional intent needs product or pricing pages. Check what format dominates the SERP and{" "}
+                <a href="/seo-guide/content-seo/how-to-write-seo-articles" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">write your article</a>{" "}
+                in that same format.
+              </p>
+            ),
+            answerText: "Informational intent needs guides and explainers. Commercial intent needs comparisons and listicles. Transactional intent needs product or pricing pages. Check what format dominates the SERP and write your article in that same format.",
+          },
+          {
+            question: "Is search intent more important than keywords?",
+            answer: (
+              <p>
+                They work together, but intent is the foundation. Targeting the right keyword with the wrong format will fail. Start by understanding intent, then{" "}
+                <a href="/seo-guide/keyword-research/how-to-find-easy-keywords" className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors">find keywords</a>{" "}
+                where you can match that intent with better content than what currently ranks.
+              </p>
+            ),
+            answerText: "They work together, but intent is the foundation. Targeting the right keyword with the wrong format will fail. Start by understanding intent, then find keywords where you can match that intent with better content than what currently ranks.",
+          },
+        ]}
+      />
 
       {/* ------------------------------------------------------------------ */}
       {/* CTA */}

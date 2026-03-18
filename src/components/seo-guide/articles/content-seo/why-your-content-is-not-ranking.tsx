@@ -6,6 +6,7 @@ import {
   BulletList,
   NumberedList,
   Callout,
+  FaqSection,
 } from "@/components/seo-guide/ArticleBlocks";
 import { Icon, Icons } from "@/components/ui/Icon";
 
@@ -391,6 +392,88 @@ export default function WhyYourContentIsNotRanking() {
           .
         </Paragraph>
       </Section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* FAQ */}
+      {/* ------------------------------------------------------------------ */}
+      <FaqSection
+        faqs={[
+          {
+            question: "How long does it take for new content to start ranking?",
+            answer: (
+              <p>
+                New content typically takes 2 to 6 months to reach its ranking potential. Pages targeting low-competition keywords can rank faster, sometimes within weeks. High-competition keywords may take 6 to 12 months or longer, especially for newer sites with less domain authority.
+              </p>
+            ),
+            answerText:
+              "New content typically takes 2 to 6 months to reach its ranking potential. Pages targeting low-competition keywords can rank faster, sometimes within weeks. High-competition keywords may take 6 to 12 months or longer, especially for newer sites with less domain authority.",
+          },
+          {
+            question: "Why does my content not rank even though it is well written?",
+            answer: (
+              <p>
+                Good writing is necessary but not sufficient for ranking. Common reasons include targeting keywords that are too competitive, not matching the search intent Google expects, weak content structure, or missing{" "}
+                <a
+                  href="/seo-guide/on-page-seo/internal-linking"
+                  className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+                >
+                  internal links
+                </a>{" "}
+                that help Google discover and prioritize your page. Ranking requires both quality content and sound SEO strategy.
+              </p>
+            ),
+            answerText:
+              "Good writing is necessary but not sufficient for ranking. Common reasons include targeting keywords that are too competitive, not matching the search intent Google expects, weak content structure, or missing internal links that help Google discover and prioritize your page. Ranking requires both quality content and sound SEO strategy.",
+          },
+          {
+            question: "How important are backlinks for ranking content?",
+            answer: (
+              <p>
+                Backlinks remain one of the strongest ranking signals. They tell Google that other websites trust your content. However, their importance varies by keyword competition. For low-competition keywords, strong content and good on-page SEO may be enough. For competitive terms, backlinks are usually essential to reach page 1.
+              </p>
+            ),
+            answerText:
+              "Backlinks remain one of the strongest ranking signals. They tell Google that other websites trust your content. However, their importance varies by keyword competition. For low-competition keywords, strong content and good on-page SEO may be enough. For competitive terms, backlinks are usually essential to reach page 1.",
+          },
+          {
+            question: "Can you rank on Google without backlinks?",
+            answer: (
+              <p>
+                Yes, but only for lower-competition keywords. If you target long-tail keywords with less competition, thorough content,{" "}
+                <a
+                  href="/seo-guide/content-seo/content-optimization"
+                  className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+                >
+                  proper optimization
+                </a>
+                , and strong internal linking can be enough to rank. For competitive keywords, you will almost always need backlinks from other websites.
+              </p>
+            ),
+            answerText:
+              "Yes, but only for lower-competition keywords. If you target long-tail keywords with less competition, thorough content, proper optimization, and strong internal linking can be enough to rank. For competitive keywords, you will almost always need backlinks from other websites.",
+          },
+          {
+            question: "Should I delete content that is not ranking?",
+            answer: (
+              <p>
+                Not necessarily. First, diagnose why the content is not ranking. It may need better keyword targeting, improved structure, or more internal links. If the content targets a keyword with zero search volume or is thin and cannot be improved, consolidating it into a stronger page or redirecting it may be the better option.
+              </p>
+            ),
+            answerText:
+              "Not necessarily. First, diagnose why the content is not ranking. It may need better keyword targeting, improved structure, or more internal links. If the content targets a keyword with zero search volume or is thin and cannot be improved, consolidating it into a stronger page or redirecting it may be the better option.",
+          },
+          {
+            question: "How do I fix pages that are underperforming in search?",
+            answer: (
+              <p>
+                Start by identifying the root cause: check keyword difficulty, compare your content structure against top-ranking competitors, verify your search intent alignment, and review your internal linking. Then make targeted improvements such as updating outdated information, adding missing sections, improving headings, and building internal links from your higher-authority pages.
+              </p>
+            ),
+            answerText:
+              "Start by identifying the root cause: check keyword difficulty, compare your content structure against top-ranking competitors, verify your search intent alignment, and review your internal linking. Then make targeted improvements such as updating outdated information, adding missing sections, improving headings, and building internal links from your higher-authority pages.",
+          },
+        ]}
+      />
 
       {/* ------------------------------------------------------------------ */}
       {/* CTA */}

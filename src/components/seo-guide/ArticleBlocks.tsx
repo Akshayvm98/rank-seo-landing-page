@@ -18,6 +18,8 @@
  *   }
  */
 
+import { FaqAccordion } from "@/components/seo-guide/FaqAccordion";
+
 /** Article hero with title, subtitle, reading time, and CTA */
 export function ArticleHero({
   title,
@@ -173,6 +175,46 @@ export function Callout({
     <div className={`mt-6 rounded-xl border px-5 py-4 ${styles[type]}`}>
       <p className="text-[14px] leading-[1.7] font-medium">{children}</p>
     </div>
+  );
+}
+
+/** FAQ section with JSON-LD structured data and interactive accordion */
+export function FaqSection({
+  faqs,
+}: {
+  faqs: { question: string; answer: React.ReactNode; answerText: string }[];
+}) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answerText,
+      },
+    })),
+  };
+
+  return (
+    <section className="py-6 md:py-8">
+      <div className="mx-auto max-w-[720px] px-6">
+        <h2
+          id="faq"
+          className="reveal text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-foreground md:text-[1.75rem]"
+        >
+          Frequently Asked Questions
+        </h2>
+        <div className="reveal reveal-delay-1 mt-6">
+          <FaqAccordion faqs={faqs} />
+        </div>
+      </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+    </section>
   );
 }
 

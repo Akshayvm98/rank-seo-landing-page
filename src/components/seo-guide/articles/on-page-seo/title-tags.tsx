@@ -6,6 +6,7 @@ import {
   BulletList,
   NumberedList,
   Callout,
+  FaqSection,
 } from "@/components/seo-guide/ArticleBlocks";
 import { Icon, Icons } from "@/components/ui/Icon";
 
@@ -309,6 +310,88 @@ export default function TitleTags() {
           .
         </Paragraph>
       </Section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* FAQ */}
+      {/* ------------------------------------------------------------------ */}
+      <FaqSection
+        faqs={[
+          {
+            question: "What is the ideal title tag length?",
+            answer: (
+              <p>
+                Keep title tags under 60 characters to avoid truncation in search results. Google measures display width in pixels rather than characters, but 60 characters is a reliable guideline. Front-load your most important keywords and information so they are always visible even if the title gets cut off.
+              </p>
+            ),
+            answerText:
+              "Keep title tags under 60 characters to avoid truncation in search results. Google measures display width in pixels rather than characters, but 60 characters is a reliable guideline. Front-load your most important keywords and information so they are always visible even if the title gets cut off.",
+          },
+          {
+            question: "Where should I place keywords in my title tag?",
+            answer: (
+              <p>
+                Place your primary keyword as close to the beginning of the title as possible. Keywords at the front carry slightly more weight for rankings and are always visible even if the title gets truncated. Avoid stuffing multiple keywords into the title. Use the keyword once, naturally, and focus the rest on making the title compelling to click.
+              </p>
+            ),
+            answerText:
+              "Place your primary keyword as close to the beginning of the title as possible. Keywords at the front carry slightly more weight for rankings and are always visible even if the title gets truncated. Avoid stuffing multiple keywords into the title. Use the keyword once, naturally, and focus the rest on making the title compelling to click.",
+          },
+          {
+            question: "Does Google rewrite title tags?",
+            answer: (
+              <p>
+                Yes. Google sometimes generates its own title for your page in search results, especially if the original title is too long, keyword-stuffed, does not match the page content, or is generic. Writing clear, concise, and accurate title tags that match the page content reduces the chance of Google rewriting them.
+              </p>
+            ),
+            answerText:
+              "Yes. Google sometimes generates its own title for your page in search results, especially if the original title is too long, keyword-stuffed, does not match the page content, or is generic. Writing clear, concise, and accurate title tags that match the page content reduces the chance of Google rewriting them.",
+          },
+          {
+            question: "Should the title tag and H1 be the same?",
+            answer: (
+              <p>
+                They can be the same, but they do not have to be. The title tag is what appears in search results, while the H1 is the main heading on the page itself. Many sites use the same text for both, which is perfectly fine. You can also make the H1 slightly longer or more descriptive since it does not have the same character limit as the title tag.
+              </p>
+            ),
+            answerText:
+              "They can be the same, but they do not have to be. The title tag is what appears in search results, while the H1 is the main heading on the page itself. Many sites use the same text for both, which is perfectly fine. You can also make the H1 slightly longer or more descriptive since it does not have the same character limit as the title tag.",
+          },
+          {
+            question: "How do title tags affect click-through rate?",
+            answer: (
+              <p>
+                Title tags are the primary element searchers see in results, so they directly influence whether someone clicks. A specific, benefit-driven title with your keyword can significantly increase CTR compared to a vague or generic one. Higher CTR sends positive signals to Google and can improve your rankings over time. Learn more about writing{" "}
+                <a
+                  href="/seo-guide/content-seo/how-to-write-seo-articles"
+                  className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+                >
+                  SEO-optimized content
+                </a>{" "}
+                that complements strong titles.
+              </p>
+            ),
+            answerText:
+              "Title tags are the primary element searchers see in results, so they directly influence whether someone clicks. A specific, benefit-driven title with your keyword can significantly increase CTR compared to a vague or generic one. Higher CTR sends positive signals to Google and can improve your rankings over time.",
+          },
+          {
+            question: "Should every page on my site have a unique title tag?",
+            answer: (
+              <p>
+                Yes. Every page should have a unique title tag that accurately describes its content. Duplicate titles confuse Google about which page to rank for a given query and dilute your SEO efforts. Use your{" "}
+                <a
+                  href="/seo-guide/on-page-seo/internal-linking"
+                  className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
+                >
+                  internal linking strategy
+                </a>{" "}
+                to connect related pages rather than relying on similar titles to signal relevance.
+              </p>
+            ),
+            answerText:
+              "Yes. Every page should have a unique title tag that accurately describes its content. Duplicate titles confuse Google about which page to rank for a given query and dilute your SEO efforts. Use your internal linking strategy to connect related pages rather than relying on similar titles to signal relevance.",
+          },
+        ]}
+      />
 
       {/* ------------------------------------------------------------------ */}
       {/* CTA */}
