@@ -551,6 +551,32 @@ const articles: GuideArticlePage[] = [
     relatedIds: ["on-page-seo", "internal-linking", "keyword-placement", "blog-structure", "why-pages-are-not-indexed"],
   },
   {
+    id: "anchor-text-best-practices",
+    type: "article",
+    title: "Anchor Text Best Practices for SEO",
+    slug: "anchor-text-best-practices",
+    topicSlug: "on-page-seo",
+    excerpt:
+      "Learn anchor text best practices for SEO. Improve internal linking, avoid over-optimization, and boost rankings.",
+    category: "On-Page",
+    order: 3.7,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 9,
+    seoTitle:
+      "Anchor Text Best Practices for SEO (Complete Guide)",
+    seoDescription:
+      "Learn anchor text best practices for SEO. Improve internal linking, avoid over-optimization, and boost rankings.",
+    ogTitle: "Anchor Text Best Practices | RankSEO",
+    ogDescription:
+      "Use anchor text properly to improve internal linking and SEO performance.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Anchor Text for SEO | RankSEO",
+    twitterDescription:
+      "Anchor text best practices for better internal linking and SEO rankings.",
+    relatedIds: ["on-page-seo", "internal-linking-best-practices", "internal-linking", "keyword-placement", "blog-structure"],
+  },
+  {
     id: "how-to-find-low-competition-keywords",
     type: "article",
     title: "How to Find Low Competition Keywords",
