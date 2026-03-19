@@ -577,6 +577,32 @@ const articles: GuideArticlePage[] = [
     relatedIds: ["content-seo", "how-to-write-seo-articles", "content-optimization", "internal-linking", "blog-seo-checklist"],
   },
   {
+    id: "seo-introductions",
+    type: "article",
+    title: "How to Write SEO-Friendly Introductions",
+    slug: "seo-introductions",
+    topicSlug: "content-seo",
+    excerpt:
+      "Learn how to write SEO-friendly introductions that hook readers, match search intent, and improve rankings.",
+    category: "Content",
+    order: 2.67,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 9,
+    seoTitle:
+      "How to Write SEO-Friendly Introductions (That Keep Readers Engaged)",
+    seoDescription:
+      "Learn how to write SEO-friendly introductions that hook readers, match search intent, and improve rankings.",
+    ogTitle: "How to Write SEO-Friendly Introductions | RankSEO",
+    ogDescription:
+      "Write introductions that hook readers, match search intent, and improve your SEO rankings.",
+    ogImage: "/og-image.png",
+    twitterTitle: "SEO-Friendly Introductions | RankSEO",
+    twitterDescription:
+      "Learn how to write introductions that keep readers engaged and improve your rankings.",
+    relatedIds: ["content-seo", "blog-structure", "how-to-write-seo-articles", "content-optimization", "search-intent"],
+  },
+  {
     id: "how-to-update-old-content",
     type: "article",
     title: "How to Update Old Content for SEO",
