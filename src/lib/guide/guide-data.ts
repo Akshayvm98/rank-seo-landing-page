@@ -629,6 +629,110 @@ const articles: GuideArticlePage[] = [
     relatedIds: ["keyword-research", "keyword-clustering", "search-intent", "how-to-find-easy-keywords"],
   },
   {
+    id: "keywords-per-page",
+    type: "article",
+    title: "How Many Keywords Should a Page Target",
+    slug: "keywords-per-page",
+    topicSlug: "keyword-research",
+    excerpt:
+      "Learn how many keywords you should target per page and why topic-based SEO beats keyword counting.",
+    category: "Keyword Research",
+    order: 1.7,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 9,
+    seoTitle:
+      "How Many Keywords Should a Page Target? The Right SEO Strategy",
+    seoDescription:
+      "How many keywords should you target per page? Learn the right SEO strategy to rank without over-optimizing.",
+    ogTitle: "How Many Keywords Per Page | RankSEO",
+    ogDescription:
+      "Learn how many keywords to target per page and why topic-based SEO works better than keyword counting.",
+    ogImage: "/og-image.png",
+    twitterTitle: "How Many Keywords Per Page | RankSEO",
+    twitterDescription:
+      "How many keywords should a page target? The answer is simpler than you think.",
+    relatedIds: ["keyword-research", "keyword-clustering", "search-intent", "semantic-keywords", "content-optimization"],
+  },
+  {
+    id: "keyword-cannibalization",
+    type: "article",
+    title: "Keyword Cannibalization Explained",
+    slug: "keyword-cannibalization",
+    topicSlug: "keyword-research",
+    excerpt:
+      "Learn what keyword cannibalization is, how to detect it, and how to fix it to stop your own pages from competing against each other.",
+    category: "Keyword Research",
+    order: 1.8,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 10,
+    seoTitle:
+      "Keyword Cannibalization Explained (And How to Fix It)",
+    seoDescription:
+      "Keyword cannibalization can hurt your rankings. Learn what it is, how to detect it, and how to fix it effectively.",
+    ogTitle: "Keyword Cannibalization Explained | RankSEO",
+    ogDescription:
+      "Learn what keyword cannibalization is and how to fix it so your pages stop competing against each other.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Keyword Cannibalization | RankSEO",
+    twitterDescription:
+      "Your own pages might be hurting each other. Learn how to find and fix keyword cannibalization.",
+    relatedIds: ["keyword-research", "keywords-per-page", "search-intent", "keyword-clustering", "content-optimization"],
+  },
+  {
+    id: "short-vs-long-tail-keywords",
+    type: "article",
+    title: "Short Tail vs Long Tail Keywords",
+    slug: "short-vs-long-tail-keywords",
+    topicSlug: "keyword-research",
+    excerpt:
+      "Learn the difference between short tail and long tail keywords and which type you should target for better SEO results.",
+    category: "Keyword Research",
+    order: 1.9,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 9,
+    seoTitle:
+      "Short Tail vs Long Tail Keywords (Which Should You Target?)",
+    seoDescription:
+      "Short tail vs long tail keywords: learn the difference, pros and cons, and which keywords you should target for better SEO results.",
+    ogTitle: "Short Tail vs Long Tail Keywords | RankSEO",
+    ogDescription:
+      "Learn the difference between short and long tail keywords and which to target for your SEO strategy.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Short vs Long Tail Keywords | RankSEO",
+    twitterDescription:
+      "Short tail vs long tail keywords: which should you target? A clear comparison for smarter SEO.",
+    relatedIds: ["keyword-research", "how-to-find-low-competition-keywords", "keywords-per-page", "keyword-cannibalization", "how-to-find-easy-keywords"],
+  },
+  {
+    id: "keyword-prioritization",
+    type: "article",
+    title: "How to Prioritize Keywords for SEO",
+    slug: "keyword-prioritization",
+    topicSlug: "keyword-research",
+    excerpt:
+      "Learn how to prioritize keywords so you target the right ones first and see faster SEO results.",
+    category: "Keyword Research",
+    order: 1.95,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 10,
+    seoTitle:
+      "How to Prioritize Keywords for SEO (Step-by-Step Guide)",
+    seoDescription:
+      "Not sure which keywords to target first? Learn how to prioritize keywords for faster SEO results and smarter growth.",
+    ogTitle: "How to Prioritize Keywords for SEO | RankSEO",
+    ogDescription:
+      "Learn how to prioritize keywords so you target the right ones first and grow faster.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Keyword Prioritization Guide | RankSEO",
+    twitterDescription:
+      "Stop guessing which keywords to target. Learn a simple framework to prioritize for faster SEO results.",
+    relatedIds: ["keyword-research", "how-to-find-low-competition-keywords", "short-vs-long-tail-keywords", "keywords-per-page", "keyword-difficulty"],
+  },
+  {
     id: "how-to-improve-ctr",
     type: "article",
     title: "How to Improve CTR in SEO",
