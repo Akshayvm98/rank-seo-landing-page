@@ -33,6 +33,7 @@ const footerLinks = [
       { label: "Keyword Density", href: "/tools/keyword-density-checker" },
       { label: "Readability Checker", href: "/tools/readability-checker" },
       { label: "Link Checker", href: "/tools/internal-link-checker" },
+      { label: "Broken Links", href: "/tools/broken-link-checker" },
     ],
   },
 ];

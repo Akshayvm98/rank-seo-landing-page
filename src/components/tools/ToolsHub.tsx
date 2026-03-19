@@ -28,9 +28,9 @@ const categories = [
     name: "Technical SEO",
     tools: [
       { id: "internal-link-checker", live: true },
+      { id: "broken-link-checker", live: true },
     ],
     comingSoon: [
-      { name: "Broken Link Checker", description: "Detect broken outbound links on any page." },
       { name: "URL Slug Analyzer", description: "Check URL structure and get optimization tips." },
     ],
   },

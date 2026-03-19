@@ -77,6 +77,18 @@ export const freeTools: ToolMeta[] = [
     href: "/tools/internal-link-checker",
     published: true,
   },
+  {
+    id: "broken-link-checker",
+    slug: "broken-link-checker",
+    name: "Broken Link Checker",
+    tagline: "Find broken links and dead pages",
+    description:
+      "Check all internal and external links on a page. Detect broken links, redirects, and unreachable URLs with status codes.",
+    category: "Technical SEO",
+    icon: "alertCircle",
+    href: "/tools/broken-link-checker",
+    published: true,
+  },
   // Future tools — add entries here as they are built
 ];
 
