@@ -65,6 +65,18 @@ export const freeTools: ToolMeta[] = [
     href: "/tools/readability-checker",
     published: true,
   },
+  {
+    id: "internal-link-checker",
+    slug: "internal-link-checker",
+    name: "Internal Link Checker",
+    tagline: "Analyze internal links and anchor text quality",
+    description:
+      "Check internal and external links, anchor text quality, and linking balance on any page. Get actionable SEO recommendations.",
+    category: "Technical SEO",
+    icon: "link",
+    href: "/tools/internal-link-checker",
+    published: true,
+  },
   // Future tools — add entries here as they are built
 ];
 

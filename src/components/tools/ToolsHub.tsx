@@ -26,9 +26,10 @@ const categories = [
   },
   {
     name: "Technical SEO",
-    tools: [],
+    tools: [
+      { id: "internal-link-checker", live: true },
+    ],
     comingSoon: [
-      { name: "Internal Link Checker", description: "Find broken internal links and orphan pages." },
       { name: "Broken Link Checker", description: "Detect broken outbound links on any page." },
       { name: "URL Slug Analyzer", description: "Check URL structure and get optimization tips." },
     ],
