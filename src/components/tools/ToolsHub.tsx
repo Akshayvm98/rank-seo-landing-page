@@ -4,16 +4,19 @@ import { ToolCTA } from "./ToolCTA";
 import { ToolFAQ } from "./ToolFAQ";
 
 // Categories with published tools + coming-soon placeholders
-const categories = [
+const categories: {
+  name: string;
+  tools: { id: string; live: boolean }[];
+  comingSoon: { name: string; description: string }[];
+}[] = [
   {
     name: "Content SEO",
     tools: [
       { id: "content-length-analyzer", live: true },
       { id: "readability-checker", live: true },
+      { id: "content-structure-checker", live: true },
     ],
-    comingSoon: [
-      { name: "Content Structure Analyzer", description: "Check heading hierarchy, paragraph flow, and content organization." },
-    ],
+    comingSoon: [],
   },
   {
     name: "On-Page SEO",
@@ -21,6 +24,8 @@ const categories = [
       { id: "meta-tag-checker", live: true },
       { id: "heading-structure-checker", live: true },
       { id: "keyword-density-checker", live: true },
+      { id: "anchor-text-analyzer", live: true },
+      { id: "image-alt-text-checker", live: true },
     ],
     comingSoon: [],
   },
@@ -29,18 +34,22 @@ const categories = [
     tools: [
       { id: "internal-link-checker", live: true },
       { id: "broken-link-checker", live: true },
+      { id: "robots-txt-checker", live: true },
+      { id: "sitemap-checker", live: true },
+      { id: "canonical-tag-checker", live: true },
+      { id: "noindex-checker", live: true },
     ],
-    comingSoon: [
-      { name: "URL Slug Analyzer", description: "Check URL structure and get optimization tips." },
-    ],
+    comingSoon: [],
   },
   {
     name: "SERP & Optimization",
-    tools: [],
-    comingSoon: [
-      { name: "SERP Preview", description: "Preview how your page appears in Google search results." },
-      { name: "Schema Markup Checker", description: "Validate structured data and rich snippet eligibility." },
+    tools: [
+      { id: "serp-preview-tool", live: true },
+      { id: "url-slug-analyzer", live: true },
+      { id: "title-tag-analyzer", live: true },
+      { id: "open-graph-checker", live: true },
     ],
+    comingSoon: [],
   },
 ];
 

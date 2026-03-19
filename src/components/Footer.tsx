@@ -27,13 +27,12 @@ const footerLinks = [
     title: "Free Tools",
     links: [
       { label: "All Tools", href: "/tools" },
-      { label: "Content Length Analyzer", href: "/tools/content-length-analyzer" },
+      { label: "Content Analyzer", href: "/tools/content-length-analyzer" },
       { label: "Meta Tag Checker", href: "/tools/meta-tag-checker" },
-      { label: "Heading Checker", href: "/tools/heading-structure-checker" },
-      { label: "Keyword Density", href: "/tools/keyword-density-checker" },
       { label: "Readability Checker", href: "/tools/readability-checker" },
-      { label: "Link Checker", href: "/tools/internal-link-checker" },
-      { label: "Broken Links", href: "/tools/broken-link-checker" },
+      { label: "Broken Link Checker", href: "/tools/broken-link-checker" },
+      { label: "SERP Preview", href: "/tools/serp-preview-tool" },
+      { label: "Title Tag Analyzer", href: "/tools/title-tag-analyzer" },
     ],
   },
 ];
