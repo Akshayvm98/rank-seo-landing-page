@@ -31,6 +31,7 @@ const footerLinks = [
       { label: "Meta Tag Checker", href: "/tools/meta-tag-checker" },
       { label: "Heading Checker", href: "/tools/heading-structure-checker" },
       { label: "Keyword Density", href: "/tools/keyword-density-checker" },
+      { label: "Readability Checker", href: "/tools/readability-checker" },
     ],
   },
 ];

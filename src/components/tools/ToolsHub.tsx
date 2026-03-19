@@ -9,9 +9,9 @@ const categories = [
     name: "Content SEO",
     tools: [
       { id: "content-length-analyzer", live: true },
+      { id: "readability-checker", live: true },
     ],
     comingSoon: [
-      { name: "Readability Checker", description: "Analyze content readability and get improvement suggestions." },
       { name: "Content Structure Analyzer", description: "Check heading hierarchy, paragraph flow, and content organization." },
     ],
   },

@@ -53,6 +53,18 @@ export const freeTools: ToolMeta[] = [
     href: "/tools/keyword-density-checker",
     published: true,
   },
+  {
+    id: "readability-checker",
+    slug: "readability-checker",
+    name: "Readability Checker",
+    tagline: "Analyze content clarity and structure",
+    description:
+      "Check sentence length, paragraph density, heading usage, and overall readability. Get actionable recommendations to improve content.",
+    category: "Content SEO",
+    icon: "bookOpen",
+    href: "/tools/readability-checker",
+    published: true,
+  },
   // Future tools — add entries here as they are built
 ];
 
