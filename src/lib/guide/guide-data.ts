@@ -525,6 +525,32 @@ const articles: GuideArticlePage[] = [
     relatedIds: ["on-page-seo", "title-tags", "headings-seo", "content-optimization", "keywords-per-page"],
   },
   {
+    id: "internal-linking-best-practices",
+    type: "article",
+    title: "Internal Linking Best Practices for SEO",
+    slug: "internal-linking-best-practices",
+    topicSlug: "on-page-seo",
+    excerpt:
+      "Learn internal linking best practices to improve rankings, distribute authority, and boost SEO performance.",
+    category: "On-Page",
+    order: 3.6,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 10,
+    seoTitle:
+      "Internal Linking Best Practices for SEO (Complete Guide)",
+    seoDescription:
+      "Learn internal linking best practices to improve rankings, distribute authority, and boost your SEO performance.",
+    ogTitle: "Internal Linking Best Practices | RankSEO",
+    ogDescription:
+      "Improve rankings and distribute authority with these internal linking best practices.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Internal Linking Best Practices | RankSEO",
+    twitterDescription:
+      "Internal linking best practices that improve rankings, crawlability, and SEO performance.",
+    relatedIds: ["on-page-seo", "internal-linking", "keyword-placement", "blog-structure", "why-pages-are-not-indexed"],
+  },
+  {
     id: "how-to-find-low-competition-keywords",
     type: "article",
     title: "How to Find Low Competition Keywords",
