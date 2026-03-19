@@ -38,6 +38,7 @@ const pillar: GuidePillarPage = {
     "link-building",
     "seo-analytics",
     "seo-strategy",
+    "ai-seo",
   ],
 };
 
@@ -209,6 +210,29 @@ const topics: GuideTopicPage[] = [
     twitterDescription:
       "Practical SEO analytics guide for tracking clicks, impressions, rankings, and growth.",
     relatedIds: ["keyword-research", "technical-seo", "content-seo"],
+  },
+  {
+    id: "ai-seo",
+    type: "topic",
+    title: "AI SEO Guide",
+    slug: "ai-seo",
+    topicSlug: "ai-seo",
+    excerpt: "Scale content and SEO with AI the right way",
+    category: "AI SEO",
+    order: 8,
+    published: true,
+    lastUpdated: "2026-03-19",
+    seoTitle: "AI SEO Guide | Scale Content With AI the Right Way",
+    seoDescription:
+      "Learn how to use AI to scale SEO content without sacrificing quality. Practical strategies for AI-powered content creation and optimization.",
+    ogTitle: "AI SEO Guide | RankSEO",
+    ogDescription:
+      "Scale your SEO content with AI. Practical strategies that maintain quality.",
+    ogImage: "/og-image.png",
+    twitterTitle: "AI SEO Guide | RankSEO",
+    twitterDescription:
+      "Learn how to scale SEO content with AI without sacrificing quality.",
+    relatedIds: ["content-seo", "keyword-research", "seo-strategy"],
   },
 ];
 
@@ -1277,6 +1301,58 @@ const articles: GuideArticlePage[] = [
     twitterDescription:
       "How to find keywords a new website can actually rank for. Step-by-step guide.",
     relatedIds: ["keyword-research", "how-to-find-low-competition-keywords", "short-vs-long-tail-keywords", "keyword-prioritization", "new-website-no-traffic"],
+  },
+  {
+    id: "scale-content-with-ai",
+    type: "article",
+    title: "How to Scale Content Using AI for SEO",
+    slug: "scale-content-with-ai",
+    topicSlug: "ai-seo",
+    excerpt:
+      "Learn how to scale SEO content using AI without sacrificing quality. Build a content engine that grows traffic consistently.",
+    category: "AI SEO",
+    order: 8.1,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 10,
+    seoTitle:
+      "How to Scale Content Using AI for SEO (Practical Guide)",
+    seoDescription:
+      "Learn how to scale SEO content using AI without sacrificing quality. Build a content engine that grows traffic consistently.",
+    ogTitle: "Scale Content With AI | RankSEO",
+    ogDescription:
+      "Build an AI-powered content engine that scales your SEO traffic without sacrificing quality.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Scale Content With AI | RankSEO",
+    twitterDescription:
+      "How to scale SEO content using AI. Practical workflow for faster, better content production.",
+    relatedIds: ["ai-seo", "ai-content-seo", "content-optimization", "how-to-find-low-competition-keywords", "keyword-prioritization"],
+  },
+  {
+    id: "ai-vs-human-content",
+    type: "article",
+    title: "AI vs Human Content for SEO",
+    slug: "ai-vs-human-content",
+    topicSlug: "ai-seo",
+    excerpt:
+      "AI vs human content for SEO: learn what works, what does not, and how to combine both for the best results.",
+    category: "AI SEO",
+    order: 8.2,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 10,
+    seoTitle:
+      "AI vs Human Content for SEO (What Actually Works)",
+    seoDescription:
+      "AI vs human content for SEO: learn what works, what doesn't, and how to use AI content without hurting rankings.",
+    ogTitle: "AI vs Human Content for SEO | RankSEO",
+    ogDescription:
+      "AI vs human content: a balanced comparison of what works for SEO and how to combine both.",
+    ogImage: "/og-image.png",
+    twitterTitle: "AI vs Human Content | RankSEO",
+    twitterDescription:
+      "AI vs human content for SEO: what actually works and how to get the best of both.",
+    relatedIds: ["ai-seo", "scale-content-with-ai", "content-optimization", "internal-linking-best-practices", "keyword-prioritization"],
   },
 ];
 
