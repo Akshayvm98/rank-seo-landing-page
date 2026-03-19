@@ -551,6 +551,32 @@ const articles: GuideArticlePage[] = [
     relatedIds: ["content-seo", "how-to-write-seo-articles", "content-optimization", "title-tags", "internal-linking"],
   },
   {
+    id: "blog-structure",
+    type: "article",
+    title: "How to Structure a Blog Post for SEO",
+    slug: "blog-structure",
+    topicSlug: "content-seo",
+    excerpt:
+      "Learn how to structure a blog post for SEO to improve readability, rankings, and user engagement.",
+    category: "Content",
+    order: 2.65,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 10,
+    seoTitle:
+      "How to Structure a Blog Post for SEO (Step-by-Step Guide)",
+    seoDescription:
+      "Learn how to structure a blog post for SEO to improve readability, rankings, and user engagement.",
+    ogTitle: "How to Structure a Blog Post for SEO | RankSEO",
+    ogDescription:
+      "The exact blog post structure that improves readability, engagement, and SEO rankings.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Blog Post Structure for SEO | RankSEO",
+    twitterDescription:
+      "Learn the ideal blog post structure for better SEO rankings and reader engagement.",
+    relatedIds: ["content-seo", "how-to-write-seo-articles", "content-optimization", "internal-linking", "blog-seo-checklist"],
+  },
+  {
     id: "how-to-update-old-content",
     type: "article",
     title: "How to Update Old Content for SEO",
