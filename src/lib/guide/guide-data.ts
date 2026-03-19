@@ -473,6 +473,58 @@ const articles: GuideArticlePage[] = [
     relatedIds: ["on-page-seo", "keyword-clustering", "content-optimization", "seo-analytics"],
   },
   {
+    id: "headings-seo",
+    type: "article",
+    title: "Heading Tags Best Practices for SEO",
+    slug: "headings-seo",
+    topicSlug: "on-page-seo",
+    excerpt:
+      "Learn how to use H1, H2, and H3 heading tags correctly to improve content structure, readability, and SEO rankings.",
+    category: "On-Page",
+    order: 3.4,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 9,
+    seoTitle:
+      "Heading Tags Best Practices for SEO (H1, H2, H3 Guide)",
+    seoDescription:
+      "Learn heading tags best practices for SEO. Use H1, H2, and H3 tags correctly to improve structure, readability, and rankings.",
+    ogTitle: "Heading Tags Best Practices | RankSEO",
+    ogDescription:
+      "Use H1, H2, and H3 heading tags correctly to improve your content structure and SEO rankings.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Heading Tags for SEO | RankSEO",
+    twitterDescription:
+      "Learn how to use heading tags properly for better SEO structure and readability.",
+    relatedIds: ["on-page-seo", "blog-structure", "seo-introductions", "title-tags", "content-optimization"],
+  },
+  {
+    id: "keyword-placement",
+    type: "article",
+    title: "Keyword Placement Best Practices for SEO",
+    slug: "keyword-placement",
+    topicSlug: "on-page-seo",
+    excerpt:
+      "Learn where to place keywords for SEO without over-optimizing. Improve rankings with proper keyword placement strategies.",
+    category: "On-Page",
+    order: 3.5,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 9,
+    seoTitle:
+      "Keyword Placement Best Practices for SEO (Where and How)",
+    seoDescription:
+      "Learn where to place keywords for SEO without over-optimizing. Improve rankings with proper keyword placement strategies.",
+    ogTitle: "Keyword Placement for SEO | RankSEO",
+    ogDescription:
+      "Learn where to place keywords for maximum SEO impact without over-optimizing.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Keyword Placement for SEO | RankSEO",
+    twitterDescription:
+      "Where to place keywords for SEO and how to keep your writing natural.",
+    relatedIds: ["on-page-seo", "title-tags", "headings-seo", "content-optimization", "keywords-per-page"],
+  },
+  {
     id: "how-to-find-low-competition-keywords",
     type: "article",
     title: "How to Find Low Competition Keywords",
@@ -601,6 +653,32 @@ const articles: GuideArticlePage[] = [
     twitterDescription:
       "Learn how to write introductions that keep readers engaged and improve your rankings.",
     relatedIds: ["content-seo", "blog-structure", "how-to-write-seo-articles", "content-optimization", "search-intent"],
+  },
+  {
+    id: "content-readability",
+    type: "article",
+    title: "How to Improve Content Readability for SEO",
+    slug: "content-readability",
+    topicSlug: "content-seo",
+    excerpt:
+      "Learn how to make your content easier to read, more engaging, and better for SEO rankings.",
+    category: "Content",
+    order: 2.69,
+    published: true,
+    lastUpdated: "2026-03-19",
+    readingTime: 9,
+    seoTitle:
+      "How to Improve Content Readability for SEO",
+    seoDescription:
+      "Improve content readability for SEO. Learn how to make your content easier to read, more engaging, and better for rankings.",
+    ogTitle: "Content Readability for SEO | RankSEO",
+    ogDescription:
+      "Make your content easier to read and better for SEO rankings with practical readability improvements.",
+    ogImage: "/og-image.png",
+    twitterTitle: "Content Readability for SEO | RankSEO",
+    twitterDescription:
+      "Improve content readability to boost engagement and SEO performance.",
+    relatedIds: ["content-seo", "blog-structure", "seo-introductions", "headings-seo", "seo-writing-mistakes"],
   },
   {
     id: "how-to-update-old-content",
