@@ -37,6 +37,11 @@ const CATEGORIES = [
     label: "SERP & Optimization",
     description: "See how your pages appear in search results and improve click-through rate.",
   },
+  {
+    id: "Utilities",
+    label: "Utilities",
+    description: "Practical tools for email, data quality, and other common checks.",
+  },
 ] as const;
 
 // Humanized taglines that override the registry when needed
@@ -59,6 +64,7 @@ const HUMANIZED_TAGLINES: Record<string, string> = {
   "url-slug-analyzer": "Check if your URL slugs are clean and SEO-friendly",
   "title-tag-analyzer": "Analyze title tag length, keywords, and SERP readiness",
   "open-graph-checker": "Check Open Graph tags for better social sharing previews",
+  "email-validator": "Check if an email is valid, risky, or disposable",
 };
 
 // Helper text for what each tool checks
@@ -81,6 +87,7 @@ const HELPER_TEXT: Record<string, string> = {
   "url-slug-analyzer": "Length, stop words, readability, keyword presence",
   "title-tag-analyzer": "Character count, keyword position, repetition check",
   "open-graph-checker": "og:title, og:description, og:image, social preview",
+  "email-validator": "Syntax, domain, MX records, disposable, role-based",
 };
 
 const FEATURED_IDS = [

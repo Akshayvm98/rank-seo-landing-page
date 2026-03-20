@@ -221,6 +221,18 @@ export const freeTools: ToolMeta[] = [
     href: "/tools/image-alt-text-checker",
     published: true,
   },
+  {
+    id: "email-validator",
+    slug: "email-validator",
+    name: "Email Validator",
+    tagline: "Check if an email is valid, risky, or disposable",
+    description:
+      "Validate email addresses by checking syntax, domain, mail servers, and deliverability signals. Honest results with transparent checks.",
+    category: "Utilities",
+    icon: "mail",
+    href: "/tools/email-validator",
+    published: true,
+  },
 ];
 
 export function getToolBySlug(slug: string): ToolMeta | null {

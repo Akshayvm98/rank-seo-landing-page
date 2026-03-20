@@ -73,6 +73,10 @@ const CTA_MAP: Record<string, { title: string; description: string }> = {
     title: "Want Open Graph checks across your site?",
     description: "RankSEO audits meta tags, Open Graph, and social sharing readiness across every page.",
   },
+  "email-validator": {
+    title: "Want to build systems that improve traffic quality?",
+    description: "RankSEO helps you grow organic traffic with better content, cleaner optimization, and smarter targeting.",
+  },
 };
 
 const DEFAULT_CTA = {

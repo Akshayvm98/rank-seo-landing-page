@@ -25,6 +25,7 @@ const RELATED_MAP: Record<string, string[]> = {
   "noindex-checker": ["canonical-tag-checker", "robots-txt-checker", "meta-tag-checker"],
   "open-graph-checker": ["meta-tag-checker", "serp-preview-tool", "title-tag-analyzer"],
   "image-alt-text-checker": ["heading-structure-checker", "content-structure-checker", "anchor-text-analyzer"],
+  "email-validator": ["meta-tag-checker", "broken-link-checker", "content-length-analyzer"],
 };
 
 const allTools = getPublishedTools();

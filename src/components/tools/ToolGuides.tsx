@@ -132,6 +132,13 @@ const GUIDE_MAP: Record<string, { intro: string; links: { href: string; label: s
       { href: "/seo-guide/content-seo/content-optimization", label: "Content Optimization Guide" },
     ],
   },
+  "email-validator": {
+    intro: "Keep your contacts and leads clean",
+    links: [
+      { href: "/seo-guide/content-seo/how-to-increase-organic-traffic", label: "How to Increase Organic Traffic" },
+      { href: "/seo-guide/content-seo/content-optimization", label: "Content Optimization Guide" },
+    ],
+  },
 };
 
 /** Shared guide links section for tool pages */
