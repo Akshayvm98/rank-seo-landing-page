@@ -55,6 +55,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  verification: {
+    other: {
+      "msvalidate.01": "9958C121374B7540BC46789A2BFC1C13",
+    },
+  },
 };
 
 export default function RootLayout({
