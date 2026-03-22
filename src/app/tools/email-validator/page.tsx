@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Email Validator | RankSEO",
     description: "Free email validation tool. Check syntax, domain, mail server, and deliverability signals.",
-    url: "https://rankseoengine.com/tools/email-validator",
+    url: "https://www.rankseoengine.com/tools/email-validator",
     siteName: "RankSEO",
     type: "website",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Email Validator | RankSEO",
     description: "Free email validation tool with honest, transparent results.",
   },
-  alternates: { canonical: "https://rankseoengine.com/tools/email-validator" },
+  alternates: { canonical: "https://www.rankseoengine.com/tools/email-validator" },
 };
 
 export default function EmailValidatorPage() {

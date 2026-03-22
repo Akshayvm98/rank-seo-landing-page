@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Internal Link Checker | RankSEO",
     description:
       "Free tool to analyze internal links, external links, and anchor text quality for SEO.",
-    url: "https://rankseoengine.com/tools/internal-link-checker",
+    url: "https://www.rankseoengine.com/tools/internal-link-checker",
     siteName: "RankSEO",
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Free tool to analyze internal links, external links, and anchor text quality for SEO.",
   },
   alternates: {
-    canonical: "https://rankseoengine.com/tools/internal-link-checker",
+    canonical: "https://www.rankseoengine.com/tools/internal-link-checker",
   },
 };
 

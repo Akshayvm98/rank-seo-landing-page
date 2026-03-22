@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Free SEO Tools | RankSEO",
     description:
       "Fast, simple SEO tools to analyze and improve your website. No login required.",
-    url: "https://rankseoengine.com/tools",
+    url: "https://www.rankseoengine.com/tools",
     siteName: "RankSEO",
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Fast, simple SEO tools to analyze and improve your website.",
   },
   alternates: {
-    canonical: "https://rankseoengine.com/tools",
+    canonical: "https://www.rankseoengine.com/tools",
   },
 };
 

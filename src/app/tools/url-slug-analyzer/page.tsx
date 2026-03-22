@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "URL Slug Analyzer | RankSEO",
     description: "Free tool to analyze URL slugs for SEO readability and optimization.",
-    url: "https://rankseoengine.com/tools/url-slug-analyzer",
+    url: "https://www.rankseoengine.com/tools/url-slug-analyzer",
     siteName: "RankSEO",
     type: "website",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "URL Slug Analyzer | RankSEO",
     description: "Free tool to analyze URL slugs for SEO readability and optimization.",
   },
-  alternates: { canonical: "https://rankseoengine.com/tools/url-slug-analyzer" },
+  alternates: { canonical: "https://www.rankseoengine.com/tools/url-slug-analyzer" },
 };
 
 export default function UrlSlugAnalyzerPage() {

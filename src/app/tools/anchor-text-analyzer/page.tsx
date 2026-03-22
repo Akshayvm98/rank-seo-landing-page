@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Anchor Text Analyzer | RankSEO",
     description: "Free tool to analyze anchor text quality for SEO.",
-    url: "https://rankseoengine.com/tools/anchor-text-analyzer",
+    url: "https://www.rankseoengine.com/tools/anchor-text-analyzer",
     siteName: "RankSEO",
     type: "website",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Anchor Text Analyzer | RankSEO",
     description: "Free tool to analyze anchor text quality for SEO.",
   },
-  alternates: { canonical: "https://rankseoengine.com/tools/anchor-text-analyzer" },
+  alternates: { canonical: "https://www.rankseoengine.com/tools/anchor-text-analyzer" },
 };
 
 export default function AnchorTextAnalyzerPage() {

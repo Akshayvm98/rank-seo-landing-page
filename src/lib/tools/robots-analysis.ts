@@ -50,7 +50,7 @@ export async function fetchRobotsTxt(origin: string): Promise<{ content: string;
   try {
     const res = await fetch(robotsUrl, {
       signal: controller.signal,
-      headers: { "User-Agent": "RankSEO-RobotsChecker/1.0 (+https://rankseoengine.com)" },
+      headers: { "User-Agent": "RankSEO-RobotsChecker/1.0 (+https://www.rankseoengine.com)" },
       redirect: "follow",
     });
     const content = await res.text();

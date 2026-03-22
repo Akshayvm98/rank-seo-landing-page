@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Careers | RankSEO",
     description:
       "Join the team building the future of SEO automation. See open roles and learn how we work.",
-    url: "https://rankseoengine.com/careers",
+    url: "https://www.rankseoengine.com/careers",
     siteName: "RankSEO",
     type: "website",
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       "Join the team building the future of SEO automation.",
   },
   alternates: {
-    canonical: "https://rankseoengine.com/careers",
+    canonical: "https://www.rankseoengine.com/careers",
   },
 };
 

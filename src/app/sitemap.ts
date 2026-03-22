@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getGuideSitemapEntries } from "@/lib/guide";
 import { getPublishedTools } from "@/lib/tools/tools-data";
 
-const siteUrl = "https://rankseoengine.com";
+const siteUrl = "https://www.rankseoengine.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

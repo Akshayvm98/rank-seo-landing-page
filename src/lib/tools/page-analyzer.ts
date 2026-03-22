@@ -70,7 +70,7 @@ export async function fetchPage(url: URL): Promise<{ html: string; statusCode: n
     const response = await fetch(url.toString(), {
       signal: controller.signal,
       headers: {
-        "User-Agent": "RankSEO-Analyzer/1.0 (+https://rankseoengine.com)",
+        "User-Agent": "RankSEO-Analyzer/1.0 (+https://www.rankseoengine.com)",
         Accept: "text/html,application/xhtml+xml",
       },
       redirect: "follow",

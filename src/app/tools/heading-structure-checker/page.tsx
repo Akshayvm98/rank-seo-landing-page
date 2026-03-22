@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Heading Structure Checker | RankSEO",
     description:
       "Free tool to analyze heading hierarchy, detect structural issues, and improve on-page SEO.",
-    url: "https://rankseoengine.com/tools/heading-structure-checker",
+    url: "https://www.rankseoengine.com/tools/heading-structure-checker",
     siteName: "RankSEO",
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Free tool to analyze heading hierarchy, detect structural issues, and improve on-page SEO.",
   },
   alternates: {
-    canonical: "https://rankseoengine.com/tools/heading-structure-checker",
+    canonical: "https://www.rankseoengine.com/tools/heading-structure-checker",
   },
 };
 

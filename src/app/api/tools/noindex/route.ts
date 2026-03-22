@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
     try {
       const response = await fetch(validation.url.toString(), {
         signal: controller.signal,
-        headers: { "User-Agent": "RankSEO-Analyzer/1.0 (+https://rankseoengine.com)", Accept: "text/html" },
+        headers: { "User-Agent": "RankSEO-Analyzer/1.0 (+https://www.rankseoengine.com)", Accept: "text/html" },
         redirect: "follow",
       });
       responseHeaders = response.headers;

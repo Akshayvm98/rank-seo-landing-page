@@ -8,7 +8,7 @@ import type {
 } from "./types";
 import { guidePages } from "./guide-data";
 
-const SITE_URL = "https://rankseoengine.com";
+const SITE_URL = "https://www.rankseoengine.com";
 
 // ---------------------------------------------------------------------------
 // Lookups

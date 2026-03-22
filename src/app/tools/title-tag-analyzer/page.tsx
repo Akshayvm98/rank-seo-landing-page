@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Title Tag Analyzer | RankSEO",
     description: "Free tool to check title tag length, keywords, and SEO optimization.",
-    url: "https://rankseoengine.com/tools/title-tag-analyzer",
+    url: "https://www.rankseoengine.com/tools/title-tag-analyzer",
     siteName: "RankSEO",
     type: "website",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Title Tag Analyzer | RankSEO",
     description: "Free tool to check title tag length, keywords, and SEO optimization.",
   },
-  alternates: { canonical: "https://rankseoengine.com/tools/title-tag-analyzer" },
+  alternates: { canonical: "https://www.rankseoengine.com/tools/title-tag-analyzer" },
 };
 
 export default function TitleTagAnalyzerPage() {

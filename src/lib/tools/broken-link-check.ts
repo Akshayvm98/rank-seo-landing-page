@@ -112,7 +112,7 @@ export async function checkLinkStatus(href: string): Promise<{ statusCode: numbe
       signal: controller.signal,
       redirect: "manual",
       headers: {
-        "User-Agent": "RankSEO-LinkChecker/1.0 (+https://rankseoengine.com)",
+        "User-Agent": "RankSEO-LinkChecker/1.0 (+https://www.rankseoengine.com)",
       },
     });
     return { statusCode: headRes.status };
@@ -127,7 +127,7 @@ export async function checkLinkStatus(href: string): Promise<{ statusCode: numbe
           signal: controller2.signal,
           redirect: "manual",
           headers: {
-            "User-Agent": "RankSEO-LinkChecker/1.0 (+https://rankseoengine.com)",
+            "User-Agent": "RankSEO-LinkChecker/1.0 (+https://www.rankseoengine.com)",
           },
         });
         // Don't read body, just get status

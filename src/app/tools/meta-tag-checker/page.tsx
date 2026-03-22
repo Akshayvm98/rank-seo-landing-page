@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Meta Tag Checker | RankSEO",
     description:
       "Free tool to analyze meta tags, Open Graph, Twitter Cards, and SEO metadata on any page.",
-    url: "https://rankseoengine.com/tools/meta-tag-checker",
+    url: "https://www.rankseoengine.com/tools/meta-tag-checker",
     siteName: "RankSEO",
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Free tool to analyze meta tags, Open Graph, Twitter Cards, and SEO metadata on any page.",
   },
   alternates: {
-    canonical: "https://rankseoengine.com/tools/meta-tag-checker",
+    canonical: "https://www.rankseoengine.com/tools/meta-tag-checker",
   },
 };
 

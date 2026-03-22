@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Content Length Analyzer | RankSEO",
     description:
       "Free tool to analyze page content length, structure, and SEO readiness.",
-    url: "https://rankseoengine.com/tools/content-length-analyzer",
+    url: "https://www.rankseoengine.com/tools/content-length-analyzer",
     siteName: "RankSEO",
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Free tool to analyze page content length, structure, and SEO readiness.",
   },
   alternates: {
-    canonical: "https://rankseoengine.com/tools/content-length-analyzer",
+    canonical: "https://www.rankseoengine.com/tools/content-length-analyzer",
   },
 };
 

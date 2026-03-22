@@ -32,7 +32,7 @@ async function safeFetch(url: string): Promise<{ text: string; status: number } 
   try {
     const res = await fetch(url, {
       signal: controller.signal,
-      headers: { "User-Agent": "RankSEO-SitemapChecker/1.0 (+https://rankseoengine.com)" },
+      headers: { "User-Agent": "RankSEO-SitemapChecker/1.0 (+https://www.rankseoengine.com)" },
       redirect: "follow",
     });
     const text = await res.text();

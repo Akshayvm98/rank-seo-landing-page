@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "SERP Preview Tool | RankSEO",
     description:
       "Free tool to preview and optimize your Google search result appearance.",
-    url: "https://rankseoengine.com/tools/serp-preview-tool",
+    url: "https://www.rankseoengine.com/tools/serp-preview-tool",
     siteName: "RankSEO",
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Free tool to preview and optimize your Google search result appearance.",
   },
   alternates: {
-    canonical: "https://rankseoengine.com/tools/serp-preview-tool",
+    canonical: "https://www.rankseoengine.com/tools/serp-preview-tool",
   },
 };
 

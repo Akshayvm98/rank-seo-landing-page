@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Broken Link Checker | RankSEO",
     description:
       "Free tool to find broken links, check status codes, and fix dead links for better SEO.",
-    url: "https://rankseoengine.com/tools/broken-link-checker",
+    url: "https://www.rankseoengine.com/tools/broken-link-checker",
     siteName: "RankSEO",
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Free tool to find broken links, check status codes, and fix dead links for better SEO.",
   },
   alternates: {
-    canonical: "https://rankseoengine.com/tools/broken-link-checker",
+    canonical: "https://www.rankseoengine.com/tools/broken-link-checker",
   },
 };
 

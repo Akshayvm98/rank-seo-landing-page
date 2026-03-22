@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Content Structure Checker | RankSEO",
     description: "Free tool to analyze content structure, heading usage, and SEO readiness.",
-    url: "https://rankseoengine.com/tools/content-structure-checker",
+    url: "https://www.rankseoengine.com/tools/content-structure-checker",
     siteName: "RankSEO",
     type: "website",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Content Structure Checker | RankSEO",
     description: "Free tool to analyze content structure, heading usage, and SEO readiness.",
   },
-  alternates: { canonical: "https://rankseoengine.com/tools/content-structure-checker" },
+  alternates: { canonical: "https://www.rankseoengine.com/tools/content-structure-checker" },
 };
 
 export default function ContentStructureCheckerPage() {

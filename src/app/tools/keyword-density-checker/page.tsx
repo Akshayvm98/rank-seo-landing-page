@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Keyword Density Checker | RankSEO",
     description:
       "Free tool to analyze keyword density, term frequency, and content balance for SEO.",
-    url: "https://rankseoengine.com/tools/keyword-density-checker",
+    url: "https://www.rankseoengine.com/tools/keyword-density-checker",
     siteName: "RankSEO",
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Free tool to analyze keyword density, term frequency, and content balance for SEO.",
   },
   alternates: {
-    canonical: "https://rankseoengine.com/tools/keyword-density-checker",
+    canonical: "https://www.rankseoengine.com/tools/keyword-density-checker",
   },
 };
 

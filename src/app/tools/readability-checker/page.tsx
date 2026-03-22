@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Readability Checker | RankSEO",
     description:
       "Free tool to analyze content readability, sentence length, and paragraph structure for SEO.",
-    url: "https://rankseoengine.com/tools/readability-checker",
+    url: "https://www.rankseoengine.com/tools/readability-checker",
     siteName: "RankSEO",
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Free tool to analyze content readability, sentence length, and paragraph structure for SEO.",
   },
   alternates: {
-    canonical: "https://rankseoengine.com/tools/readability-checker",
+    canonical: "https://www.rankseoengine.com/tools/readability-checker",
   },
 };
 

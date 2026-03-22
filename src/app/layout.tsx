@@ -7,7 +7,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://rankseoengine.com";
+const siteUrl = "https://www.rankseoengine.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
