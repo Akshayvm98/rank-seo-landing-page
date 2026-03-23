@@ -12,8 +12,6 @@ const footerColumns = [
     links: [
       { label: "SEO Guide", href: "/seo-guide" },
       { label: "Free Tools", href: "/tools" },
-      { label: "Help Center", href: "#" },
-      { label: "Documentation", href: "#" },
     ],
   },
   {
