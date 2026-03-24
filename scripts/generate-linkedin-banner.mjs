@@ -7,15 +7,18 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const W = 1584;
 const H = 396;
 
-// Brand colors
 const accent = "#0d9488";
 const accentLight = "#2dd4bf";
 const dark = "#0f172a";
 const muted = "#64748b";
 const mutedLight = "#94a3b8";
 const border = "#e2e8f0";
+const borderLight = "#f1f5f9";
 const bg = "#fafafa";
 const white = "#ffffff";
+
+// Use system font stack (quotes must use &quot; inside SVG XML)
+const font = `Inter,Geist,SF Pro Display,system-ui,-apple-system,sans-serif`;
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
   <defs>
@@ -24,111 +27,118 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
       <stop offset="100%" stop-color="${accentLight}"/>
     </linearGradient>
     <linearGradient id="bar-grad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="${accent}" stop-opacity="0.6"/>
+      <stop offset="0%" stop-color="${accent}" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="${accentLight}"/>
     </linearGradient>
-    <radialGradient id="glow" cx="75%" cy="50%" r="40%">
-      <stop offset="0%" stop-color="${accentLight}" stop-opacity="0.08"/>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${white}"/>
+      <stop offset="100%" stop-color="#f0fdfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="${accentLight}" stop-opacity="0.06"/>
       <stop offset="100%" stop-color="${accentLight}" stop-opacity="0"/>
     </radialGradient>
-    <!-- Grid pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="${border}" stroke-width="0.5" stroke-opacity="0.4"/>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="${border}" stroke-width="0.4" stroke-opacity="0.3"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="${W}" height="${H}" fill="${bg}"/>
+  <rect width="${W}" height="${H}" fill="url(#bg-grad)"/>
   <rect width="${W}" height="${H}" fill="url(#grid)"/>
   <rect width="${W}" height="${H}" fill="url(#glow)"/>
 
-  <!-- Subtle top accent line -->
+  <!-- Top accent line -->
   <rect x="0" y="0" width="${W}" height="3" fill="url(#accent-grad)"/>
 
-  <!-- LEFT SIDE: Text content -->
+  <!-- ═══════════ LEFT SIDE ═══════════ -->
 
-  <!-- Logo icon -->
-  <rect x="80" y="60" width="40" height="40" rx="10" fill="url(#accent-grad)"/>
-  <text x="100" y="87" text-anchor="middle" font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="20" font-weight="700" fill="${white}">R</text>
+  <!-- Logo -->
+  <rect x="88" y="68" width="38" height="38" rx="9" fill="url(#accent-grad)"/>
+  <text x="107" y="94" text-anchor="middle" font-family="${font}" font-size="19" font-weight="700" fill="${white}">R</text>
+  <text x="138" y="94" font-family="${font}" font-size="18" font-weight="600" fill="${dark}" letter-spacing="-0.5">RankSEO</text>
 
-  <!-- Brand name -->
-  <text x="132" y="88" font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="20" font-weight="600" fill="${dark}" letter-spacing="-0.02em">RankSEO</text>
+  <!-- Headline -->
+  <text x="88" y="185" font-family="${font}" font-size="46" font-weight="700" fill="${dark}" letter-spacing="-1.8">Make your website</text>
+  <text x="88" y="238" font-family="${font}" font-size="46" font-weight="700" fill="${dark}" letter-spacing="-1.8">a traffic engine</text>
 
-  <!-- Main headline -->
-  <text x="80" y="175" font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="42" font-weight="700" fill="${dark}" letter-spacing="-0.03em">Turn your website into a</text>
-  <text x="80" y="225" font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="42" font-weight="700" fill="${dark}" letter-spacing="-0.03em">traffic engine</text>
-
-  <!-- Supporting line -->
-  <text x="80" y="270" font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18" font-weight="400" fill="${muted}">AI-powered SEO that grows your traffic automatically</text>
+  <!-- Subheadline -->
+  <text x="88" y="282" font-family="${font}" font-size="17" font-weight="400" fill="${muted}" letter-spacing="-0.2">AI-powered SEO that grows your traffic automatically</text>
 
   <!-- URL -->
-  <text x="80" y="340" font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="15" font-weight="500" fill="${accent}">rankseoengine.com</text>
+  <text x="88" y="348" font-family="${font}" font-size="14" font-weight="500" fill="${accent}" letter-spacing="0">rankseoengine.com</text>
 
-  <!-- RIGHT SIDE: Abstract UI visualization -->
+  <!-- ═══════════ RIGHT SIDE ═══════════ -->
 
-  <!-- Main dashboard card -->
-  <rect x="920" y="40" width="580" height="316" rx="16" fill="${white}" stroke="${border}" stroke-width="1"/>
+  <!-- Dashboard card -->
+  <rect x="900" y="32" width="600" height="332" rx="16" fill="${white}" stroke="${border}" stroke-width="0.8"/>
 
-  <!-- Card header bar -->
-  <rect x="920" y="40" width="580" height="48" rx="16" fill="${white}"/>
-  <rect x="920" y="72" width="580" height="1" fill="${border}"/>
-  <!-- Window dots -->
-  <circle cx="948" cy="64" r="5" fill="#f87171" opacity="0.6"/>
-  <circle cx="966" cy="64" r="5" fill="#fbbf24" opacity="0.6"/>
-  <circle cx="984" cy="64" r="5" fill="#34d399" opacity="0.6"/>
-  <!-- Tab text -->
-  <text x="1020" y="68" font-family="system-ui,sans-serif" font-size="12" font-weight="500" fill="${muted}">SEO Performance</text>
+  <!-- Header bar -->
+  <rect x="900" y="32" width="600" height="44" rx="16" fill="${white}"/>
+  <rect x="900" y="76" width="600" height="0.8" fill="${borderLight}"/>
+  <!-- Dots -->
+  <circle cx="926" cy="54" r="4.5" fill="#f87171" opacity="0.5"/>
+  <circle cx="942" cy="54" r="4.5" fill="#fbbf24" opacity="0.5"/>
+  <circle cx="958" cy="54" r="4.5" fill="#34d399" opacity="0.5"/>
+  <text x="985" y="58" font-family="${font}" font-size="11" font-weight="500" fill="${mutedLight}">SEO Dashboard</text>
 
-  <!-- Traffic chart area -->
-  <!-- Chart bars -->
-  <rect x="960" y="230" width="28" height="50" rx="4" fill="${border}" opacity="0.5"/>
-  <rect x="996" y="210" width="28" height="70" rx="4" fill="${border}" opacity="0.5"/>
-  <rect x="1032" y="190" width="28" height="90" rx="4" fill="${border}" opacity="0.5"/>
-  <rect x="1068" y="200" width="28" height="80" rx="4" fill="url(#bar-grad)" opacity="0.7"/>
-  <rect x="1104" y="170" width="28" height="110" rx="4" fill="url(#bar-grad)" opacity="0.8"/>
-  <rect x="1140" y="145" width="28" height="135" rx="4" fill="url(#bar-grad)" opacity="0.9"/>
-  <rect x="1176" y="120" width="28" height="160" rx="4" fill="url(#accent-grad)"/>
+  <!-- Metric cards -->
+  <rect x="928" y="92" width="130" height="56" rx="10" fill="${bg}" stroke="${borderLight}" stroke-width="0.5"/>
+  <text x="944" y="112" font-family="${font}" font-size="9" font-weight="600" fill="${mutedLight}" letter-spacing="0.08em">IMPRESSIONS</text>
+  <text x="944" y="136" font-family="${font}" font-size="22" font-weight="700" fill="${dark}" letter-spacing="-0.5">142.8K</text>
 
-  <!-- Growth line -->
-  <polyline points="974,225 1010,205 1046,185 1082,195 1118,165 1154,140 1190,115" fill="none" stroke="${accent}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <rect x="1070" y="92" width="130" height="56" rx="10" fill="${bg}" stroke="${borderLight}" stroke-width="0.5"/>
+  <text x="1086" y="112" font-family="${font}" font-size="9" font-weight="600" fill="${mutedLight}" letter-spacing="0.08em">CLICKS</text>
+  <text x="1086" y="136" font-family="${font}" font-size="22" font-weight="700" fill="${dark}" letter-spacing="-0.5">8,412</text>
 
-  <!-- Metric cards row -->
-  <rect x="960" y="95" width="120" height="58" rx="8" fill="${bg}" stroke="${border}" stroke-width="0.5"/>
-  <text x="975" y="115" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="${mutedLight}" letter-spacing="0.05em">IMPRESSIONS</text>
-  <text x="975" y="140" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="${dark}">142.8K</text>
+  <rect x="1212" y="92" width="130" height="56" rx="10" fill="${bg}" stroke="${borderLight}" stroke-width="0.5"/>
+  <text x="1228" y="112" font-family="${font}" font-size="9" font-weight="600" fill="${mutedLight}" letter-spacing="0.08em">AVG POSITION</text>
+  <text x="1228" y="136" font-family="${font}" font-size="22" font-weight="700" fill="${dark}" letter-spacing="-0.5">14.2</text>
 
-  <rect x="1092" y="95" width="120" height="58" rx="8" fill="${bg}" stroke="${border}" stroke-width="0.5"/>
-  <text x="1107" y="115" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="${mutedLight}" letter-spacing="0.05em">CLICKS</text>
-  <text x="1107" y="140" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="${dark}">8,412</text>
+  <rect x="1354" y="92" width="118" height="56" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="0.5"/>
+  <text x="1370" y="112" font-family="${font}" font-size="9" font-weight="600" fill="#059669" letter-spacing="0.08em">GROWTH</text>
+  <text x="1370" y="136" font-family="${font}" font-size="22" font-weight="700" fill="#059669" letter-spacing="-0.5">+24%</text>
 
-  <rect x="1224" y="95" width="120" height="58" rx="8" fill="${bg}" stroke="${border}" stroke-width="0.5"/>
-  <text x="1239" y="115" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="${mutedLight}" letter-spacing="0.05em">AVG POSITION</text>
-  <text x="1239" y="140" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="${dark}">14.2</text>
+  <!-- Bar chart -->
+  <rect x="928" y="248" width="30" height="54" rx="5" fill="${border}" opacity="0.4"/>
+  <rect x="968" y="228" width="30" height="74" rx="5" fill="${border}" opacity="0.4"/>
+  <rect x="1008" y="208" width="30" height="94" rx="5" fill="${border}" opacity="0.5"/>
+  <rect x="1048" y="218" width="30" height="84" rx="5" fill="url(#bar-grad)" opacity="0.6"/>
+  <rect x="1088" y="188" width="30" height="114" rx="5" fill="url(#bar-grad)" opacity="0.7"/>
+  <rect x="1128" y="168" width="30" height="134" rx="5" fill="url(#bar-grad)" opacity="0.85"/>
+  <rect x="1168" y="160" width="30" height="142" rx="5" fill="url(#accent-grad)"/>
 
-  <!-- Workflow chips at bottom of card -->
-  <rect x="960" y="300" width="80" height="26" rx="13" fill="${accent}" fill-opacity="0.08" stroke="${accent}" stroke-width="0.5" stroke-opacity="0.2"/>
-  <text x="1000" y="317" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="${accent}">Discover</text>
+  <!-- Growth trend line -->
+  <polyline points="943,243 983,223 1023,203 1063,213 1103,183 1143,163 1183,155" fill="none" stroke="${accent}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
 
-  <rect x="1050" y="300" width="80" height="26" rx="13" fill="${accent}" fill-opacity="0.08" stroke="${accent}" stroke-width="0.5" stroke-opacity="0.2"/>
-  <text x="1090" y="317" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="${accent}">Generate</text>
+  <!-- Dot on latest point -->
+  <circle cx="1183" cy="155" r="4" fill="${accent}" opacity="0.8"/>
+  <circle cx="1183" cy="155" r="7" fill="${accent}" opacity="0.15"/>
 
-  <rect x="1140" y="300" width="80" height="26" rx="13" fill="${accent}" fill-opacity="0.08" stroke="${accent}" stroke-width="0.5" stroke-opacity="0.2"/>
-  <text x="1180" y="317" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="${accent}">Optimize</text>
+  <!-- Workflow chips -->
+  <rect x="928" y="318" width="76" height="24" rx="12" fill="${accent}" fill-opacity="0.07" stroke="${accent}" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="966" y="334" text-anchor="middle" font-family="${font}" font-size="10" font-weight="600" fill="${accent}">Discover</text>
 
-  <rect x="1230" y="300" width="80" height="26" rx="13" fill="${accent}" fill-opacity="0.08" stroke="${accent}" stroke-width="0.5" stroke-opacity="0.2"/>
-  <text x="1270" y="317" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="${accent}">Publish</text>
+  <rect x="1014" y="318" width="78" height="24" rx="12" fill="${accent}" fill-opacity="0.07" stroke="${accent}" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="1053" y="334" text-anchor="middle" font-family="${font}" font-size="10" font-weight="600" fill="${accent}">Generate</text>
 
-  <rect x="1320" y="300" width="70" height="26" rx="13" fill="${accent}" fill-opacity="0.08" stroke="${accent}" stroke-width="0.5" stroke-opacity="0.2"/>
-  <text x="1355" y="317" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="${accent}">Track</text>
+  <rect x="1102" y="318" width="76" height="24" rx="12" fill="${accent}" fill-opacity="0.07" stroke="${accent}" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="1140" y="334" text-anchor="middle" font-family="${font}" font-size="10" font-weight="600" fill="${accent}">Optimize</text>
 
-  <!-- Growth arrow indicator -->
-  <rect x="1370" y="95" width="85" height="58" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="0.5"/>
-  <text x="1385" y="115" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#059669" letter-spacing="0.05em">GROWTH</text>
-  <text x="1385" y="140" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#059669">+24%</text>
+  <rect x="1188" y="318" width="68" height="24" rx="12" fill="${accent}" fill-opacity="0.07" stroke="${accent}" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="1222" y="334" text-anchor="middle" font-family="${font}" font-size="10" font-weight="600" fill="${accent}">Publish</text>
+
+  <rect x="1266" y="318" width="60" height="24" rx="12" fill="${accent}" fill-opacity="0.07" stroke="${accent}" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="1296" y="334" text-anchor="middle" font-family="${font}" font-size="10" font-weight="600" fill="${accent}">Track</text>
+
+  <!-- Connector arrows between chips -->
+  <text x="1000" y="334" font-family="${font}" font-size="10" fill="${accentLight}" opacity="0.5">&#x2192;</text>
+  <text x="1088" y="334" font-family="${font}" font-size="10" fill="${accentLight}" opacity="0.5">&#x2192;</text>
+  <text x="1176" y="334" font-family="${font}" font-size="10" fill="${accentLight}" opacity="0.5">&#x2192;</text>
+  <text x="1254" y="334" font-family="${font}" font-size="10" fill="${accentLight}" opacity="0.5">&#x2192;</text>
 </svg>`;
 
 async function generate() {
-  // Light version
   const pngBuffer = await sharp(Buffer.from(svg))
     .resize(W, H)
     .png({ quality: 95, compressionLevel: 6 })
