@@ -41,7 +41,7 @@ export function WhyIntegrations() {
             <Icon icon={Icons.arrowRight} size="sm" />
           </a>
           <a
-            href="/pricing"
+            href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 rounded-lg border border-border px-4 py-2.5 text-[14px] font-medium text-foreground transition-all duration-200 hover:border-muted-light hover:bg-surface"
           >
             See pricing

@@ -64,17 +64,19 @@ export function Footer() {
         <div className="mx-auto max-w-[1200px] px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="text-[15px] font-semibold text-foreground">
-              Start building your SEO engine today
+              Let me show you what is holding your SEO back
             </p>
             <p className="text-[13px] text-muted mt-0.5">
-              From keyword discovery to published, optimized content.
+              A quick call to find the gaps and fix them together.
             </p>
           </div>
           <a
-            href="/pricing"
+            href="https://cal.com/rankseo/15min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="shrink-0 rounded-xl bg-accent px-6 py-2.5 text-[13px] font-semibold text-white shadow-sm transition-all hover:bg-accent-hover hover:shadow-md"
           >
-            Start $1 trial
+            Book a quick call
           </a>
         </div>
       </div>
@@ -102,13 +104,15 @@ export function Footer() {
               {/* CTA */}
               <div className="mt-5">
                 <a
-                  href="/pricing"
+                  href="https://cal.com/rankseo/15min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex rounded-lg bg-accent px-5 py-2 text-[13px] font-semibold text-white shadow-sm transition-all hover:bg-accent-hover hover:shadow-md"
                 >
-                  Start $1 trial
+                  Book a quick call
                 </a>
                 <p className="mt-2 text-[11px] text-muted-light">
-                  No lock-in. Cancel anytime.
+                  15 min. No commitment.
                 </p>
               </div>
 

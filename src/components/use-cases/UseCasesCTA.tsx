@@ -13,13 +13,13 @@ export function UseCasesCTA() {
 
           <div className="reveal reveal-delay-3 mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
-              href="/pricing"
+              href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
               className="inline-flex h-11 items-center rounded-lg bg-foreground px-6 text-[14px] font-semibold text-white transition-all duration-200 hover:bg-foreground/90 hover:shadow-lg hover:shadow-foreground/10"
             >
-              Start $1 Trial
+              Book a quick call
             </a>
             <a
-              href="/pricing"
+              href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
               className="inline-flex h-11 items-center rounded-lg border border-border bg-white px-5 text-[14px] font-medium text-foreground transition-all duration-200 hover:border-muted-light"
             >
               View Pricing

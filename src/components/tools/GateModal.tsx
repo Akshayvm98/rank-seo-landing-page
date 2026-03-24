@@ -34,10 +34,12 @@ export function GateModal({ open, onClose }: { open: boolean; onClose: () => voi
           </p>
           <div className="mt-6 space-y-3">
             <a
-              href="/pricing"
+              href="https://cal.com/rankseo/15min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full rounded-xl bg-accent py-3 text-center text-[14px] font-semibold text-white transition-colors hover:bg-accent-hover"
             >
-              Get unlimited access
+              Book a quick call
             </a>
             <button
               onClick={onClose}

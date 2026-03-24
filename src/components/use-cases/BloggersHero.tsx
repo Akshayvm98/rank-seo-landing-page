@@ -22,10 +22,10 @@ export function BloggersHero() {
 
             <div className="reveal reveal-delay-2 mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href="/pricing"
+                href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
                 className="inline-flex h-12 items-center justify-center rounded-lg bg-foreground px-7 text-[15px] font-semibold text-white transition-all duration-200 hover:bg-foreground/90 hover:shadow-lg hover:shadow-foreground/10"
               >
-                Start $1 Trial
+                Book a quick call
               </a>
               <a
                 href="/features"

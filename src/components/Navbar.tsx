@@ -167,10 +167,12 @@ export function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden items-center gap-3 md:flex">
           <a
-            href="/pricing"
+            href="https://cal.com/rankseo/15min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-lg bg-foreground px-4 py-2 text-[14px] font-medium text-white transition-all duration-200 hover:bg-foreground/90 hover:shadow-md"
           >
-            Start $1 Trial
+            Book a quick call
           </a>
         </div>
 
@@ -248,11 +250,13 @@ export function Navbar() {
               )
             )}
             <a
-              href="/pricing"
+              href="https://cal.com/rankseo/15min"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
               className="mt-2 rounded-lg bg-foreground px-3 py-2.5 text-center text-[15px] font-medium text-white"
             >
-              Start $1 Trial
+              Book a quick call
             </a>
           </div>
         </div>

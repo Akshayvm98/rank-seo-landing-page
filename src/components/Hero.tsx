@@ -28,10 +28,12 @@ export function Hero() {
 
             <div className="animate-hero-delay-3 mt-9 flex flex-wrap items-center gap-3">
               <a
-                href="/pricing"
+                href="https://cal.com/rankseo/15min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex h-12 items-center rounded-xl bg-foreground px-8 text-[15px] font-semibold text-white shadow-lg shadow-foreground/10 transition-all duration-300 hover:bg-foreground/90 hover:shadow-xl hover:shadow-foreground/15 hover:-translate-y-0.5"
               >
-                Start $1 Trial
+                Book a quick call
               </a>
               <a
                 href="#workflow"

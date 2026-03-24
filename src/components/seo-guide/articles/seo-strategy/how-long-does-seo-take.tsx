@@ -468,7 +468,7 @@ export default function HowLongDoesSeoTake() {
           </a>{" "}
           to see how it works, or{" "}
           <a
-            href="/pricing"
+            href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
             className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
           >
             start a $1 trial
@@ -609,10 +609,10 @@ export default function HowLongDoesSeoTake() {
               </p>
               <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
                 <a
-                  href="/pricing"
+                  href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
                   className="inline-flex h-11 items-center rounded-xl bg-white px-7 text-[14px] font-semibold text-foreground shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl hover:-translate-y-0.5"
                 >
-                  Start $1 Trial
+                  Book a quick call
                 </a>
                 <a
                   href="/features"

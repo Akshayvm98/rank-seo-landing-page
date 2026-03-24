@@ -1,11 +1,11 @@
 /** Reusable CTA section for free tool pages */
 export function ToolCTA({
   title = "Done checking pages one at a time?",
-  description = "RankSEO runs these checks across your entire site automatically. Find every issue, fix what matters, and watch your traffic grow.",
-  primaryText = "See what RankSEO does",
-  primaryHref = "/features",
-  secondaryText = "View plans",
-  secondaryHref = "/pricing",
+  description = "I'll show you exactly what's holding your SEO back and how to fix it.",
+  primaryText = "Book a quick call",
+  primaryHref = "https://cal.com/rankseo/15min",
+  secondaryText = "See how it works",
+  secondaryHref = "/features",
 }: {
   title?: string;
   description?: string;
@@ -14,6 +14,8 @@ export function ToolCTA({
   secondaryText?: string;
   secondaryHref?: string;
 }) {
+  const isExternal = primaryHref.startsWith("http");
+
   return (
     <section className="py-10 md:py-14">
       <div className="mx-auto max-w-[680px] px-6">
@@ -27,6 +29,7 @@ export function ToolCTA({
           <div className="mt-5 flex flex-wrap justify-center gap-3">
             <a
               href={primaryHref}
+              {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="rounded-xl bg-accent px-6 py-3 text-[13px] font-semibold text-white shadow-sm transition-all hover:bg-accent-hover hover:shadow-md"
             >
               {primaryText}

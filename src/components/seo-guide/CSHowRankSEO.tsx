@@ -45,10 +45,10 @@ export function CSHowRankSEO() {
             </p>
             <div className="reveal reveal-delay-3 mt-8">
               <a
-                href="/pricing"
+                href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
                 className="inline-flex h-11 items-center rounded-xl bg-foreground px-6 text-[14px] font-semibold text-white shadow-lg shadow-foreground/10 transition-all duration-300 hover:bg-foreground/90 hover:shadow-xl hover:-translate-y-0.5"
               >
-                Start $1 Trial
+                Book a quick call
               </a>
             </div>
           </div>

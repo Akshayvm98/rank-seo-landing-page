@@ -363,16 +363,18 @@ export function ToolsHub() {
             </p>
             <div className="mt-5 flex flex-wrap justify-center gap-3">
               <a
-                href="/features"
+                href="https://cal.com/rankseo/15min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-xl bg-accent px-6 py-3 text-[13px] font-semibold text-white shadow-sm transition-colors hover:bg-accent-hover"
               >
-                See what RankSEO does
+                Book a quick call
               </a>
               <a
-                href="/pricing"
+                href="/features"
                 className="rounded-xl border border-accent/20 bg-white px-6 py-3 text-[13px] font-semibold text-accent transition-colors hover:bg-accent-bg/50"
               >
-                View plans
+                See how it works
               </a>
             </div>
           </div>

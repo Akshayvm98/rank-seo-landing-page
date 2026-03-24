@@ -30,10 +30,10 @@ export function PillarHero() {
             Explore the Guide
           </a>
           <a
-            href="/pricing"
+            href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
             className="inline-flex h-12 items-center rounded-xl border border-border px-6 text-[14px] font-medium text-foreground transition-all duration-300 hover:border-muted-light hover:bg-white hover:shadow-sm"
           >
-            Start $1 Trial
+            Book a quick call
           </a>
         </div>
         <p className="animate-hero-delay-4 mt-5 text-[13px] text-muted-light">

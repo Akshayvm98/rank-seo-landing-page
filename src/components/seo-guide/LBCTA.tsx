@@ -15,13 +15,13 @@ export function LBCTA() {
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a
-                href="/pricing"
+                href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
                 className="inline-flex h-12 items-center rounded-xl bg-white px-8 text-[15px] font-semibold text-foreground shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl hover:-translate-y-0.5"
               >
-                Start $1 Trial
+                Book a quick call
               </a>
               <a
-                href="/pricing"
+                href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
                 className="inline-flex h-12 items-center rounded-xl border border-white/15 px-6 text-[14px] font-medium text-white/80 transition-all duration-300 hover:border-white/25 hover:text-white"
               >
                 View Pricing

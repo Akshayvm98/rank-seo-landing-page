@@ -27,10 +27,10 @@ export function OPHero() {
 
         <div className="animate-hero-delay-3 mt-7 flex flex-wrap items-center gap-3">
           <a
-            href="/pricing"
+            href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
             className="inline-flex h-11 items-center rounded-xl bg-foreground px-7 text-[14px] font-semibold text-white shadow-lg shadow-foreground/10 transition-all duration-300 hover:bg-foreground/90 hover:shadow-xl hover:-translate-y-0.5"
           >
-            Start $1 Trial
+            Book a quick call
           </a>
           <a
             href="/features"

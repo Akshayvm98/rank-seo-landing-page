@@ -9,10 +9,12 @@ export function SignupPrompt({ visible }: { visible: boolean }) {
           1 free check remaining today.
         </span>
         <a
-          href="/pricing"
+          href="https://cal.com/rankseo/15min"
+          target="_blank"
+          rel="noopener noreferrer"
           className="ml-auto shrink-0 rounded-lg bg-accent px-4 py-1.5 text-[12px] font-semibold text-white transition-colors hover:bg-accent-hover"
         >
-          Get unlimited
+          Book a call
         </a>
       </div>
     </div>

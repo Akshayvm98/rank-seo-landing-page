@@ -264,7 +264,7 @@ export default function SeoForStartups() {
           </a>{" "}
           to see how it works, or{" "}
           <a
-            href="/pricing"
+            href="https://cal.com/rankseo/15min" target="_blank" rel="noopener noreferrer"
             className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover transition-colors"
           >
             start a $1 trial
