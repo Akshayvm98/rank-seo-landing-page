@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Icon, Icons } from "@/components/ui/Icon";
 
 // ---------------------------------------------------------------------------
 // Timing (ms)
@@ -128,7 +129,6 @@ function S5() {
 
   return (
     <motion.div className="flex items-center gap-8 w-full max-w-[920px]">
-      {/* Steps */}
       <div className="flex-1 space-y-2">
         {steps.map((s, i) => (
           <motion.div
@@ -152,7 +152,6 @@ function S5() {
         ))}
       </div>
 
-      {/* Dashboard */}
       <motion.div
         initial={{ opacity: 0, x: 36, scale: 0.96 }}
         animate={{ opacity: 1, x: 0, scale: 1 }}
@@ -247,13 +246,13 @@ const SCENES = [S1, S2, S3, S4, S5, S6];
 export function LaunchVideo() {
   const [idx, setIdx] = useState(-1);
 
-  // Start after brief pause
+  // Auto-start
   useEffect(() => {
     const t = setTimeout(() => setIdx(0), 500);
     return () => clearTimeout(t);
   }, []);
 
-  // Advance scenes (hold on last)
+  // Advance scenes, hold on last
   useEffect(() => {
     if (idx < 0 || idx >= DURATIONS.length - 1) return;
     const t = setTimeout(() => setIdx(idx + 1), DURATIONS[idx]);
@@ -279,7 +278,17 @@ export function LaunchVideo() {
           maxHeight: "720px",
         }}
       >
-        {/* BG color transition */}
+        {/* Download button */}
+        <a
+          href="/launch-video.mp4"
+          download="rankseo-launch.mp4"
+          className="absolute top-4 right-4 z-30 flex items-center gap-1.5 rounded-lg bg-white/10 backdrop-blur-sm px-3 py-2 text-[12px] font-medium text-white/70 transition-all hover:bg-white/20 hover:text-white"
+        >
+          <Icon icon={Icons.download} size="sm" />
+          Download
+        </a>
+
+        {/* BG */}
         <motion.div
           className="absolute inset-0"
           animate={{ backgroundColor: dark ? "#0f172a" : "#fafafa" }}
