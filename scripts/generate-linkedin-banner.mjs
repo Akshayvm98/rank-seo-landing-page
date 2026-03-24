@@ -4,8 +4,8 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const W = 1584;
-const H = 396;
+const W = 1128;
+const H = 191;
 
 // Brand palette
 const c = {
