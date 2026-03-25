@@ -54,10 +54,6 @@ ${Array.from({ length: 31 }, (_, c) =>
 <!-- Top accent line -->
 <rect width="${W}" height="3" fill="url(#ag)"/>
 
-<!-- Launch badge -->
-<rect x="60" y="50" width="130" height="28" rx="14" fill="${accent}" fill-opacity="0.08" stroke="${accent}" stroke-width="0.6" stroke-opacity="0.2"/>
-<text x="125" y="69" text-anchor="middle" font-family="${f}" font-size="11" font-weight="600" fill="${accent}">Launching RankSEO</text>
-
 <!-- Logo -->
 <rect x="60" y="100" width="44" height="44" rx="11" fill="url(#ag)"/>
 <text x="82" y="130" text-anchor="middle" font-family="${f}" font-size="22" font-weight="bold" fill="${white}">R</text>
