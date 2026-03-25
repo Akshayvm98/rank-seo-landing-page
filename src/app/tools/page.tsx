@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 export default function ToolsPage() {
   return (
-    <ToolLayout>
+    <ToolLayout showBackLink={false}>
       <ToolsHub />
     </ToolLayout>
   );
