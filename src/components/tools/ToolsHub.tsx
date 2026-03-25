@@ -149,7 +149,7 @@ export function ToolsHub() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden pt-20 pb-8 md:pt-24 md:pb-12">
+      <section className="relative overflow-hidden pt-8 pb-8 md:pt-10 md:pb-12">
         <div className="pointer-events-none absolute inset-0 bg-grid" />
         <div className="pointer-events-none absolute inset-0 hero-glow" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />

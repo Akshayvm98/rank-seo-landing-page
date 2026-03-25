@@ -13,9 +13,9 @@ export function ToolLayout({
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main className="min-h-screen bg-background pt-16">
         {showBackLink && (
-          <div className="mx-auto max-w-[1200px] px-6 pt-4 pb-0">
+          <div className="mx-auto max-w-[1200px] px-6 pt-3">
             <a
               href="/tools"
               className="inline-flex items-center gap-1.5 text-[13px] font-medium text-muted transition-colors hover:text-accent"
